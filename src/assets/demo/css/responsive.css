@@ -1,0 +1,600 @@
+@media (min-width: 992px){
+	.makeup-sec .product-des {
+		margin-top: 30px;
+	}
+	
+	.makeup-sec.right .col-md-6.pull-left {
+		padding-left: 150px;
+	}
+	
+	
+}	
+
+@media (max-width: 991px){
+	.review .dis-n {
+		display: none;
+	}
+	
+	footer .f-1 .contact-d span {
+		display: block;
+		margin-right: 0px !important;
+		margin-bottom: 10px;
+	}
+	
+	footer h6.f-b{
+		text-align: center;
+	}
+	
+}
+
+@media (min-width: 768px){
+	.mobile-footer{
+		display: none;
+	}
+	
+	.mobile-header{
+		display: none;
+	}
+	
+	.new-items .banner-carousel1 {
+		display: none;
+	}
+	
+	.innerbeauty .banner-carousel2 {
+		display: none;
+	}
+	
+	.makeup-heading.mobile-view{
+		display: none;
+	}
+	
+	.makeup-sec .product-des.mobile-h1 {
+		display: none;
+	}
+	
+	.makeup-sec .eyes-m {
+		display: none;
+	}
+	
+}
+
+@media (max-width: 767px){
+	.review .review-img{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+	}
+
+	.main-footer{
+		display: none;
+	}
+
+	.mobile-footer{
+		display: block;
+	}
+	
+	.main-header{
+		display: none;
+	}
+	
+	.home-header{
+		display: none;
+	}
+
+	.mobile-header{
+		display: block;
+		position: absolute;
+		z-index: 999;
+		width: 100%;
+	}
+	
+	.heading h4 {
+		font-size: 20px;	
+	}
+	
+	.new-items .item .p-top-r {
+		display: none;
+	}
+	
+	.new-items.combinations .col-md-2.text-center .img-fluid{
+		position: relative;
+		transform: none;
+		top: auto;
+		left: auto;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	
+	.combinations .item .item-des .shop{
+		display: none;
+	}
+	
+	.new-items .item:hover .item-des .shop{
+		display: block;
+	}
+	
+	.heading p {
+		font-size: 13px;
+	}
+	
+	.feature-d.text-center {
+		margin-bottom: 50px;
+	}
+	
+	.features .col-md-4:last-child .feature-d.text-center{
+		margin-bottom: 0px;
+	}
+	
+	.feature-d.text-center h5 {
+		font-size: 18px;
+	}
+	
+	.feature-d.text-center p {
+		font-size: 13px;
+	}
+	
+	.learn-more p {
+		display: none;
+	}
+	
+	.learn-more .col-md-4 {
+		text-align: center;
+	}
+	
+	footer .f-1 p {
+		font-size: 13px;
+	}
+	
+	.new-items .row.desktop-view {
+		display: none;
+	}
+	
+	.new-items .banner-carousel1 {
+		display: block;
+	}
+	
+	.innerbeauty .beauty-img.desktop-view{
+		display: none;
+	}
+	
+	.blog-banner .data h1 {
+		font-size: 30px;
+	}
+	
+	.makeup-heading{
+		display: none;
+	}
+	
+	.makeup-heading.mobile-view{
+		display: block;
+	}
+	
+	.makeup-sec .product-des.mobile-h1 .text-bg {
+		display: block;
+	}
+	
+	.makeup-sec .product-des .text-bg {
+		display: none;
+	}
+	
+	.makeup-sec .eyes-d {
+		display: none;
+	}
+	
+	.makeup-sec .eyes-m {
+		display: block;
+	}
+	
+  .filter-sidebar {
+    width: 100%;
+    padding: 20px;
+}
+		
+}	
+
+@media (min-width: 576px){
+	.home-overlay .modal-dialog{
+		 max-width: 400px;
+	 }
+	 	 
+}
+
+@media (max-width: 575px){
+	.review .review-sec .form-group .dis-flex {
+		display: block;
+		width: 150px;
+	}
+	
+	.review .review-sec .form-group .dis-flex .form-control {
+		margin-bottom: 15px;
+	}
+	
+	.review .review-sec .form-group .pink-btn.review-btn {
+		float: none;
+	}
+	
+	.review .review-sec .form-group.email input::-webkit-input-placeholder{
+		font-size: 9px
+	}
+	
+	.review .review-sec .form-group.email input::-moz-placeholder{
+		font-size: 9px
+	}
+	
+	.review .review-sec .form-group.email input:-ms-input-placeholder{
+		font-size: 9px
+	}
+	
+	.makeup-sec .row .col-md-6 {
+		padding-left: 30px;
+	}
+
+
+
+.carousel-caption h1 {
+    color: #000;
+    /* padding: 10px; */
+    font-size: 27px;
+    color: #51514f;
+}
+
+.carousel-caption {
+    bottom: 73px;
+    text-align: left;
+}
+
+
+
+}
+
+@media (max-width: 320px){
+	.carousel-caption {
+    bottom: 22px;
+    text-align: left;
+}
+
+.images-box img {
+    width: 100%;
+}
+
+h2.product-title {
+    font-size: 23px;
+}
+
+.form-sec1 {
+    padding-top: 18px;
+}
+
+.cart-btn {
+    padding: 17px 0 0 28px;
+}
+
+p.italy-text.textiright {
+    /* float: right; */
+    font-size: 13px;
+    padding: 15px 48px 5px 24px;
+}
+
+.circle-sec {
+    padding-left: 4px;
+}
+
+ul.media-icon-sec {
+    padding-left: 33px;
+}
+}
+
+@media (min-width: 321px) and (max-width: 479px){
+	.images-box img {
+    width: 100%;
+}
+
+}
+
+@media (max-width: 767px){
+
+	.lips-filter-sidebar {
+    	width: 100%;
+
+	}
+	
+.face-text .face1-title {
+    font-size: 27px;
+    line-height: 39px;
+}
+	
+	.face-text{
+		position: relative;
+	}	
+	
+.face-text .face1-title {
+    top: 35px;
+    left: 85px;
+    padding: unset;
+}	
+
+}
+
+@media (min-width: 321px) and (max-width: 767px){
+
+.face-text .face1-title {
+    top: -10px;
+    left: 84px;
+    padding: unset;
+}
+
+.face-text{
+	position: relative;
+}
+
+.face-text .face1-title {
+    font-size: 38px;
+    line-height: 60px;
+    top: 97px;
+    left: 169px;
+}
+
+.product-banner .banner-text {
+    position: unset;
+    
+}
+
+.banner-icon ul.banner-icon-sec {
+    position: unset;
+   
+}
+
+.product-banner .banner-text {
+    position: unset !important;
+
+}
+
+.product-banner img.image-fluid {
+    width: 100%;
+}
+.fhfj .banner-carousel2 {
+    display: none !important;
+}
+
+.fhfj {
+    display: none;
+}
+
+.eyes-text .eyes1-title {
+
+    font-size: 33px;
+    line-height: 60px;
+    padding: unset;
+    left: 94px;
+    bottom: 8px;
+}
+
+.lips-text .lips-title {
+    position: absolute;
+    color: #fff;
+    font-size: 32px;
+    font-style: italic;
+    line-height: 60px;
+    padding: unset;
+    left: 100px;
+    top: 6px;
+}
+
+.overall-review-right {
+    float: left;
+}
+
+
+.banner-text .banner-contant {
+
+    font-size: 24px;
+    padding: 42px;
+    line-height: 36px;
+}
+
+}
+
+
+@media (min-width: 320px) and (max-width: 767px){
+
+.ingredients-data {
+    position: absolute;
+    top: 210px;
+    left: 10px;
+    font-style: italic;
+}
+
+.ingredients-data h1 {
+    font-size: 32px;
+    color: #fff;
+}
+
+.natural-sec h1.natural-heading {
+    font-size: 24px;
+
+}
+
+.clean-sec h1.clean-heading {
+    font-size: 24px;
+}
+
+
+.natural-clean-2 h1.natural-heading {
+    font-size: 24px;
+
+}    
+
+.not-sure-inner-part1 {
+  
+    font-size: 18px;
+    
+}
+
+}
+
+
+@media (min-width: 320px) and (max-width: 767px){
+	
+.banner-sec .banner-img {
+    padding-top: 85px !important;
+}
+	
+.doctor-img-sec h1.doctor-text {
+    top: 43px;
+    left: 48px;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+.about-item1 {
+
+    width: 100%;
+
+}
+
+.skin-care-title {
+    position: absolute;
+	top: 30px;;
+}
+
+.banner-img-sec {
+    width: 100%;
+    float: left;
+    height: 185px;
+
+}
+
+.filter-sidebar-sec {
+    padding: 25px;
+    width: 100%;
+    margin-top: 175px;
+}
+
+
+.doctor-img-sec img {
+    width: 100%;
+}
+
+.main-text h2.text-sec {
+    font-size: 22px;
+}
+
+.doctor-text-sec h3.Deneb-text {
+    font-size: 16px;
+    
+}
+
+.doctor-text-sec h5.Deneb-text {
+    font-size: 13px;
+    
+}
+
+.about-sec .filter-sidebar {
+    width: 100%;
+    padding-top: 55px;
+}
+
+.about-content { 
+    margin-top: auto;
+    
+}
+
+.click-our-text {
+ 
+    padding: 16px;
+    margin: 11px;
+}
+
+
+.click-our-text h3.click-our-heading.text-center {
+    font-size: 18px;
+}
+
+.about-sec .about-part .about-text h1.story-text {
+    
+    bottom: 30px;
+    left: 42px;
+    font-size: 26px;
+        
+}
+
+.founder-sec .founder-content {
+    padding-top: 30px;
+}
+
+.banner-img-sec .c-item1 img {
+    width: 100%;
+}
+
+
+}
+
+
+/*start-Sets-page*/
+
+
+@media (min-width: 320px) and (max-width: 767px){
+	
+	.main-sets-sec {
+    padding-top: 90px;
+}
+
+.blog-banner .data {
+  
+    top: 75%; 
+}
+
+.blog-banner {  
+    padding-top: 85px;
+}
+
+	.product-sets-img img {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.sets-sec .product-sets-img {
+    padding: unset;
+}
+
+.main-sets-sec .sets-heading .sets-text h1 {
+
+    bottom: 34px;
+    left: 46px;
+    font-size: 42px;
+}
+
+.skin-care-product-des {
+  
+    margin-left: unset;
+}
+
+.ingredients-banner {
+    padding-top: 131px;
+}
+
+.product-banner {
+    position: relative;
+    padding-top: 85px;
+}
+
+.new-item-sec {
+    width: 100% !important;
+    float: left;
+}
+
+.lips-product-page {
+    padding-top: 85px;
+}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+	
+	.lips-text .lips-title {
+    
+    padding: 23px 0 0 130px;
+}
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<ng4-loading-spinner> </ng4-loading-spinner>
+
+<body>
+  <app-header></app-header>
+  <section class="headerFixed">
+    <div class="bred">
+      <div class="container">
+
+        <ul class="breadcrumb">
+          <li><a [routerLink]="['/allmakeup']">MAKEUP</a></li>
+          <li><a [routerLink]="['/eyes/81913905201']" (click)="clear()">Eyes</a></li>
+          <li class="li1" style="display:none;"><a routerLinkActive="active" id="bread" class="active">{{bred}}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid eyes-product-page">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 banner-pic">
+          <div class="eyes-banner-sec">
+            <div class="eyes-item">
+              <div class="banner-img eye-res-ban">
+                <img src="../assets/images/eyesorignal.jpg" alt="banner-new">
+                <span _ngcontent-c1="" class="banner-color"></span>
+
+                <div class="eyes-sec-text">
+                  <h1><a routerLink="/lips/81913872433">Lips</a><br><a routerLink="/eyes/81913905201"
+                      class="active">Eyes</a><br><a routerLink="/face/81913937969">Face</a></h1>
+                  <!--  <span class="gredient-boxs"></span> -->
+                </div>
+              </div>
+            </div>
+          </div> <!-- banner-sec-->
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div class="lips-product-description">
+            <div class="lips-natural-sec">
+              <p class="lips-text-title">{{description}}.</p>
+            </div>
+            <div class="LipSolution">
+              <div class="Lips-title">
+                <a href="#"><i class="fa fa-heart-o"></i><span class="Vagen
+									">COSMOS Ceritified</span></a>
+              </div>
+              <div class="Lips-title">
+                <a href="#"><i class="fa fa-heart-o"></i><span class="Vagen">100% Natural/Bio-Based</span></a>
+              </div>
+              <div class="Lips-title">
+                <a href="#"><i class="fa fa-heart-o"></i><span class="Vagen">100% Natural Colorants</span></a>
+              </div>
+              <div class="Lips-title">
+                <a href="#"><i class="fa fa-heart-o"></i><span class="Vagen">Oil Free</span></a>
+              </div>
+              <div class="Lips-title">
+                <a href="#"><i class="fa fa-heart-o"></i><span class="Vagen">Vegen</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="main-Skincare-product-sec" id="main-Skincare-product-sec">
+      <div class="filter-sidebar">
+        <div class="side-filter">
+          <h4 class="titile-cate" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+            aria-controls="collapseSix">Category
+          </h4>
+          <ul class="fiter-text collapse show" id="collapseSix" aria-labelledby="headingSix" data-parent="#accordion">
+            <li>
+
+              <input type="checkbox" id="81913905201" (change)="onChecked($event,'81913905201')"><a
+                routerLink="/eyes/81913905201" routerLinkActive="active"><b>All</b></a></li>
+            <li>
+              <input type="checkbox" id="81913479217" (change)="onChecked($event,'81913479217')">
+              <a routerLink="/eyes/81913479217" routerLinkActive="active"
+                (click)="checkbox('81913479217',$event,'Mascara')" id="81913479217"><b>Mascara</b></a>
+            </li>
+            <li>
+              <input type="checkbox" id="81913413681" (change)="onChecked($event,'81913413681')">
+              <a routerLink="/eyes/81913413681" routerLinkActive="active"
+                (click)="checkbox('81913413681',$event,'Eye Shadow')" id="81913413681"><b>Eye Shadow</b></a>
+            </li>
+            <li>
+              <input type="checkbox" id="81913446449" (change)="onChecked($event,'81913446449')">
+              <a routerLink="/eyes/81913446449" routerLinkActive="active"
+                (click)="checkbox('81913446449',$event,'Eye Liner')" id="81913446449"><b>Eye Liner</b></a>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <app-sidebar></app-sidebar>
+
+      </div>
+
+      <div class="mobile-show-filter-sidebar eye-side-bars">
+        <div class="filter-sidebar new-filtersidebar">
+          <div class="side-filter">
+            <div class="">
+              <h4 class="titile-cate collapsed" data-toggle="collapse" data-target="#categorys" aria-expanded="false"
+                aria-controls="collapseSix">Category </h4>
+              <ul class="fiter-text collapse hide" id="categorys" aria-labelledby="headingSix" data-parent="#accordion">
+                <li><a routerLink="/eyes/81913905201"><b>All</b><span class="icon-xside"><img
+                        src="../assets/images/X.svg"></span></a></li>
+                <li>
+                  <a routerLink="/eyes/81913479217" routerLinkActive="active"><b>Mascara</b></a>
+                </li>
+                <li>
+                  <a routerLink="/eyes/81913413681" routerLinkActive="active"><b>Eye Shadow</b></a>
+                </li>
+                <li>
+                  <a routerLink="/eyes/81913446449" routerLinkActive="active"><b>Eye Liner</b></a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="side-filter">
+            <h4 class="titile-cate collapsed" data-toggle="collapse" data-target="#Ingredients" aria-expanded="false"
+              aria-controls="collapseSix1">Ingredients</h4>
+            <div class="fiter-text collapse" id="Ingredients" aria-labelledby="headingSix" data-parent="#accordion">
+              <ul class="fiter-text1 collapse show" id="collapsenine" aria-labelledby="headingSix"
+                data-parent="#accordion">
+                <li class="re_sidebar"><a routerLink="/face/81913937969">COSMOS CERTIFIED</a></li>
+                <li class="re_sidebar"><a routerLink="/face/81913937969">100%NATURAL/BIO-BASED</a></li>
+                <li class="re_sidebar"><a routerLink="/face/81913937969">100%NATURAL/COLORANTS</a></li>
+                <li class="re_sidebar"><a routerLink="/face/81913937969">OIL FREE</a></li>
+                <li class="re_sidebar"><a routerLink="/face/81913937969">VEGAN</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side-filter">
+            <h4 class="titile-cate collapsed" data-toggle="collapse" data-target="#Solutions" aria-expanded="false"
+              aria-controls="collapseSix">Solutions </h4>
+            <ul class="fiter-text collapse" id="Solutions" aria-labelledby="headingSix" data-parent="#accordion">
+              <li><a routerLink="/face/119198908480">Acne</a></li>
+              <li><a routerLink="/face/119198908480">Redness</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End-side-filter -->
+
+      <!-- start-new-item-sec -->
+
+
+
+      <div class="new-items our-lineup responsive-new">
+        <div id="product-pro" class="banner-box product-pro">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4" *ngFor="let items of products">
+                <div class="product-item-box">
+                  <div class="product-item">
+                    <h6 class="new-text">NEW</h6>
+                    <div class="dots-sec" *ngIf="items.options[1]">
+                      <span class="fa fa-circle" *ngFor="let item of items.variants; let i = index"
+                        [ngStyle]="{'color': item.option2}"
+                        (click)="selectshadess(item, item.id,item.option2, $event, items)"></span>
+                    </div>
+
+                    <div class="img-item-box" *ngIf="items.image != null else other_content ">
+                      <img src="{{items.activeVariant}}" alt="item" title="{{items.title}}"
+                        routerLink="/onclick/{{items.id}}">
+                    </div>
+                    <ng-template #other_content>
+                      <div class="img-item-box">
+                        <img src="../assets/images/NoImageFound.png" alt="item">
+                      </div>
+                    </ng-template>
+                    <div class="product-item-des">
+                      <h6 class="raiting"><img class="heart" src="../assets/images/Heart.svg" alt="Heart">4.5</h6>
+                      <h5 class="product-name">{{items.title}}</h5>
+                      <h6 class="Secondary-text" *ngIf="items.shortdescription">{{items.shortdescription}}</h6>
+                      <h5 class="price">$ {{items.activeprice}}</h5>
+                      <button class="btn-shop" (click)="popup(items.id,items)" title="Quick Shop">Quick Shop</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="errorMsgs notification">
+
+                <div style="display: none;" class="alert-box myclass noProduct">Sorry! no Product Found
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="top_pagination" *ngIf="counts">
+            <div class="pagination-sec">
+              <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item " (click)="prev()"><a class="page-item"></a>
+                    << </li> <li class="page-item active"><a class="page-link" (click)="pagination('1')">1</a>
+                  </li>
+                  <li class="page-item " *ngIf="counts > 20"><a class="page-link" (click)="pagination('2')">2</a>
+                  </li>
+                  <li class="page-item" *ngIf="counts > 20"><a class="page-link" (click)="pagination('3')">3</a>
+                  </li>
+                  <li class="page-item" (click)="next()">>></li>
+                </ul>
+                <span>1-{{counts}} of {{totalcounts}}</span>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-overlay">
+      <div class="modal fade" id="popup" role="dialog">
+        <div class="modal-dialog">
+
+          <div class="modal-content overlay">
+            <div class="modal-header">
+              <button type="button" (click)="closePopup()" class="close" data-dismiss="modal"><img
+                  src="../assets/images/X.svg"></button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="popup-sec">
+                <div class="container">
+                  <div class="row" *ngIf="reviewProduct">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+                      *ngIf="this.reviewProduct.product.image != null else other_content">
+                      <div class="preview popup-view">
+                        <div class="preview-pic tab-content">
+
+                          <div class="tab-pane active" id="pic-0"><img src="{{activeProductImage}}" />
+                          </div>
+                        </div>
+                        <ul class="preview-thumbnail nav nav-tabs">
+                          <li (click)="changeActiveProductImage(image, image.id)"
+                            *ngFor="let image of variantImages;let j = index" class="active"><a
+                              data-target="#pic-{{j+1}}" data-toggle="tab"><img src="{{image.src}}"
+                                id="{{image.id}}" /></a></li>
+                        </ul>
+
+                      </div>
+                    </div>
+                    <ng-template #other_content>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="preview popup-view">
+                          <img src="../assets/images/NoImageFound.png" alt="item">
+                        </div>
+                      </div>
+                    </ng-template>
+
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                      <div class="product-description res-order">
+                        <h2 class="product-title one"><span
+                            class="p-title">{{this.reviewProduct.product.title}}</span><span
+                            class="product-price pullright-box"><b>$
+                              {{price}}</b></span>
+                        </h2>
+                        <p class="product-meta-description two" *ngIf="shortdescription">{{shortdescription}}<b></b></p>
+                        <a routerLink="/review/{{this.reviewProduct.product.id}}" class="three"><i
+                            class="fa fa-heart"></i> <span class="number-sec">4.5 / </span> <span class="review-sec">10
+                            Review</span></a>
+                        <p class="text-title nine">{{longdescription}}</p>
+                        <p class="size-text four size-top"
+                          *ngIf="this.reviewProduct.product.options[0].name != 'Title'"><span
+                            class="size-inner">{{this.reviewProduct.product.options[0].name}}:</span>
+                          {{this.reviewProduct.product.options[0].values[0]}} </p>
+                        <p class="size-text five" *ngIf="this.reviewProduct.product.options[2]"><span
+                            class="size-inner">{{this.reviewProduct.product.options[2].name}}:</span>
+                          {{this.reviewProduct.product.options[2].values[0]}} </p>
+                        <div class="errorMsgs notification">
+                          <div style="display: none;" class="alert-box myclass warning">Please add a shade</div>
+                          <div style="display: none;" class="alert-box myclass failure">Out Of Stock</div>
+                          <div style="display: none;" class="alert-box myclass success">{{ids}} Product has been
+                            added to cart
+                          </div>
+                        </div>
+                        <ul class="circle-sec six"
+                          *ngIf="this.reviewProduct.product.options[1]&&this.reviewProduct.product.options[0].values &&this.reviewProduct.product.options[0].values[0]!= 'Default Title' else other_div">
+
+                          <li class="shade-common"
+                            *ngFor="let item of reviewProduct.product.options[1].values let i = index;"
+                            (click)="selectshades(item, this.reviewProduct.product.variants[i].id, $event,this.reviewProduct.product.variants[i] )"
+                            (mouseover)="onMouseMove(item, this.reviewProduct.product.variants[i].id, $event,this.reviewProduct.product.variants[i])">
+                            <i [ngClass]="{'fa fa-circle': true, 'active':this.reviewProduct.product.variants[i].id==selectedColorDropdown }"
+                              [attr.initialColor]="item"
+                              [ngStyle]="{color:item, 'background-color':selectedColorDropdown && this.reviewProduct.product.variants[i].id==selectedColorDropdown ? itemsColour :item}"></i>
+                          </li>
+                        </ul>
+
+                        <ng-template #other_div>
+
+                          <ul class="circle-sec">
+                            <li>Product has no variants</li>
+                          </ul>
+                        </ng-template>
+
+
+
+                        <div class="select-btn seven">
+                          <div class="row">
+                            <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 "
+                              *ngIf="this.reviewProduct.product.options[0].values &&this.reviewProduct.product.options[0].values[0]!= 'Default Title' ">
+                              <select class="form-control shades" id="shedes" [(ngModel)]="selectedColorDropdown"
+                                name="selectedColorDropdown" #name
+                                (change)="selectshades('color',$event.target.value,$event,'variantId')">
+                                <option [value]="SelectAShade">select a shade</option>
+                                <option *ngFor="let items of reviewProduct.product.variants"
+                                  [attr.initialColor]="items.option2" [value]="items.id">
+                                  {{items.option2}}</option>
+
+                              </select>
+
+                            </div>
+
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                              <div class="form-sec-title"
+                                *ngIf="this.reviewProduct.product.options[0].values &&this.reviewProduct.product.options[0].values[0]!= 'Default Title'">
+
+                                <div class="quantity buttons_added popup-button-quantity quan-buttons">
+                                  <input type='button' value='-' class='minus' field='quantity' (click)="sub()" />
+                                  <input type="number" step="1" name="quantity" min="0" value={{count}} #quantity
+                                    title="Qhow-to-ues-secty" class="input-text qty text" size="4" pattern=""
+                                    inputmode="">
+                                  <input type='button' value='+' class='plus' field='quantity' (click)="add()" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="cart-btn eight"
+                          *ngIf="this.reviewProduct.product.options[0].values &&this.reviewProduct.product.options[0].values[0]!= 'Default Title'">
+
+                          <button class="pink-btn text-center" type="button" title="add to cart"
+                            (click)="addtocart(productvariant)">Add
+                            to Cart</button>
+
+
+                          <p class="italy-text textiright made-italy">Made in Italy</p>
+                        </div>
+                        <ul class="media-icon-sec nine">
+                          <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                          <li><a href="https://www.pinterest.co.uk/"><i class="fa fa-pinterest"></i></a></li>
+                          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <app-footer></app-footer>
+
+  <script>
+    $('.f-menu .collapse').collapse();
+
+  </script>
+
+</body>
+
+</html>

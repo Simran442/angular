@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<app-header></app-header>
+<ng4-loading-spinner> </ng4-loading-spinner>
+<body>
+  <div class="main-chack-out-sec">
+    <div class="container">
+      <div class="chack-out-sec">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+            <div class="chack-out-part">
+              <div class="content-text">
+                <h3>Thank you</h3>
+                <ul>
+                  <li><a href="">Cart</a><i class="fa fa-angle-right"></i></li>
+                  <li><a href="">Customer information</a><i class="fa fa-angle-right"></i></li>
+                  <li><a href="">Shipping method</a><i class="fa fa-angle-right"></i></li>
+                  <li><a href="">Payment method</a><i class="fa fa-angle-right"></i></li>
+                </ul>
+              </div>
+              <div class="main-form-sec">
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="form-sec-box">
+                      <div class="form-sec">
+                        <label class="light">Contact information</label>
+                        <input type="text" name="Email or mobile phone number"
+                          placeholder="Email or mobile phone number">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="main-form-sec">
+                  <div class="Shipping-text">
+                    <h3>Shipping address</h3>
+                  </div>
+                  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                    <div class="row form-group">
+
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form-group">
+                        <div class="form-sec form-group">
+                          <input type="text" formControlName="First_name" placeholder="Enter your email"
+                            class="form-control" [ngClass]="{ 'is-invalid': submitted && f.First_name.errors }" />
+                          <div *ngIf="submitted && f.First_name.errors" class="invalid-feedback">
+                            <div *ngIf="f.First_name.errors.required">First Name is required</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form-group">
+                        <div class="form-sec form-group">
+                          <input type="text" formControlName="Last_name" placeholder="Enter your Last name"
+                            class="form-control" [ngClass]="{ 'is-invalid': submitted && f.Last_name.errors }" />
+                          <div *ngIf="submitted && f.Last_name.errors" class="invalid-feedback">
+                            <div *ngIf="f.Last_name.errors.required">Last Name is required</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 form-group">
+                        <div class="form-sec form-group">
+                          <input type="text" formControlName="Address" placeholder="Enter your Last name"
+                            class="form-control" [ngClass]="{ 'is-invalid': submitted && f.Address.errors }" />
+                          <div *ngIf="submitted && f.Address.errors" class="invalid-feedback">
+                            <div *ngIf="f.Address.errors.required">Address is required</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 form-group">
+                        <div class="form-sec form-group">
+                          <input type="text" name="Apartment,suite,etc,(optional)"
+                            placeholder="Apartment,suite,etc,(optional)">
+                        </div>
+                      </div>
+                      <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 form-group">
+                        <div class="form-sec form-group">
+                          <input type="text" formControlName="city" placeholder="enter your city" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.city.errors }" />
+                          <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+                            <div *ngIf="f.city.errors.required">city is required</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 form-group">
+                        <div class="form-sec form-group">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 form-group">
+                        <div class="form-sec form-group">
+                          <input type="text" class="form-control">
+
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 form-group">
+                        <div class="form-sec form-group">
+                          <div class="form-sec form-group">
+                            <input type="text" formControlName="pin_code" placeholder="enter your pin_code"
+                              class="form-control" [ngClass]="{ 'is-invalid': submitted && f.pin_code.errors }" />
+                            <div *ngIf="submitted && f.pin_code.errors" class="invalid-feedback">
+                              <div *ngIf="f.pin_code.errors.required">PIN code is required</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="check-out-btn">
+                          <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                              <div class="btn-text-title">
+                                <i class="fa fa-angle-left">
+                                  <p routerLink="/cart" routerLinkActive="active" class="btn-text">Return to cart</p>
+                                </i>
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                              <div class="btn-box">
+                                <button class="check-out-btn-btn text-center" type="button">Continue to shiping method</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>  -->
+                      <div class="btn-text-title">
+                        <i class="fa fa-angle-left">
+                          <p routerLink="/cart" routerLinkActive="active" class="btn-text">Return to cart</p>
+                        </i>
+                      </div>
+                    </div>
+                    <button class="pink-btn check-btn">Continue to shiping method <i class="fa fa-long-arrow-right"
+                        aria-hidden="true"></i>
+                    </button>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+            <div class="main-product-box">
+              <div class="product-box" *ngFor="let item of this.checkout.lineItems">
+                <span class="img-box"><img src="{{item.variant.image.src}}" aly="check-img"></span>
+                <span class="lipstick">{{item.title}}</span>
+                <span class="carancy">$ {{item.variant.price}}</span>
+              </div>
+
+
+              <hr>
+              <div class="payment-tbl-data">
+                <div class="table-row">
+                  <div class="name">Bag Total</div>
+                  <div class="value">$ {{this.checkout.subtotalPrice}}</div>
+                </div>
+                <div class="table-row">
+                  <div class="name">Subtotal</div>
+                  <div class="value">$ {{this.checkout.subtotalPrice}}</div>
+                </div>
+                <div class="table-row">
+                  <div class="name">Shipping Charge</div>
+                  <div class="value">$ next step</div>
+                </div>
+              </div>
+              <hr>
+              <div class="check-out-title">
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="btn-text-title totle">
+                      <p class="Total-text">Total</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="btn-text-title price">
+                      <h5 class="Total-text">$. {{this.checkout.totalPrice}}</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+  <!-- start-footer -->
+
+
+
+  <script>
+    $('.f-menu .collapse').collapse();
+
+  </script>
+
+</body>
+
+</html>

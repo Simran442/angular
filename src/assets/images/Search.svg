@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Main-Nav_Transparent" transform="translate(-1478.000000, -26.000000)" stroke="#FFFFFF">
+            <g id="Search">
+                <g transform="translate(1479.000000, 27.000000)">
+                    <path d="M8.88888889,0 C13.7977778,0 17.7777778,3.98 17.7777778,8.88888889 C17.7777778,13.7977778 13.7977778,17.7777778 8.88888889,17.7777778 C3.98,17.7777778 0,13.7977778 0,8.88888889 C0,3.98 3.98,0 8.88888889,0 Z" id="Circle"></path>
+                    <path d="M20,20 L15.1666667,15.1666667" id="Line"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,6950 @@
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1440px !important;
+  }
+
+  .skin-container {
+    max-width: 958px !important;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+
+  .banner-text .banner-contant {
+    font-size: 45px;
+
+  }
+
+
+  .makeup-sec .product-des {
+    margin-top: 50px;
+  }
+
+  .makeup-sec.right .col-md-6.pull-left {
+    padding-left: 150px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .review .dis-n {
+    display: none;
+  }
+
+  .product-banner .banner-text {
+    position: absolute;
+    top: 109px;
+    width: 270px;
+    float: left;
+    right: 189px;
+  }
+
+  footer .f-1 .contact-d span {
+    display: block;
+    margin-right: 0px !important;
+    margin-bottom: 10px;
+  }
+
+  footer h6.f-b {
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .mobile-footer {
+    display: none;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  .new-items .banner-carousel1 {
+    display: none;
+    padding-bottom: 50px;
+  }
+
+  .innerbeauty .banner-carousel2 {
+    display: block;
+  }
+
+  .makeup-heading.mobile-view {
+    display: none;
+  }
+
+  .makeup-sec .product-des.mobile-h1 {
+    display: none;
+  }
+
+  .makeup-sec .eyes-m {
+    display: none;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .review .review-img {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+
+  .main-footer {
+    display: none;
+  }
+
+  .mobile-footer {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+  }
+
+  .main-header {
+    display: none;
+  }
+
+  .home-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    background: #fff;
+  }
+
+  .heading h4 {
+    font-size: 18px;
+  }
+
+  .new-items .item .p-top-r {
+    display: none;
+  }
+
+  .new-items.combinations .col-md-2.text-center .img-fluid {
+    position: relative;
+    transform: none;
+    top: auto;
+    left: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .combinations .item .item-des .shop {
+    display: none;
+  }
+
+  .new-items .item:hover .item-des .shop {
+    display: block;
+  }
+
+
+  .heading p {
+    font-size: 13px;
+  }
+
+
+
+  .features .col-md-4:last-child .feature-d.text-center {
+    margin-bottom: 0px;
+  }
+
+  .feature-d.text-center h5 {
+    font-size: 18px;
+  }
+
+  .learn-more p {
+    display: none;
+  }
+
+  .learn-more .col-md-4 {
+    text-align: center;
+  }
+
+  footer .f-1 p {
+    font-size: 13px;
+    margin: 0 auto;
+  }
+
+  /*   .new-items .row.desktop-view {
+    display: none;
+  } */
+
+  .new-items .banner-carousel1 {
+    display: block;
+    width: 100%;
+    float: left;
+  }
+
+  .innerbeauty .beauty-img.desktop-view {
+    display: block;
+  }
+
+  .blog-banner .data h1 {
+    font-size: 35px;
+    line-height: unset;
+
+  }
+
+  .blog-banner .data h6 {
+    font-size: 20px;
+    ;
+    margin-top: 0;
+    line-height: unset;
+  }
+
+  .makeup-heading {
+    display: none;
+  }
+
+  .makeup-heading.mobile-view {
+    display: block;
+    margin-bottom: 0px;
+
+  }
+
+  .makeup-sec .product-des.mobile-h1 .text-bg {
+    display: block;
+  }
+
+  .makeup-sec .product-des .text-bg {
+    display: none;
+  }
+
+  .makeup-sec .eyes-m {
+    display: block;
+  }
+
+  .filter-sidebar {
+    width: 100%;
+    padding: 20px;
+    display: none;
+  }
+
+  .review {
+    padding-top: 85px;
+    margin: 0;
+  }
+
+}
+
+
+/* home */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .founder-img img {
+    width: 100%
+  }
+
+  .banner-icon ul.banner-icon-sec {
+    position: absolute;
+    right: -42px;
+    top: 245px;
+  }
+
+
+  .product-banner .banner-text {
+    position: absolute;
+    top: 71px;
+    width: 492px;
+    float: left;
+    right: 160px;
+  }
+
+  .ingredients-data h1 {
+    top: 333px;
+    left: 237px;
+  }
+
+  .ingredients-data span.gredient-box-box {
+    top: 374px;
+    left: 201px;
+  }
+
+  .founder-text p.founder-title {
+    padding-right: 23px;
+    padding-left: 0px;
+  }
+
+  .learn-more h1 {
+    font-size: 44px;
+  }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .product-description.on-click-discription .product-title {
+    padding-right: 90px;
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+
+  .product-price.pullright-box {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+
+  .select-btn .form-control {
+    width: 100%;
+  }
+
+
+  .banner-text .banner-contant {
+    width: 650px !important;
+    height: auto;
+    font-size: 45px !important;
+  }
+
+  .product-banner .banner-text {
+    right: 14px;
+  }
+
+  .banner-icon ul.banner-icon-sec {
+    right: 154px;
+    top: 250px;
+  }
+
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1250px) {
+  .product-description.on-click-discription .product-title {
+    padding-right: 90px;
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+
+  .product-price.pullright-box {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+
+  .select-btn .form-control {
+    width: 100%;
+  }
+
+  .intredients {
+    top: 68px;
+    width: 300px;
+    height: 300px;
+    left: 555px;
+  }
+
+  .banner-text .banner-contant {
+    width: 582px;
+    height: auto;
+    font-size: 45px !important;
+  }
+
+  .banner-img .banner-color {
+    left: 412px;
+    top: 222px;
+    display: none;
+  }
+
+  .banner-carousel .carousel-inner .carousel-caption {
+    left: 132px;
+  }
+
+  .founder-img img {
+    width: 100%;
+  }
+
+  .icon-bar {
+    top: 45%;
+  }
+
+
+  .product-description.on-click-discription .product-title {
+    padding-right: 90px;
+    position: relative;
+    width: 100%;
+    float: left;
+  }
+
+  .product-price.pullright-box {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .select-btn .form-control {
+    width: 100%;
+  }
+
+  .product-title .p-title {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .select-shades .shades {
+    width: 70% !important;
+    float: left;
+  }
+
+  .quantity.buttons_added .minus,
+  .quantity.buttons_added .plus {
+    padding: 7px 5px 8px;
+  }
+
+  .cart-btn {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .cart-btn .pink-btn.text-center {
+    max-width: 170px;
+    width: 100%;
+    float: left;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+
+  .our-lineup .product-pro {
+    width: 80%;
+    float: left;
+    position: relative;
+  }
+
+  .product-item-box {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .product-item-box .product-item {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .product-item-box .product-item .img-item-box {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+  }
+
+  .product-item-box .product-item .img-item-box img {
+    width: auto !important;
+    height: 100%;
+    cursor: pointer;
+    margin-top: 0px;
+    max-width: 90px;
+  }
+
+  .product-item-box .product-item .product-item-des {
+    margin-top: 38px !important;
+  }
+
+  .product-item-box .product-item .product-item-des h5.product-name {
+    font-size: 14px;
+    overflow: hidden;
+  }
+
+  .product-item-box .product-item .product-item-des h5.price {
+    overflow: hidden;
+  }
+
+  .product-item-box .product-item .product-item-des .btn-shop {
+    margin-top: 0px;
+
+    padding: 11px 8p.product-description.on-click-discription .product-title {
+      padding-right: 90px;
+      width: 100%;
+      position: relative;
+      float: left;
+    }
+
+    .product-price.pullright-box {
+      float: right;
+      position: absolute;
+      top: 0;
+      right: 0px;
+    }
+
+    .select-btn .form-control {
+      width: 100%;
+    }
+
+    font-size: 12px;
+
+    .product-description.on-click-discription .product-title {
+      padding-right: 90px;
+      width: 100%;
+      position: relative;
+      float: left;
+    }
+
+    .product-price.pullright-box {
+      float: right;
+      position: absolute;
+      top: 0;
+      right: 0px;
+    }
+
+    .select-btn .form-control {
+      width: 100%;
+    }
+
+    margin-bottom: 0px;
+  }
+
+  .product-item-box .product-item .product-item-des h6.Secondary-text {
+    overflow: hidden;
+    height: 17px;
+  }
+
+  .italy-text.textiright {
+    margin-right: 0px;
+  }
+
+
+
+
+
+
+
+  .icon-bar {
+    top: 44%;
+  }
+
+  .product-description .natural-sec .natural {
+    width: 50%;
+  }
+
+  .uses-sec {
+    width: 100%;
+  }
+
+  .how-box-image img {
+    width: 100%;
+  }
+
+  .contant-sec-text {
+    margin-left: 69px;
+    width: 111%;
+  }
+
+  .contant-sec-text1 {
+    margin-left: 69px;
+    width: 111%;
+  }
+
+  .intredients {
+    top: 106px;
+    width: 300px;
+    height: 300px;
+    left: 365px;
+  }
+
+  .product-left-img span.background-box {
+    width: 237px;
+  }
+
+  .product-left-img span.background-box-eyes {
+    width: 235px;
+    left: 104px;
+
+  }
+
+  .banner-img .banner-color {
+    display: none;
+  }
+
+  .founder-img img {
+    width: 100%;
+  }
+
+  .foot-space {
+    margin-left: 0px;
+  }
+
+  .learn-more .container {
+    margin-bottom: 26px;
+    padding-bottom: 120px;
+    padding-top: 40px;
+    background-position: top center;
+    background-size: 500px 500px;
+  }
+
+  .doctor-img-sec img {
+    width: 100%;
+  }
+
+  .skin-sec-text h1 {
+    font-size: 82px;
+  }
+
+  .new-banner-sec .new-sec-text {
+    top: 371px;
+    left: 16%;
+  }
+
+  .new-banner-sec .new-sec-text h1 {
+    font-size: 60px;
+  }
+
+  .new-items .item .item-des {
+    margin-top: 120px;
+  }
+
+  .feature-d.text-center {
+    padding: 40px 10px
+  }
+
+  .banner-icon ul.banner-icon-sec {
+    position: absolute;
+    top: 110px;
+    right: -155px;
+  }
+
+  .product-banner .banner-text {
+    /*  //position: unset !important; */
+    width: 100%;
+    top: 105px;
+  }
+
+
+  .banner-text .banner-contant {
+    font-size: 34px !important;
+    padding: 33px;
+    line-height: 36px;
+    position: relative;
+    bottom: 73px;
+    width: 430px;
+    height: auto;
+  }
+
+  .learn-more p {
+    width: 100%;
+    height: auto;
+    margin-top: 97px;
+    font-size: 12px;
+    line-height: 29px;
+
+  }
+
+  .ol.carousel-indicators {
+    display: none;
+  }
+
+  .banner-carousel .carousel-inner .carousel-caption {
+    text-align: left;
+    top: 17%;
+    left: 10%;
+  }
+
+  .banner-carousel .carousel-inner h6 {
+    font-size: 15px;
+    margin-top: 0;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+
+  .face-sec-text br {
+    display: none;
+  }
+
+  .mobile-header .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .lips-product-description {
+    padding-top: 0px;
+  }
+
+  .lips-product-description .LipSolution {
+    padding-top: 54px;
+  }
+
+  .lips-product-description .lips-text-title {
+    line-height: 22px;
+  }
+
+  .Lips-title span.Vagen {
+    line-height: 24px;
+  }
+
+  .new-items .item .item-des .shop {
+    padding: 8px 32px !important;
+    font-size: 13px;
+    margin-top: 0px;
+
+  }
+
+  .modal-body h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .banner-carousel .carousel-indicators {
+    display: inline-flex;
+  }
+
+  .new-items {
+    padding-top: 30px;
+  }
+
+  new-items .heading {
+    padding: 0;
+  }
+
+  .row.desktop-view {
+    margin: 0;
+    display: flex;
+  }
+
+  .new-items .item {
+    height: unset;
+    width: 100%;
+  }
+
+  .home-img-sec {
+    width: 100%;
+    height: 204PX;
+    line-height: 121px;
+  }
+
+  .home-img-sec img {
+    width: auto !important;
+    max-height: 250px;
+  }
+
+  .new-items .item .item-des h5 {
+    letter-spacing: .5px;
+    height: 24px;
+    color: #494949;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 14px;
+    overflow: hidden;
+  }
+
+  .mb-0 .btn.btn-link.collapsed {
+    background-color: #fff;
+    letter-spacing: 0.0em !important;
+  }
+
+  footer .f-1 .sign-up input {
+    padding: 0 6px;
+
+  }
+
+  .mobile-footer .f-1 .sign-up {
+    display: flex;
+
+  }
+
+  /* .new-items .item .item-des .shop{
+padding:10px 30px;
+} */
+  .heading-text h4 {
+    font-size: 25px;
+  }
+
+  .heading h4 {
+    font-size: 25px;
+  }
+
+  .heading {
+    margin-bottom: 27px;
+
+  }
+
+  .new-items .heading {
+    padding: 0;
+  }
+
+  .new-items .banner-carousel1 .item {
+    margin-bottom: 22px;
+  }
+
+  .learn-more h1 {
+    font-size: 35px;
+    margin-top: 94px;
+    line-height: 45px;
+  }
+
+  .banner-carousel .banner-content h2 {
+    font-size: 54px;
+    margin-top: 135px;
+    line-height: 57px;
+    height: 120px;
+  }
+
+
+  .about-banner-sec .banner-about-img {
+    padding-left: 1px;
+  }
+
+  .founder-text p.founder-title {
+    font-size: 14px;
+    line-height: 30px;
+    padding-right: 0;
+  }
+
+  .about-content .est-sec {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .content-box .colan-box {
+    display: block;
+  }
+
+  .about-part {
+    width: 100%;
+    float: left;
+  }
+
+  .filter-sidebar-sec {
+    padding: 20px;
+    width: 100%;
+    /* margin-top: 0; */
+  }
+
+  .about-sec-text h1 {
+    font-size: 47px;
+  }
+
+  .mobile-header #demo-2 {
+    position: relative;
+    top: 10px;
+    display: none;
+  }
+
+  .ingredients-data h1 {
+    font-size: 45px;
+    color: #fff;
+    left: 141px;
+    top: 300px;
+  }
+
+  .ingredients-data span.gredient-box-box {
+    top: 330px;
+    left: 121px;
+  }
+
+  .new-items .heading {
+    margin-top: 43px;
+    margin-bottom: 0;
+    width: 100%;
+    float: left;
+    padding-bottom: 30px;
+  }
+
+  .plus-sec {
+    position: absolute;
+    top: 165px;
+    left: 35px;
+  }
+
+  #preview {
+    right: 0px !important;
+  }
+
+  .product-description.on-click-discription .product-title {
+    padding-right: 90px;
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+
+  .product-price.pullright-box {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+
+  .select-btn .form-control {
+    width: 100%;
+  }
+
+  .product-title .p-title {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .select-shades .shades {
+    width: 65% !important;
+    float: left;
+  }
+
+  .quantity.buttons_added .minus,
+  .quantity.buttons_added .plus {
+    padding: 7px 5px 8px;
+  }
+
+  .cart-btn {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .cart-btn .pink-btn.text-center {
+    max-width: 170px;
+    width: 100%;
+    float: left;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .hide-class {
+    display: none !important;
+  }
+
+  .blog-heads {
+    margin-top: -60px;
+  }
+
+  .eye-side .filter-sidebar {
+    margin-top: 41px !important;
+  }
+
+  .main-lips-product-page .mobile-show-filter-sidebar .filter-sidebar {
+    margin-top: 20px;
+  }
+
+  .plus-sec {
+    margin: 31px 0px;
+    position: unset;
+  }
+
+
+
+  .our-lineup .product-pro {
+    width: 100%;
+    float: left;
+    1259 position: relative;
+  }
+
+  .product-item-box {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .product-item-box .product-item {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .product-item-box .product-item .dots-sec {
+    display: none;
+  }
+
+  .product-item-box .product-item .img-item-box {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+  }
+
+  .product-item-box .product-item .img-item-box img {
+    width: auto !important;
+    height: 100%;
+    cursor: pointer;
+    margin-top: -33px;
+    max-width: 90px;
+  }
+
+  .product-item-box .product-item .product-item-des {
+    margin-top: 12px !important;
+  }
+
+  .product-item-box .product-item .product-item-des h5.product-name {
+    font-size: 14px;
+    overflow: hidden;
+  }
+
+  .product-item-box .product-item .product-item-des h5.price {
+    overflow: hidden;
+  }
+
+  .product-item-box .product-item .product-item-des .btn-shop {
+    margin-top: 0px;
+    padding: 11px 8px;
+    font-size: 12px;
+    margin-bottom: 0px;
+    height: 45px;
+  }
+
+  .product-item-box .product-item .product-item-des h6.Secondary-text {
+    overflow: hidden;
+    height: 17px;
+  }
+
+
+
+
+
+
+
+  .main-skin-care-sec .skin-item-des .shop {
+    padding: 0px 50px;
+  }
+
+  .owl-theme .owl-nav {
+    display: none;
+  }
+
+  .mob-text {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .new-items .heading {
+    margin-top: 43px;
+    margin-bottom: 0;
+  }
+
+  .span.gredient-box {
+    display: none;
+  }
+
+  .side-filter {
+    border: none;
+    margin-top: 0px !important;
+  }
+
+  .top_activate {
+    margin-top: 100px;
+  }
+
+  section.not-sure-where-sec {
+    margin-bottom: 25px;
+  }
+
+  .top_pagination nav span {
+    width: 80%;
+    position: relative;
+    top: 5px;
+    left: -18px;
+  }
+
+  .icon-bar {
+    top: 21%;
+  }
+
+  .uses-sec {
+    padding: 55px;
+    width: 100%;
+  }
+
+  .how-to-ues-sec .left_sec {
+    height: 37%;
+    width: 100%;
+  }
+
+  .innerbeauty .mobile.banner-carousel2 {
+    display: none;
+  }
+
+  .intredients {
+    top: 42px;
+    width: 200px;
+    height: 200px;
+    left: 200px;
+  }
+
+  .Add-to-cart-sec {
+    margin-top: 97px;
+  }
+
+  .about-content {
+    float: left;
+  }
+
+  .main-est-sec {
+
+    margin-left: 0px;
+  }
+
+  .main-contant-sec {
+    padding-top: 0px;
+    margin-top: -90px;
+  }
+
+  .product-left-img span.background-box-eyes {
+    top: 13px;
+    left: 196px;
+    width: 312px;
+  }
+
+  .makeup {
+    margin-top: 84px;
+  }
+
+  .product-left-img span.background-box {
+    top: 14px;
+  }
+
+  .product-left-img span {
+    display: none;
+  }
+
+  .product-left-img .eyes {
+    top: 137px;
+  }
+
+  .banner-img .banner-color {
+    display: none;
+  }
+
+  .lips-sec-text h1 {
+    font-size: 59px;
+  }
+
+  .learn-more .container {
+    margin-bottom: 26px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    background-position: top center;
+    background-size: contain;
+  }
+
+  .row.desktop-view {
+    margin: 0;
+    display: ;
+  }
+
+  .filter-sidebar-sec {
+    width: 100%
+  }
+
+  .product-sets-img {
+    margin-top: 20px;
+  }
+
+  .skin-banner-sec .banner-skin-img {
+    background: #fcf6f6;
+    height: 110px;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+
+  .product-description.on-click-discription .product-title {
+    padding-right: 90px;
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+
+  .product-price.pullright-box {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+
+  .select-btn .form-control {
+    width: 100%;
+  }
+
+  .product-description.on-click-discription .product-title {
+    padding-right: 90px;
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+
+  .product-price.pullright-box {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+
+  .select-btn .form-control {
+    width: 100%;
+  }
+
+  .product-description.on-click-discription .product-title {
+    padding-right: 90px;
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+
+  .product-price.pullright-box {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+
+  .select-btn .form-control {
+    width: 100%;
+  }
+
+  .banner-skin-img img {
+    width: 100%;
+    float: left;
+    opacity: 0;
+  }
+
+  .mobile-show-filter-sidebar .filter-sidebar {
+    display: block;
+    background-color: #fcf6f6;
+    margin-bottom: 30px;
+    margin-top: -108px;
+
+  }
+
+  .skin-banner-sec {
+    padding-top: 80px;
+  }
+
+  .skin-sec-text h1 {
+    font-size: 80px;
+  }
+
+  .skin-banner-sec .skin-sec-text {
+    left: 18%;
+  }
+
+  .skins.future {
+    float: none;
+  }
+
+  .banner-carousel .carousel-inner h6 {
+    margin-bottom: 22px !important;
+  }
+
+  .banner-carousel .banner-content h2 {
+    font-size: 55px;
+    line-height: 64px;
+  }
+
+  .banner-icon ul.banner-icon-sec {
+    position: absolute;
+    top: 50px;
+    right: 53px;
+  }
+
+  .product-banner .banner-text {
+    position: unset !important;
+    width: 100%;
+  }
+
+  .banner-text .banner-contant {
+    font-size: 23px !important;
+    padding: 33px;
+    line-height: 36px;
+    position: relative;
+    bottom: 250px;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-carousel {
+    width: 100%;
+
+    height: 530px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+
+  .new-items .item .item-des .shop {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  .Dummy-text h2 {
+    font-size: 27px;
+    line-height: 45px;
+  }
+
+  .dummy_part {
+    padding-bottom: 70px;
+  }
+
+  .ol.carousel-indicators {
+    display: none;
+  }
+
+  /* .about-content .est-sec { */
+
+  .banner-carousel .carousel-inner .carousel-caption {
+    text-align: left;
+    top: 17%;
+    float: left;
+    left: 10%;
+  }
+
+  .banner-carousel .carousel-inner h6 {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 85px;
+  }
+
+  .doctor-img-sec h1.doctor-text {
+    top: 63px;
+    left: 62px;
+    font-size: 43px;
+    letter-spacing: 2px;
+    line-height: 59px;
+  }
+
+  .ingredients-banner {
+    padding-top: 47px;
+    min-height: 200px;
+    padding-left: 0px;
+  }
+
+  .ingredients-data {
+    position: absolute;
+    top: 151px;
+    left: 43px;
+    font-style: italic;
+
+  }
+
+  .new-banner-sec {
+    margin-top: 72px;
+  }
+
+  .new-banner-sec .banner-img img {
+    width: 100%;
+    float: left;
+    opacity: 0;
+  }
+
+  .banner-img {
+    background: #fcf6f6;
+    height: 180px;
+    overflow: ;
+  }
+
+  .lips-product-description .lips-text-title {
+    width: 100%;
+  }
+
+  .lips-product-description {
+    margin-top: -80px;
+  }
+
+  .main-Skincare-product-sec {
+    padding-top: 0px;
+
+  }
+
+  .new-banner-sec .new-sec-text {
+    left: 30px;
+    top: 160px;
+  }
+
+  .main-Skincare.Product {
+    width: 100%;
+    float: left;
+    background: #fff;
+  }
+
+  .home-img-sec {
+    width: 100%;
+    height: 204PX;
+    line-height: 121px;
+  }
+
+  .home-img-sec img {
+    width: auto !important;
+    max-height: 250px;
+  }
+
+  .pagination-sec {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    float: unset;
+    position: relative;
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 45px;
+  }
+
+  .pagination-sec .pagination {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0px;
+    float: unset;
+    margin-bottom: 8px;
+    text-align: center;
+    display: flex;
+    position: relative;
+  }
+
+  .page-item:first-child .page-link {
+    border-radius: 0px;
+  }
+
+  .new-items .item .item-des h5 {
+
+    letter-spacing: .5px;
+    height: 18px;
+    color: #494949;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+
+  .pagination-sec nav {
+    display: table;
+    width: unset;
+    float: none;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-left: 170px;
+  }
+
+
+  .new-banner-sec .new-sec-text h1 {
+    font-size: 70px;
+    line-height: 30px !important;
+
+  }
+
+  .new-items .banner-carousel1 .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+  }
+
+  .learn-more {
+    background: #fff;
+    padding: 50px 0;
+    width: 100%;
+    float: left;
+  }
+
+  .feature-d.text-center {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .ture-d.text-center p {
+    font-size: 13px;
+    height: 100%;
+  }
+
+  .new-items .item {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .new-items .item .item-des .shop {
+    padding: 7px 40px;
+  }
+
+  .ingredients-banner {
+    padding-top: 47px;
+    min-height: 200px;
+    padding-left: 0px;
+  }
+
+  .ingredients-data {
+    position: absolute;
+    top: 234px;
+    left: 48px;
+    font-style: italic;
+  }
+
+  .doctor-sec {
+    padding-top: 50px;
+    width: 100%;
+    float: left;
+  }
+
+  .blog-tabs .tab-content .tab-pane-data nav {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    display: inline-grid !important;
+  }
+
+  .eyes-sec-text h1 br {
+    display: none;
+  }
+
+  .lips-sec-text h1 br {
+    display: none;
+  }
+
+
+
+  .banner-pic {
+    padding-left: 0px;
+    padding-right: 0;
+  }
+
+  .face-sec-text br {
+    display: none;
+  }
+
+  .mobile-header .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .ingredients-data span.gredient-box-box {
+    left: -27px;
+    width: 88px;
+    height: 31px;
+    display: inline-block;
+    top: 23px;
+  }
+
+  .about-banner-sec .banner-about-img {
+    padding-left: 0;
+  }
+
+  .founder-text p.founder-title {
+    font-size: 14px;
+    line-height: 30px;
+    padding-right: 0;
+  }
+
+  .about-content .est-sec {
+    float: left;
+  }
+
+  .content-box .colan-box {
+    display: block;
+    position: absolute;
+    top: -25px;
+  }
+
+  .about-part {
+    width: 100%;
+    float: left;
+  }
+
+  .about-sec-text h1 {
+    font-size: 47px;
+  }
+
+  .mobile-header #demo-2 {
+    position: relative;
+    top: 10px;
+    display: none;
+  }
+
+  .ingredients-data h1 {
+    font-size: 45px;
+    color: #fff;
+    left: 0;
+    top: -10px;
+  }
+
+  .main-box .svg-box {
+    display: none;
+  }
+
+  ..product-description.on-click-discription .product-title {
+    padding-right: 90px;
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+
+  .product-price.pullright-box {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+
+  .select-btn .form-control {
+    width: 100%;
+  }
+
+  .product-description.on-click-discription .product-title {
+    padding-right: 90px;
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+
+  .product-price.pullright-box {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+
+  .select-btn .form-control {
+    width: 100%;
+  }
+
+  .product-description.on-click-discription .product-title {
+    padding-right: 90px;
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+
+  .product-price.pullright-box {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+
+  .select-btn .form-control {
+    width: 100%;
+  }
+}
+
+.product-description.on-click-discription .product-title {
+  padding-right: 90px;
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+.product-price.pullright-box {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.select-btn .form-control {
+  width: 100%;
+}
+
+.top_pagination {
+  right: 0px;
+}
+
+.eyes-sec-text span.gredient-boxs {
+  display: none;
+}
+
+.lips-sec-text span.gredient-box {
+  display: none;
+}
+
+
+.product-description.on-click-discription .product-title {
+  padding-right: 90px;
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+.product-price.pullright-box {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.select-btn .form-control {
+  width: 100%;
+}
+
+.product-title .p-title {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.select-shades .shades {
+  width: 70% !important;
+  float: left;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+  padding: 7px 5px 8px;
+}
+
+.cart-btn {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.cart-btn .pink-btn.text-center {
+  max-width: 170px;
+  width: 100%;
+  float: left;
+}
+
+.product-description .natural-sec .natural {
+  margin-left: 0px !important;
+}
+
+.bred .breadcrumb li {
+  padding-right: 18px;
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 575px) {
+
+  .hide-class {
+    display: none !important;
+  }
+
+  .responsive-new {
+    padding-top: 0px !important;
+  }
+
+  .eyes-sec-text h1 {
+    font-size: 52px;
+    margin-top: 153px;
+  }
+
+  .eye-side .filter-sidebar {
+    margin-top: 41px !important;
+  }
+
+  .main-lips-product-page .mobile-show-filter-sidebar .filter-sidebar {
+    margin-top: 41px;
+  }
+
+  .plus-sec {
+    margin: 31px 0px;
+    position: unset;
+  }
+
+
+
+  .our-lineup .product-pro {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .product-item-box {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .product-item-box .product-item {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .product-item-box .product-item .dots-sec {
+    display: none;
+  }
+
+  .product-item-box .product-item .img-item-box {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+  }
+
+  .product-item-box .product-item .img-item-box img {
+    width: auto !important;
+    height: 100%;
+    cursor: pointer;
+    margin-top: -33px;
+    max-width: 90px;
+  }
+
+  .product-item-box .product-item .product-item-des {
+    margin-top: 7px !important;
+  }
+
+  .product-item-box .product-item .product-item-des h5.product-name {
+    font-size: 14px;
+    overflow: hidden;
+  }
+
+  .product-item-box .product-item .product-item-des h5.price {
+    overflow: hidden;
+  }
+
+  .product-item-box .product-item .product-item-des .btn-shop {
+    margin-top: 0px;
+    padding: 11px 8px;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  .product-item-box .product-item .product-item-des h6.Secondary-text {
+    overflow: hidden;
+    height: 17px;
+  }
+
+
+  .italy-text.textiright {
+    float: right;
+    font-size: 13px;
+    height: 24px;
+    color: #494949;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 12px;
+    font-family: "Avenir Next";
+    margin-right: 59px;
+  }
+
+  .form-sec1 .quantity.buttons_added {
+
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+
+
+  .main-skin-care-sec .skin-item {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .banner-box .main-skin-care-sec {
+    padding-top: 0px;
+  }
+
+  .banner-box .main-skin-care-sec .skin-item .skin-item-img img {
+    width: auto !important;
+    height: 100%;
+    cursor: pointer;
+    margin-top: -33px;
+    max-width: 110px;
+  }
+
+  .main-skin-care-sec .skin-item-des .shop {
+    margin-top: 0px;
+    padding: 7px 10px;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  .new-items .item {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .top_pagination {
+    width: 100%;
+    position: relative;
+    right: 0px;
+  }
+
+  .mob-text {
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+  }
+
+  .learn-more h1 {
+    font-size: 38px;
+    line-height: 45px;
+    width: 100%;
+    float: left;
+    font-weight: 300;
+  }
+
+  .span.gredient-box {
+    display: none;
+  }
+
+  .top_activate {
+    margin-top: 100px;
+  }
+
+  section.not-sure-where-sec {
+    margin-bottom: 20px;
+  }
+
+  .main-est-sec {
+    margin-left: 0px;
+  }
+
+  .top_pagination nav span {
+    width: 70%;
+    position: relative;
+    top: -8px;
+    left: -2px;
+  }
+
+  .icon-bar {
+    top: 20%;
+  }
+
+  .uses-sec {
+    width: 100%;
+  }
+
+  .innerbeauty .mobile.banner-carousel2 {
+    display: none;
+  }
+
+  .intredients {
+    width: 180px;
+    height: 180px;
+    top: 33px;
+    left: 158px;
+  }
+
+  .Add-to-cart-sec {
+    margin-top: 97px;
+  }
+
+  .main-contant-sec {
+    padding-top: 0px;
+    margin-top: -90px;
+  }
+
+  .makeup {
+    margin-top: 83px;
+  }
+
+  .product-left-img span {
+    display: none;
+  }
+
+  .product-left-img span.background-box-eyes {
+    width: 267px;
+    height: 190px;
+    top: 17px;
+  }
+
+  .product-left-img span.background-box {
+    top: 13px;
+  }
+
+  .lips-sec-text h1 {
+    font-size: 52px;
+  }
+
+  .banner-img .banner-color {
+    display: none;
+  }
+
+  .learn-more .container {
+    margin-bottom: 26px;
+    padding-bottom: 135px;
+    padding-top: 40px;
+    background-position: top center;
+    background-size: 450px 450px;
+  }
+
+  .about-content {
+    float: left;
+  }
+
+  .doctor-img-sec img {
+    width: 100%
+  }
+
+  .owl-theme .owl-nav {
+    display: none;
+  }
+
+  .product-sets-img {
+    margin-top: 20px;
+  }
+
+  .skin-banner-sec .banner-skin-img {
+    background: #fcf6f6;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+
+  .skin-sec-text h1 {
+    margin-top: 27px;
+  }
+
+  .banner-skin-img img {
+    width: 100%;
+    float: left;
+    opacity: 0;
+  }
+
+  .mobile-show-filter-sidebar .filter-sidebar {
+    display: block;
+    background-color: #fcf6f6;
+    margin-bottom: 30px;
+    margin-top: -82px;
+  }
+
+  .skin-banner-sec {
+    padding-top: 80px;
+  }
+
+  .skin-banner-sec .skin-sec-text h1 {
+    font-size: 45px;
+  }
+
+  .skin-banner-sec .skin-sec-text {
+    left: 14%;
+  }
+
+  .skins.future {
+    float: none;
+    text-align: center;
+    margin-top: 71px;
+  }
+
+  .banner-carousel .carousel-inner h6 {
+    margin-bottom: 30px !important;
+  }
+
+  .banner-carousel .banner-content h2 {
+    font-size: 48px;
+    line-height: 57px;
+  }
+
+  .banner-icon ul.banner-icon-sec {
+    position: absolute;
+    top: 50px;
+    right: 53px;
+  }
+
+  .product-banner .banner-text {
+    position: unset !important;
+    width: 100%;
+  }
+
+  .banner-text .banner-contant {
+    font-size: 23px !important;
+    padding: 33px;
+    line-height: 36px;
+    position: relative;
+    bottom: 200px;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-carousel {
+    width: 100%;
+
+    height: 530px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+
+  .new-items .item .item-des .shop {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  .Dummy-text h2 {
+    font-size: 27px;
+    line-height: 45px;
+
+  }
+
+  .dummy_part {
+    padding-bottom: 70px;
+  }
+
+  .ol.carousel-indicators {
+    display: none;
+  }
+
+
+  .banner-carousel .carousel-inner .carousel-caption {
+    text-align: left;
+    top: 17%;
+    left: 10%;
+  }
+
+  .banner-carousel .carousel-inner h6 {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 85px;
+  }
+
+  .ingredients-banner {
+    padding-top: 47px;
+    min-height: 200px;
+    padding-left: 0px;
+  }
+
+  .ingredients-data {
+    position: absolute;
+    top: 151px;
+    left: 43px;
+    font-style: italic;
+  }
+
+  .new-banner-sec {
+    margin-top: 72px;
+  }
+
+  .new-banner-sec .banner-img img {
+    width: 100%;
+    float: left;
+    opacity: 0;
+  }
+
+
+
+  .main-Skincare-product-sec {
+
+    padding-top: 0px;
+
+  }
+
+  .new-banner-sec .new-sec-text {
+    left: 25px;
+
+    top: 165px;
+  }
+
+  .main-Skincare.Product {
+    width: 100%;
+    float: left;
+    background: #fff;
+  }
+
+  .home-img-sec {
+    width: 100%;
+    height: 204PX;
+    line-height: 121px;
+  }
+
+  .home-img-sec img {
+    width: auto !important;
+    max-height: 250px;
+  }
+
+  .pagination-sec {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    /* float: unset; */
+    position: relative;
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 45px;
+  }
+
+  .pagination-sec .pagination {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0px;
+    float: unset;
+    margin-bottom: 8px;
+    text-align: center;
+    display: flex;
+    position: relative;
+  }
+
+  .page-item:first-child .page-link {
+    border-radius: 0px;
+  }
+
+  .new-items .item .item-des h5 {
+    letter-spacing: .5px;
+    height: 18px;
+    color: #494949;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+
+  .pagination-sec nav {
+    display: table;
+    width: unset;
+    float: none;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-left: 179px;
+  }
+
+  .new-banner-sec .new-sec-text h1 {
+    font-size: 55px;
+    line-height: 30px !important;
+
+  }
+
+  .new-items .banner-carousel1 .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+  }
+
+  .learn-more {
+    background: #fff;
+    padding: 50px 0;
+    width: 100%;
+    font-size: 45px;
+    color: #fff;
+    left: 0;
+    margin-top: -38px;
+    bottom: -47px;
+
+  }
+
+  .mobile-header #demo-2 {
+    position: relative;
+    top: 10px;
+    display: none;
+  }
+
+  .mobile-header #demo-2 {
+    position: relative;
+    top: 10px;
+    display: none;
+    bottom: -47px;
+  }
+
+  .new-items .item {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .new-items .item .item-des .shop {
+    padding: 7px 15px;
+  }
+
+  .ingredients-banner {
+    padding-top: 47px;
+    min-height: 140px;
+    padding-left: 0px;
+  }
+
+  .ingredients-data {
+    position: absolute;
+    top: 204px;
+    left: 48px;
+    font-style: italic;
+  }
+
+  .sets-sec-text h1 {
+    font-size: 36px;
+  }
+
+  .blog-tabs .tab-content .tab-pane-data nav {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    font-size: 45px;
+    display: inline-grid !important;
+    color: #fff;
+    left: 0;
+    bottom: -47px;
+  }
+
+  .eyes-sec-text h1 br {
+    display: none;
+  }
+
+  .lips-sec-text h1 br {
+    display: none;
+  }
+
+  .banner-img {
+    background: #fcf6f6;
+    height: 180px;
+    overflow: ;
+  }
+
+  .lips-product-description {
+    margin-top: -67px;
+  }
+
+  .lips-sec-text span.gredient-box {
+    display: none;
+  }
+
+  .lips-product-description .lips-text-title {
+    width: 100%;
+  }
+
+  .banner-pic {
+    padding-left: 0px;
+    padding-right: 0;
+  }
+
+  .mobile-header .container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .face-sec-text br {
+    display: none;
+  }
+
+  .ingredients-data span.gredient-box-box {
+    left: -27px;
+    width: 88px;
+    height: 31px;
+    display: inline-block;
+    top: 23px;
+  }
+
+
+  .about-banner-sec .banner-about-img {
+    padding-left: 0;
+  }
+
+  .founder-text p.founder-title {
+    font-size: 14px;
+    line-height: 30px;
+    padding-right: 0;
+  }
+
+  .doctor-img-sec h1.doctor-text {
+    top: 43px;
+    left: 28px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 32px;
+  }
+
+  .about-content .est-sec {
+    float: left;
+  }
+
+  .content-box .colan-box {
+    display: block;
+  }
+
+  .about-part {
+    width: 100%;
+    float: left;
+  }
+
+  .filter-sidebar-sec {
+    padding: 20px;
+    width: 100%;
+    /* margin-top: 0; */
+  }
+
+  .about-sec-text h1 {
+    font-size: 47px;
+  }
+
+  .mobile-header #demo-2 {
+    position: relative;
+    top: 10px;
+    display: none;
+  }
+
+  .ingredients-data h1 {
+    font-size: 45px;
+    color: #fff;
+    left: 0;
+    top: -10px;
+  }
+
+  .side-filter {
+    border: none;
+    padding-bottom: 0px;
+  }
+
+  .main-box .svg-box {
+    display: none;
+  }
+
+  .new-items .heading {
+    margin-top: 43px;
+    margin-bottom: 0;
+  }
+
+  .top_mid {
+    display: none;
+  }
+
+  .future span {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .eyes-sec-text span.gredient-boxs {
+    display: none;
+  }
+
+  .blog-heads {
+    margin-top: -60px;
+  }
+
+  .product-description.on-click-discription {
+    padding-right: 0px !important;
+  }
+
+  #preview {
+    right: 0px !important;
+  }
+
+  .product-description.on-click-discription .product-title {
+    padding-right: 90px;
+  }
+
+  .product-title .p-title {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .select-shades .shades {
+    width: 70% !important;
+    float: left;
+  }
+
+  .quantity.buttons_added .minus,
+  .quantity.buttons_added .plus {
+    padding: 7px 5px 8px;
+  }
+
+  .cart-btn {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .cart-btn .pink-btn.text-center {
+    max-width: 170px;
+    width: 100%;
+    float: left;
+  }
+
+  .product-description .natural-sec .natural {
+    margin-left: 0px !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .product-description.on-click-discription {
+    padding-right: 0px !important;
+  }
+
+  #preview {
+    right: 0px !important;
+  }
+
+  .product-description.on-click-discription .product-title {
+    padding-right: 90px;
+  }
+
+  .product-title .p-title {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .select-shades .shades {
+    width: 70% !important;
+    float: left;
+  }
+
+  .quantity.buttons_added .minus,
+  .quantity.buttons_added .plus {
+    padding: 7px 5px 8px;
+  }
+
+  .cart-btn {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .cart-btn .pink-btn.text-center {
+    max-width: 120px;
+    width: 100%;
+    float: left;
+  }
+
+  .product-description .natural-sec .natural {
+    margin-left: 0px !important;
+  }
+
+  .italy-text.textiright {
+    font-size: 15px;
+    height: 24px;
+    color: #494949;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 15px;
+    position: relative;
+    left: 0px !important;
+    margin-right: 45px;
+    width: auto !important;
+  }
+
+
+
+
+
+
+  .doctor-text-sec {
+    border-left: 2px solid#EED6D3;
+    border-bottom: 2px solid #EED6D3;
+    border-right: 2px solid #EED6D3;
+    width: 100%;
+    float: left;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .hide-class {
+    display: none !important;
+  }
+
+  .colan-box img {
+    width: 80px;
+    margin-top: 0px;
+    position: relative;
+    left: 0px;
+  }
+
+  .founder-sec.section-abouts.topss-abouts {
+    padding-top: 30px !important;
+  }
+
+  .founder-img {
+    width: 100%;
+    float: left;
+    position: relative;
+    text-align: center;
+  }
+
+  .founder-img img {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .doctor-img-sec:before {
+    display: none;
+  }
+
+  .svg-box-about {
+    display: none;
+  }
+
+  /* .preview.popup-view {
+    padding-left: 0px;
+    height: 100%;
+    min-height: auto !important;
+    line-height: normal !important;
+  } */
+
+  .preview.popup-view .preview-thumbnail.nav.nav-tabs {
+    /* width: 100%;
+    left: 1px;
+    margin-top: 0;
+    position: relative;
+    top: 0; */
+  }
+
+  .preview.popup-view .preview-thumbnail.nav-tabs li {
+    /* width: 50px;
+    height: 50px;
+    position: relative;
+    font-size: 45px;
+    font-weight: 100;
+    color: #494949;
+    font-size: 45px;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    display: inline-block; */
+  }
+
+  /* .preview-pic.tab-content {
+    height: 400px;
+    line-height: 400px;
+  } */
+
+  .innerbeauty .banner-carousel2 {
+    display: block;
+  }
+
+  .innerbeauty .mobile.banner-carousel2 {
+    display: none;
+  }
+
+  .topss-abouts {
+    padding-top: 120px !important;
+  }
+
+  .set-bottom {
+    margin-top: -74px !important;
+  }
+
+  .line-ups {
+    padding-top: 0px !important;
+  }
+
+  .top-makeupsa {
+    margin-top: -40px !important;
+  }
+
+  .top-makeups {
+    margin-top: -40px !important;
+  }
+
+  .top-makeup {
+    margin-top: -40px !important;
+  }
+
+  .blog-heads {
+    margin-top: 27px !important;
+  }
+
+  .skin-bottom {
+    margin-top: 43px !important;
+    margin-bottom: -47px !important;
+  }
+
+  .skin-cares {
+    margin-top: -33px !important;
+
+  }
+
+  .new-filtersidebar {
+    margin-top: 0px !important;
+  }
+
+  .artical-top {
+    margin-top: -88px !important;
+  }
+
+  .allmakeup-section {
+    display: block;
+    background-color: #fcf6f6;
+    margin-top: -100px !important;
+    padding-bottom: 6px;
+  }
+
+  .card h5 {
+    padding: 0 15px;
+    line-height: 44px;
+    min-height: 44px;
+  }
+
+  .f-menu .card {
+    border: 0px;
+    padding: 0;
+  }
+
+  .makeup-sec .product-des .pink-btn {
+    max-width: 200px;
+  }
+
+  .responsive-skin {
+    padding-top: 0px;
+  }
+
+  .leave-btn {
+    max-width: 141px;
+  }
+
+  .product-left-img .front-box {
+    width: 227px;
+    height: 141px;
+    top: 256px;
+    left: 141px;
+  }
+
+  .mid_product {
+    max-width: 350px !important;
+    margin-left: 0px;
+  }
+
+  .makeup-sec .product-des.mobile-h1 {
+    margin-bottom: 55px;
+  }
+
+  .our-lineup .product-pro {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .product-item-box {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .product-item-box .product-item {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .product-item-box .product-item .dots-sec {
+    display: none;
+  }
+
+  .product-item-box .product-item .img-item-box {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+  }
+
+  .product-item-box .product-item .img-item-box img {
+    width: auto !important;
+    max-height: 130px;
+    cursor: pointer;
+    margin-top: -33px;
+    max-width: 125px;
+  }
+
+  .product-item-box .product-item .product-item-des {
+    margin-top: 0px !important;
+  }
+
+  .product-item-box .product-item .product-item-des h5.product-name {
+    font-size: 16px;
+    overflow: hidden;
+  }
+
+  .product-item-box .product-item .product-item-des h5.price {
+    overflow: hidden;
+  }
+
+  .product-item-box .product-item .product-item-des .btn-shop {
+    margin-top: 0px;
+    padding: 17px 12px;
+    font-size: 10px;
+    margin-bottom: 0px;
+    height: 44px;
+  }
+
+  .product-item-box .product-item .product-item-des h6.Secondary-text {
+    overflow: hidden;
+    height: 17px;
+  }
+
+
+
+
+  .preview {
+    /* padding-left: 0px; */
+  }
+
+  .product-title .p-title {
+    font-size: 17px;
+    font-weight: 300;
+    position: relative;
+    left: 0px;
+  }
+
+  .select-btn .form-control {
+    width: 100%;
+  }
+
+
+
+
+
+  .f-copy {
+    margin-left: 26px;
+  }
+
+  footer .f-1 .contact-d span {
+    margin-bottom: 3px;
+  }
+
+  .main-lips-product-page .mobile-show-filter-sidebar .filter-sidebar {
+    margin-top: 41px;
+  }
+
+  .eye-side .filter-sidebar {
+    margin-top: 41px !important;
+  }
+
+  .face-side .filter-sidebar {
+    margin-top: 41px !important;
+  }
+
+  .close_font {
+    font-size: 13px;
+    margin-left: -6px;
+  }
+
+  .mobile-header .f-menu .btn.btn-link {
+    font-weight: 800;
+    color: #494949;
+  }
+
+  .mobile-header .login {
+    font-weight: 800;
+  }
+
+  /* .mobile-header .f-menu .card .card-body ul li:first-child a{
+  color: #DE4579;
+  
+  font-style: italic;
+  font-weight: 500;
+} */
+
+  .innerbeauty .banner-carousel2 .carousel-indicators li {
+    width: 4px;
+    height: 4px;
+  }
+
+  .features .top-mar {
+    margin-top: -22px;
+  }
+
+  .features .top-mar h5 {
+    margin: 15px 0px 5px 0px;
+  }
+
+  .innerbeauty .head_pt {
+    padding: 10px;
+    margin-bottom: -12px;
+    margin-top: -10px;
+  }
+
+  .banner-box .owl-theme .owl-dots .owl-dot span {
+    width: 5px;
+    height: 5px;
+    background: #494949;
+  }
+
+  .banner-box .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #DE4579;
+  }
+
+  .product-left-img .makeup-image {
+    width: 100%;
+    float: left;
+
+  }
+
+  .lips-sec-text span.gredient-box {
+    display: none;
+  }
+
+  span.gredient-box-face {
+    display: none;
+  }
+
+  .eyes-sec-text span.gredient-boxs {
+    display: none;
+  }
+
+  .product-list .home-img-sec {
+    width: 100%;
+    height: 150PX;
+    line-height: 150px;
+  }
+
+  .innerbeauty .banner-carousel2 .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -44px;
+  }
+
+  .top_mid {
+    display: none;
+  }
+
+  .future span {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .heading p {
+    margin-top: 2px;
+    font-weight: 100;
+    line-height: 24px;
+  }
+
+  .innerbeauty {
+    padding-top: 15px;
+  }
+
+  .banner-carousel2 .beauty-img img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px;
+  }
+
+  .banner-box .main-skin-care-sec .skin-item .skin-item-img img {
+    width: auto !important;
+    height: 100%;
+    cursor: pointer;
+    margin-top: -33px;
+    max-width: 90px;
+    max-height: 130px;
+  }
+
+  .main-skin-care-sec .skin-item-des {
+    margin-top: 0px !important;
+  }
+
+  .banner-box .main-skin-care-sec .skin-item .skin-item-img {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+  }
+
+  .mob-text {
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    padding: 10px;
+    font-weight: 300 !important;
+    font-size: 14px !important;
+  }
+
+  footer .f-1 .sign-up .pink-btn {
+    width: 175px;
+  }
+
+  .mobile-footer .f-1 .sign-up input {
+    margin-right: 9px;
+    font-size: 14px;
+    line-height: 48px;
+  }
+
+  .top_pagination {
+    right: 0px;
+    min-height: 200px;
+  }
+
+  .mobile-footer .f-menu {
+    margin-top: 80px;
+    margin-left: -15px;
+  }
+
+  footer .f-1 .contact-d {
+    margin-top: 50px;
+  }
+
+  .fo-left {
+    margin-left: 10px;
+  }
+
+  .banner-carousel .banner-content h2 span {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .top_activate {
+    margin-top: 100px;
+  }
+
+  section.not-sure-where-sec {
+    margin-bottom: 20px;
+  }
+
+  .main-est-sec {
+    margin-left: 0px;
+  }
+
+  .top_pagination nav span {
+    width: 100%;
+    position: relative;
+    top: 0px;
+  }
+
+  .icon-bar {
+    top: auto;
+    left: 15px;
+    z-index: 1;
+  }
+
+  .how-box-image img {
+    width: 100%;
+  }
+
+  .uses-sec {
+    width: 100%;
+  }
+
+  .intredients {
+    width: 150px;
+    height: 150px;
+    top: 33px;
+    left: 158px;
+  }
+
+  .natural-sec {
+    padding-right: 0px;
+  }
+
+  .product-description .natural-sec .natural {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .main-contant-sec {
+    padding-top: 0px;
+    margin-top: -90px;
+    padding-bottom: 0px;
+
+  }
+
+  .makeup-heading.mobile-view {
+    margin-top: 0px;
+  }
+
+  .banner-img .banner-color {
+    display: none;
+  }
+
+  .section.not-sure-where-sec {
+    margin-bottom: 30px;
+  }
+
+  .natural-clean-2 p.natural-text {
+    padding: 10px;
+  }
+
+  .skin-banner-sec .banner-skin-img {
+    background: #fcf6f6;
+    height: 120px;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+
+  .skin-sec-text h1 {
+    margin-top: 27px;
+  }
+
+  .banner-skin-img img {
+    width: 100%;
+    float: left;
+    opacity: 0;
+  }
+
+  .skins.future {
+    float: none;
+  }
+
+  .banner-icon ul.banner-icon-sec {
+    position: absolute;
+    top: 30px;
+    right: 21px;
+  }
+
+  .new-items .heading {
+    margin-top: 43px;
+    margin-bottom: 0;
+  }
+
+  .product-banner .banner-text {
+    position: unset !important;
+    width: 100%;
+  }
+
+  .banner-carousel {
+    width: 100%;
+    float: left;
+    height: 466px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 160% 100%;
+    position: relative;
+    margin-bottom: 0px;
+    overflow: hidden;
+    top: 78px;
+  }
+
+  .banner-box .main-skin-care-sec {
+    padding-top: 0px;
+  }
+
+  .banner-box .main-skin-care-sec .skin-item {
+    padding: 10px;
+  }
+
+  .new-items .heading {
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+  }
+
+  .ol.carousel-indicators {
+    display: none;
+  }
+
+  .banner-carousel .carousel-inner .carousel-caption {
+    text-align: left;
+    top: 8%;
+    left: 6%;
+    right: 20px;
+  }
+
+  .banner-carousel .carousel-inner h6 {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 26px;
+    font-weight: 400;
+    height: auto;
+  }
+
+  .new-items .item .item-des .shop {
+    padding: 7px 10px;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  .Dummy-text h2 {
+    font-size: 20px;
+    line-height: 45px;
+
+  }
+
+  .dummy_part {
+    padding-bottom: 70px;
+  }
+
+  .ingredients-banner {
+    padding-top: 47px;
+    min-height: 200px;
+    padding-left: 0px;
+  }
+
+  .ingredients-data {
+    position: absolute;
+    top: 151px;
+    left: 43px;
+    font-style: italic;
+  }
+
+  .bred {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 70px;
+    background: #fcf6f6;
+  }
+
+  .new-banner-sec {
+    margin-top: 0px;
+    width: 100%;
+    float: left;
+  }
+
+  .mobile-show-filter-sidebar .filter-sidebar h4 {
+    font-weight: 400;
+  }
+
+  .new-banner-sec .banner-img img {
+    width: 100%;
+    float: left;
+    opacity: 0;
+  }
+
+  .banner-img {
+    background: #fcf6f6;
+
+    width: 100%;
+    float: left;
+  }
+
+  .bred .breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+    padding: 10px 5px;
+  }
+
+  .main-Skincare-product-sec {
+    padding-top: 0px;
+
+  }
+
+  .new-banner-sec .new-sec-text {
+    left: 5%;
+    top: 160px;
+  }
+
+  .bred .breadcrumb li a.active {
+    color: #ee73a9;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .main-Skincare.Product {
+    width: 100%;
+    float: left;
+    background: #fff;
+  }
+
+  .home-img-sec {
+    width: 100%;
+    height: 204PX;
+    line-height: 121px;
+  }
+
+  .home-img-sec img {
+    width: auto !important;
+    max-height: 250px;
+  }
+
+  .main-box .svg-box img {
+    display: none;
+  }
+
+  .pagination-sec {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    float: unset;
+    position: relative;
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 45px;
+    min-height: 165px;
+  }
+
+  .pagination-sec .pagination {
+    width: 100%;
+    margin-left: 0px !important;
+    margin-bottom: 0px;
+    float: unset;
+    margin-bottom: 8px;
+    text-align: center;
+    display: flex;
+    position: relative;
+  }
+
+  .page-item:first-child .page-link {
+    border-radius: 0px;
+  }
+
+  .new-items .item .item-des h5 {
+    letter-spacing: .5px;
+    height: 24px;
+    color: #494949;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+
+  .pagination-sec nav {
+    /* float: none; */
+    /* margin: auto; */
+    margin-bottom: 40px;
+    /* margin-left: 131px; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .new-items .banner-carousel1 .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    display: inline-flex;
+  }
+
+  .learn-more {
+    background: #fff;
+    padding: 50px 0;
+    width: 100%;
+    float: left;
+    margin-top: -60px;
+  }
+
+  .feature-d.text-center {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding: 33px;
+  }
+
+  .feature-d.text-center p {
+    font-size: 14px;
+    height: 100%;
+
+  }
+
+  .main-skin-care-sec .skin-item {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+
+  }
+
+  .main-skin-care-sec .skin-item-des {
+    margin-top: 77px;
+  }
+
+  .main-skin-care-sec .skin-item-des h5 {
+    font-size: 14px;
+    overflow: hidden;
+  }
+
+  .main-skin-care-sec .skin-item-des .shop {
+    margin-top: 0px;
+    padding: 7px 8px;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  .new-items .item {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .doctor-img {
+    width: 100%;
+    float: left;
+  }
+
+  .click-our-sec {
+    width: 100%;
+    float: left;
+  }
+
+  .click-our-text {
+    width: 100%;
+    float: left;
+    max-width: 300px;
+  }
+
+  .sets-sec-text h1 {
+    font-size: 36px;
+  }
+
+  .click-our-text::before {
+    background: #fdf2eb;
+    height: 82%;
+    width: 70%;
+    position: absolute;
+    content: "";
+    left: unset;
+    top: 5px;
+    right: 0px;
+    transition: all .5s ease-in;
+  }
+
+  .click-our-text:hover::before {
+    background: #fdf2eb;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
+    left: unset;
+    top: 0;
+    right: 0px;
+    transition: all .5s ease-in;
+
+  }
+
+  .about-item {
+
+    margin-bottom: 10px;
+
+  }
+
+  .blog-tabs .tab-content .tab-pane-data nav {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    display: inline-grid !important;
+  }
+
+  .eyes-sec-text h1 br {
+    display: none;
+  }
+
+  .banner-pic {
+    padding-left: 0px;
+    padding-right: 0;
+  }
+
+  .lips-sec-text h1 br {
+    display: none;
+  }
+
+  .makeup h1 {
+    left: 0;
+    font-size: 45px;
+    line-height: unset;
+  }
+
+  .lips-product-description {
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .lips-product-description .LipSolution {
+    padding-top: 0px !important;
+  }
+
+  .lips-product-description .lips-text-title {
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .lips_content .lips-product-description .lips-text-title {
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .eyes-product-page .lips-product-description .lips-text-title {
+    width: 100%;
+    margin-bottom: 0px;
+
+  }
+
+  .face-product-page .lips-product-description .lips-text-title {
+    width: 100%;
+    margin-bottom: 0px;
+
+  }
+
+  .mobile-show-filter-sidebar .filter-sidebar {
+    display: block;
+    background-color: #fcf6f6;
+    margin-top: 48px;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-show-filter-sidebar .filter-sidebar .side-filter {
+    margin-left: 0px;
+  }
+
+  .footer .f-1 p {
+    margin-bottom: 21px;
+  }
+
+  .side-filter {
+    padding-bottom: 20px;
+    margin-left: 10px;
+    border: none;
+    margin-top: 0px;
+  }
+
+  .learn-more .container {
+    margin-bottom: 26px;
+    padding-bottom: 97px;
+    padding-top: 40px;
+    background-position: top center;
+    background-size: 350px 350px;
+  }
+
+  .modal-body h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .banner-carousel .carousel-indicators {
+    display: none;
+  }
+
+  .new-items {
+    padding-top: 19px;
+    width: 100%;
+
+  }
+
+  .new-items.our-lineup {
+    width: 100%;
+    float: left;
+    padding-top: 40px;
+  }
+
+  new-items .heading {
+    padding: 0;
+  }
+
+  .row.desktop-view {
+    margin: 0;
+    display: block;
+
+  }
+
+  new-items .item .item-des h5 {
+    overflow: hidden;
+    font-size: 14px;
+  }
+
+  .mb-0 .btn.btn-link.collapsed {
+    background-color: #fff;
+    letter-spacing: 0.0em !important;
+  }
+
+  footer .f-1 .sign-up input {
+    padding: 0 15px;
+    width: 100%;
+
+  }
+
+  .heading-text h4 {
+    font-size: 24px;
+  }
+
+  .heading h4 {
+    font-size: 21px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .skin-care-heading h4 {
+    font-size: 21px;
+  }
+
+  .heading {
+    margin-bottom: 27px;
+  }
+
+  .new-items .heading {
+    padding: 0;
+    width: 100%;
+    float: left;
+
+  }
+
+  .main-box .svg-box {
+    display: none;
+  }
+
+  .new-items .banner-carousel1 .item {
+    margin-bottom: 22px;
+  }
+
+  .skins.future {
+    padding: 0;
+    text-align: center;
+    padding-top: 43px;
+  }
+
+  .row.desktop-view.inner-comman {
+    display: flex;
+    margin-top: 35px;
+  }
+
+  .new-items .item .item-des {
+    margin-top: 31px;
+
+  }
+
+  .new-items .item .item-des h5 {
+    font-size: 14px;
+    overflow: hidden;
+  }
+
+  .mobile-header .navbar-toggler.collapsed {
+    font-size: 15px !important;
+    left: -11px;
+  }
+
+  .mobile-show-filter-sidebar {
+    margin-top: -45px;
+  }
+
+  .navbar-light .navbar-toggler {
+    font-size: 15px;
+    position: relative;
+    top: 6px;
+    border: 0px;
+  }
+
+  .Add-to-cart-sec {
+    padding-top: 100px;
+  }
+
+  .grid__item {
+    float: none;
+    padding-left: unset;
+    width: 100%;
+    margin-top: 7px;
+    text-align: center !important;
+  }
+
+  .rte {
+    color: #69727b;
+    line-height: 27px;
+    text-align: center;
+  }
+
+  .cart__subtotal {
+    padding-left: 67px;
+
+  }
+
+  .cart__subtotal-title {
+    padding-left: 7px;
+  }
+
+  .Add-to-cart-sec .form-sec2 .page-width {
+    padding-left: 0px;
+    padding-right: 22px;
+  }
+
+  .cart__image-wrapper {
+    max-width: 85px;
+  }
+
+  .small--text-left {
+    text-align: left !important;
+  }
+
+  .list-view-item__title {
+    font-size: 0.9375em;
+  }
+
+  .small--hide {
+    display: none !important;
+  }
+
+  .cart__submit-controls>.cart__submit-control {
+    margin: -15px 0px 34px 28px;
+    padding: 11px 45px;
+    font-size: 13px;
+  }
+
+  .cart__image {
+    max-height: 50px;
+  }
+
+  .btn.btn--secondary.btn--small.js-edit-toggle.cart__edit--active {
+    display: block;
+
+  }
+
+  .product-description {
+    text-align: left;
+  }
+
+  .form-sec1 .quantity.buttons_added {
+    margin-left: 0px !important;
+    margin-top: 13px;
+  }
+
+
+  .new-items .item .item-des .shop {
+    margin-top: 0px;
+  }
+
+
+  .banner-carousel .banner-content h2 {
+    font-size: 36px !important;
+    line-height: 43px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+
+  .mobile-header #demo-2 input[type=search] {
+    position: absolute;
+    right: 18px;
+    top: -4px;
+    max-width: 50px;
+  }
+
+  .mobile-header #demo-2 input[type=search]:focus {
+    width: 70px;
+    position: absolute;
+    right: 25px;
+    top: -4px;
+    max-width: 50px;
+  }
+
+  .mobile-header #demo-2 {
+    position: relative;
+    top: 10px;
+    display: block;
+  }
+
+  .learn-more h1 {
+    font-size: 32px;
+    line-height: 42px;
+    width: 100%;
+    float: left;
+    font-weight: 300;
+  }
+
+  .main-Skincare.Product {
+    margin-bottom: 25px;
+    /*  height: 130px; */
+  }
+
+  .preview.horizontal .preview-thumbnail.nav-tabs li {
+    width: 60px;
+    margin-bottom: 5px;
+    height: 60px;
+    display: inline-block;
+  }
+
+  .Product-item {
+    margin: 0px;
+  }
+
+  .Product-item-img-sec {
+    height: 200px;
+    width: 100%;
+    padding: 20px 0px;
+  }
+
+  .face-text .face1-title {
+    top: -10px;
+    left: 84px;
+    padding: unset;
+  }
+
+  .face-text {
+    position: relative;
+  }
+
+  .face-text .face1-title {
+    font-size: 38px;
+    line-height: 60px;
+    top: 97px;
+    left: 169px;
+  }
+
+  .product-banner .banner-text {
+    position: unset;
+
+  }
+
+  /*   .banner-icon ul.banner-icon-sec {
+    position: absolute;
+    top: 30px;
+    right: 53px;
+
+  } */
+
+  .product-banner .banner-text {
+    position: unset !important;
+
+  }
+
+  .product-banner img.image-fluid {
+    width: 100%;
+  }
+
+  .innerbeauty .des_banner .banner-carousel2 {
+    display: block !important;
+  }
+
+  .eyes-text .eyes1-title {
+    font-size: 33px;
+    line-height: 60px;
+    padding: unset;
+    left: 94px;
+    bottom: 8px;
+  }
+
+  .lips-text .lips-title {
+    position: absolute;
+    color: #fff;
+    font-size: 32px;
+    font-style: italic;
+    line-height: 60px;
+    padding: unset;
+    left: 100px;
+    top: 6px;
+  }
+
+  .overall-review-right {
+    float: left;
+  }
+
+  .banner-text .banner-contant {
+    font-size: 23px !important;
+    padding: 33px;
+    line-height: 36px;
+    position: relative;
+    bottom: 200px;
+    width: 100%;
+    height: auto;
+
+  }
+
+
+  .ingredients-data span.gredient-box-box {
+    left: -27px;
+    width: 88px;
+    height: 31px;
+    display: inline-block;
+    top: 35px;
+  }
+
+  .natural-sec h1.natural-heading {
+    font-size: 24px;
+
+  }
+
+  .clean-sec h1.clean-heading {
+    font-size: 24px;
+  }
+
+  .natural-clean-2 h1.natural-heading {
+    font-size: 24px;
+
+  }
+
+  .not-sure-inner-part1 {
+    font-size: 18px;
+    padding: 60px 0;
+  }
+
+  .banner-sec .banner-img {
+    padding-top: 85px !important;
+  }
+
+  .about-item1 {
+    width: 100%;
+  }
+
+  .banner-img-sec {
+    width: 100%;
+    height: 185px;
+    padding-top: 85px;
+  }
+
+  .doctor-img-sec img {
+    width: 100%;
+  }
+
+  .main-text h2.text-sec {
+    font-size: 22px;
+  }
+
+  .doctor-text-sec h3.Deneb-text {
+    font-size: 16px;
+
+  }
+
+  .doctor-text-sec h5.Deneb-text {
+    font-size: 13px;
+  }
+
+  .about-sec .filter-sidebar {
+    width: 100%;
+    float: left;
+  }
+
+  .about-content {
+    margin-top: auto;
+    width: 100%;
+    float: left;
+    padding: 10px;
+  }
+
+  .click-our-text {
+    padding: 16px;
+    margin: 11px;
+
+    font-size: 45px;
+    font-weight: 100;
+    color: #494949;
+    font-style: italic;
+    top: 0px;
+  }
+
+  .skin-care-product-des .text-bg h1 {
+    position: absolute;
+    font-size: 45px;
+    font-weight: 100;
+    color: #494949;
+    font-style: italic;
+    top: 23px;
+  }
+
+  .skin-care-product-des .text-bg h1 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 100;
+    color: #494949;
+    font-style: italic;
+    top: 32px;
+  }
+
+  .click-our-text h3.clic.skin-care-product-des .text-bg h1 {
+    position: absolute;
+    font-size: 45px;
+    font-weight: 100;
+    color: #494949;
+    font-style: italic;
+    top: 23px;
+  }
+
+  .k-our-heading.text-center {
+    font-size: 18px;
+  }
+
+  .about-sec .about-part .about-text h1.story-text {
+    bottom: 30px;
+    left: 42px;
+    font-size: 26px;
+
+  }
+
+  .founder-sec .founder-content {
+    padding-top: 30px;
+  }
+
+  .banner-img-sec .c-item1 img {
+    width: 100%;
+  }
+
+  .preview.horizo.skin-care-product-des .text-bg h1 {
+    position: absolute;
+    font-size: 45px;
+    font-weight: 100;
+    color: #494949;
+    font-style: italic;
+    top: 23px;
+  }
+
+  .preview-thumbnail.nav.nav-tabs {
+    /* width: 100%;
+    left: 1px;
+    margin-top: 0px; */
+  }
+
+  .preview.horizo.skin-care-product-des .text-bg h1 {
+    position: absolute;
+    font-size: 45px;
+    font-weight: 100;
+    color: #494949;
+    font-style: italic;
+    top: 23px;
+  }
+
+  .preview-thumbnail.nav-tabs li {
+    /* width: 67px;
+    height: 65px;
+    position: absolute;
+    font-size: 45px;
+    font-weight: 100;
+    color: #494949;
+    font-style: italic;
+    top: 23px; */
+  }
+
+  .preview.horizo.skin-care-product-des .text-bg h1 {
+    position: absolute;
+    font-size: 45px;
+    font-weight: 100;
+    color: #494949;
+    font-style: italic;
+    top: 23px;
+  }
+
+  .preview-thumbnail.nav-tabs li {
+    /* width: 60px;
+    height: 80px;
+    position: absolute;
+    font-size: 45px;
+    font-weight: 100;
+    color: #494949;
+    font-size: 45px;
+    color: #fff;
+    left: 0;
+    bottom: -47px; */
+  }
+
+  .preview.horizontal .preview-thumbnail.nav.nav-tabs {
+    width: 100%;
+    max-height: 74px;
+    left: 50%;
+  }
+
+  .images-box img {
+    width: 100%;
+  }
+
+  .sets-banner-sec {
+    padding-top: 85px;
+  }
+
+  .sets-sec {
+    padding-top: 0px;
+
+    font-size: 45px;
+    font-weight: 100;
+    color: #494949;
+
+    top: 23px;
+  }
+
+  .owl-theme .owl-nav {
+    display: none;
+  }
+
+  /* .skin-care-product-des .text-bg h1 { */
+
+  .skin-banner-sec.ingredients-banner {
+    padding-top: 0px;
+    min-height: 200px;
+  }
+
+  .banner-skin-img img {
+    width: 100%;
+    float: left;
+  }
+
+  .skin-banner-sec {
+    padding-top: 85px;
+  }
+
+  .makeup-sec {
+    padding-top: 10px;
+  }
+
+  .skin-sec-text h1 {
+    font-size: 55px;
+  }
+
+  .skin-banner-sec .skin-sec-text {
+    left: 25px;
+  }
+
+  .main-sets-sec {
+    padding-top: 90px;
+  }
+
+  .blog-banner .data {
+    top: 75%;
+  }
+
+  .blog-banner {
+    padding-top: 85px;
+  }
+
+  .product-sets-img img {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .sets-sec .product-sets-img {
+    padding: 0px !important;
+  }
+
+  .main-sets-sec .sets-heading .sets-text h1 {
+    bottom: 34px;
+    left: 46px;
+    font-size: 42px;
+  }
+
+  .skin-care-product-des {
+    margin-left: unset;
+  }
+
+  .product-banner {
+    position: relative;
+    padding-top: 85px;
+  }
+
+  .new-item-sec {
+    width: 100% !important;
+    float: left;
+  }
+
+  .lips-product-page {
+    padding-top: 0px;
+  }
+
+  .banner-carouse-sec {
+    display: none;
+  }
+
+  .single-product-page a.next {
+    padding-top: 40px;
+    padding-right: 30px;
+  }
+
+  .single-product-page a.prev {
+    padding-top: 40px;
+  }
+
+  .single-product-page {
+    padding-top: 85px;
+    width: 100%;
+  }
+
+  .new-banner-sec .new-sec-text h1 {
+    font-size: 34px;
+    margin-top: 44px;
+    line-height: 30px !important;
+    letter-spacing: 0px;
+  }
+
+  .makeup {
+    padding-top: 85px;
+  }
+
+  .all-makeup-banner-sec {
+    padding-top: 85px;
+  }
+
+  .all-makeup-banner-sec .banner-all-makeup-img img {
+    width: 100%;
+    float: left;
+  }
+
+  .all-makeup-sec-text h1 {
+    font-size: 30px;
+  }
+
+  .about-banner-sec {
+    padding-top: 85px;
+  }
+
+  .about-part {
+    width: 100%;
+    float: left;
+  }
+
+  .about-banner-sec .banner-about-img img {
+    width: 100%;
+  }
+
+  .about-sec-text h1 {
+    font-size: 47px;
+  }
+
+  .filter-sidebar-sec {
+    padding: 20px;
+    width: 100%;
+    margin-top: 185px;
+  }
+
+  .about-banner-sec .about-sec-text {
+    top: 68%;
+    left: 10%;
+  }
+
+  .eyes-product-page {
+    padding-top: 0px;
+  }
+
+  .eyes-sec-text h1 {
+    font-size: 45px;
+    font-style: italic;
+    color: #fff;
+    line-height: 50px;
+    left: -60px;
+    position: relative;
+  }
+
+  .eyes-banner-sec .eyes-sec-text {
+    top: 50%;
+    left: 77px;
+  }
+
+  .face-product-page {
+    padding-top: 0px;
+  }
+
+  .face-sec-text h1 {
+    font-size: 45px;
+  }
+
+  .face-sec-text br {
+    display: none;
+  }
+
+  .face-banner-sec .face-sec-text {
+    top: 115px;
+    left: 45px;
+  }
+
+  .lips-filter-sidebar {
+    width: 100%;
+    margin-top: 22px;
+    padding: 20px;
+  }
+
+
+  .lips-sec-text h1 {
+    font-size: 45px;
+    font-style: italic;
+    color: #fff;
+    line-height: 36px;
+  }
+
+  .lips-banner-sec .lips-sec-text {
+    top: 128px;
+    left: 45px;
+  }
+
+  .Product-item .Product-top-r {
+    display: none;
+  }
+
+  .Product-item {
+    margin: 0px;
+  }
+
+  .main-Skincare-Product-sec {
+    width: 100%;
+    float: left;
+  }
+
+  .overall-review-right {
+    float: left;
+  }
+
+
+
+
+  .review {
+    margin: 0;
+  }
+
+  .review .review-sec .form-group .dis-flex {
+    display: block;
+    width: 150px;
+  }
+
+  .review .review-sec .form-group .dis-flex .form-control {
+    margin-bottom: 15px;
+  }
+
+  .review .review-sec .form-group .pink-btn.review-btn {
+    float: none;
+  }
+
+  .review .review-sec .form-group.email input::-webkit-input-placeholder {
+    font-size: 9px
+  }
+
+  .review .review-sec .form-group.email input::-moz-placeholder {
+    font-size: 9px
+  }
+
+  .review .review-sec .form-group.email input:-ms-input-placeholder {
+    font-size: 9px
+  }
+
+  .makeup-sec .row .col-md-6 {
+    padding-left: 18px;
+  }
+
+  .arousel-caption {
+    bottom: 73px;
+    text-align: left;
+  }
+
+  .home-overlay .modal-dialog {
+    max-width: 400px;
+  }
+
+  .product-title b {
+    font-size: 20px;
+    float: left;
+    padding: 11px 0px;
+    line-height: 31px;
+    text-align: center;
+    width: 100%;
+
+  }
+
+  .product-price.pullright {
+    font-size: 18px;
+    float: none;
+  }
+
+  p.product-meta-description {
+    font-size: 15px;
+  }
+
+  .media-icon-sec {
+
+    padding: 8px 0px 0px 25px;
+  }
+
+  .italy-text.textiright {
+    font-size: 15px;
+    height: 24px;
+    color: #494949;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 15px;
+    position: relative;
+    left: 22px;
+    margin-right: 45px;
+    width: 248px;
+  }
+
+
+
+
+  .ingredients-sec {
+    padding-top: 85px;
+  }
+
+  .ingredients-sec .banner-img img {
+    width: 100%;
+    float: left;
+  }
+
+  .ingredients-sec-text h1 {
+    font-size: 33px;
+  }
+
+  .product-left-img span.background-box-eyes {
+    width: 238px;
+    height: 139px;
+    top: 97px;
+    left: 10px;
+  }
+
+  .ingredients-data h1 {
+    font-size: 45px;
+    color: #fff;
+    left: 0;
+    top: 10%;
+  }
+
+
+  .product-left-img span {
+    width: 227px;
+    height: 141px;
+    top: 254px;
+    left: 141px;
+
+  }
+
+  .makeup-sec .product-des p {
+    margin-top: 30px;
+  }
+
+  .product-left-img span.background-box {
+    width: 250px;
+    height: 120px;
+    top: 97px;
+    left: 11px;
+  }
+
+  .makeup-sec .product-des .text-bg span {
+    width: 98px;
+    height: 36px;
+    bottom: -15px;
+    left: -32px;
+  }
+
+  .makeup-sec .product-des .text-bg h1 {
+    font-size: 40px;
+  }
+
+  .product-left-img .eyes {
+    width: 249px;
+    height: 152px;
+    top: 220px;
+    left: 94px;
+  }
+
+  .skin-care-product-des .text-bg span {
+    top: 50px;
+    left: -33px;
+  }
+
+  .skin-care-heading {
+    padding: 0;
+  }
+
+  .mobile-header .container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  span.gredient-box {
+    display: none;
+  }
+
+  .skin-care-heading {
+    padding-top: 25px;
+  }
+
+  .natural-sec .natural-text {
+    width: 100%;
+  }
+
+  .clean-sec p.clean-text {
+    width: 100%;
+  }
+
+  .natural-clean-2 p.natural-text {
+    width: 100%;
+  }
+
+  .about-banner-sec .banner-about-img {
+    padding-left: 0;
+  }
+
+  .founder-text p.founder-title {
+    font-size: 14px;
+    line-height: 30px;
+    padding-right: 0;
+  }
+
+  .doctor-img-sec h1.doctor-text {
+    top: 43px;
+    left: 28px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 32px;
+  }
+
+  .about-content .est-sec {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .content-box .colan-box {
+    display: block;
+    margin-top: 0px;
+  }
+
+  .filter-sidebar-sec {
+    padding: 20px;
+    width: 100%;
+    /* margin-top: 0; */
+  }
+
+  .plus-sec {
+    margin: 31px 0px;
+    position: unset;
+  }
+
+  .click-our-text h3.click-our-heading.text-center {
+    font-size: 22px;
+  }
+
+  .heading-text {
+    padding: 0px 0px 40px;
+  }
+
+  .home-products {
+    height: unset;
+    width: 100%;
+    max-width: 60%;
+    margin-bottom: 0;
+    margin: 0 auto;
+  }
+
+  .responsive-new {
+    padding-top: 0px !important;
+  }
+
+  .set-head {
+    margin-top: -60px !important;
+  }
+
+  .top-responsive-sidebar {
+    margin-top: 2px !important;
+  }
+
+  .eye-side-bars {
+    margin-top: -5px !important;
+  }
+
+  .face-side-bars {
+    margin-top: -5px !important;
+  }
+}
+
+
+@media (min-width: 1280px)and (max-width: 1440px) {
+
+
+  .quantity-button-pro {
+    margin-left: 0px !important;
+  }
+
+  .quan-buttons {
+    margin-left: 0px !important;
+  }
+
+  .doctor-text-sec {
+    border-left: 2px solid#EED6D3;
+    border-bottom: 2px solid #EED6D3;
+    border-right: 2px solid #EED6D3;
+    width: 100%;
+    float: left;
+    padding-left: 140px;
+    padding-bottom: 134px;
+    max-width: 90%;
+  }
+
+  .articali-tab.banner-text .banner-icon ul.banner-icon-sec {
+    right: 154px;
+    top: 370px;
+  }
+
+  .articali-tab.banner-text .banner-contant {
+    max-width: 840px;
+    margin: 0;
+    width: 100% !important;
+    height: 328px;
+    font-size: 60px !important;
+  }
+
+  .about-buttonss {
+    margin-bottom: 35px !important;
+    margin-top: 113px !important;
+  }
+
+  .sets-sections {
+    padding: 25px 0px 0px 0px !important;
+  }
+
+  .filter-about-section {
+    margin-top: 135px;
+  }
+
+  .face-mid {
+    margin-left: 119px !important;
+  }
+
+  .eye-mid {
+    margin-left: -78px !important;
+  }
+
+  .product-left-img span.background-box {
+    width: 472px;
+    height: 190px;
+    display: inline-block;
+    top: -9px;
+    position: absolute;
+    left: -9px;
+    opacity: 1.2;
+    z-index: 0;
+    background: linear-gradient(to right, #DE4579 0%, #F17BB1 100%);
+  }
+
+  .makeup-sec .row .col-md-6 {
+    padding-left: 0px;
+  }
+
+  .res-skins {
+    margin-top: -130px;
+  }
+
+  .plus-sec {
+    position: absolute;
+    top: 287px;
+    left: 63px;
+  }
+
+  .skin-care-product-des {
+    max-width: 343px;
+    padding-top: 25px;
+    margin-left: 75px;
+  }
+
+  .main-skin-care-sec .skin-item-des .shoes {
+    padding: 16px 65px !important;
+  }
+
+  .side-filter {
+    padding-bottom: 17px;
+    margin-top: 40px;
+  }
+
+  footer h6.f-b {
+    margin-right: -30px;
+  }
+
+  .banner-carousel {
+    width: 100%;
+    /* float: left; */
+    height: 712px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .banner-carousel .carousel-inner .carousel-caption {
+    text-align: left;
+    top: 29%;
+    left: 187px !important;
+  }
+
+  .banner-carousel .carousel-inner h6 {
+    margin-top: 22px;
+    line-height: 32px;
+  }
+
+  .new-items .heading {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .artical-top {
+    margin-top: -22px;
+  }
+
+  .learn-more .container {
+    background-position: 216px;
+    background-repeat: no-repeat;
+    padding-top: 202px;
+    background-size: 570px 570px;
+    padding-bottom: 124px;
+  }
+
+  .learn-more {
+    margin-top: -50px;
+    padding-bottom: 110px;
+  }
+
+  .main-box .svg-box {
+    position: absolute;
+    top: 408px;
+    right: -140px;
+    max-width: 585px;
+    width: 100%;
+    min-height: 490px;
+    max-height: min-content;
+  }
+
+  .new-banner-sec .new-sec-text {
+    position: absolute;
+    top: 381px;
+    transform: translateY(-50%);
+    left: 238px;
+  }
+
+  .top_pagination {
+    width: 100%;
+    position: relative;
+    right: 133px;
+  }
+
+  .skins.future {
+    margin-left: 70px;
+  }
+
+  .learn-more p {
+    margin-top: -3px;
+  }
+
+  .banner-carousel .carousel {
+    position: relative;
+    width: 100%;
+    float: left;
+    max-height: 712px;
+    min-height: 712px;
+  }
+
+  .makeup-sec .product_new {
+    max-width: 326px;
+    margin-left: 120px;
+  }
+
+  .product-left-img span {
+    width: 375px;
+    height: 275px;
+    display: inline-block;
+    position: absolute;
+    left: 203px;
+    opacity: 0.2;
+    top: 217px;
+    z-index: 1;
+
+
+  }
+
+  .product-left-img .front-box {
+    width: 371px;
+    height: 275px;
+    display: inline-block;
+    position: absolute;
+    left: 211px;
+    opacity: 0.2;
+    top: 219px;
+    /* background: #000; */
+    background-color: #FDF2EB;
+    z-index: 1;
+  }
+
+  .product-left-img span.background-box-eyes {
+    width: 378px;
+    height: 150px;
+    display: inline-block;
+    top: -9px;
+    position: absolute;
+    left: 171px;
+    opacity: 1.2;
+    z-index: 0;
+    background: linear-gradient(to left, #DE4579 0%, #F17BB1 100%);
+  }
+
+  .product-left-img .eyes {
+    width: 362px;
+    height: 260px;
+    display: inline-block;
+    /* bottom: -20px; */
+    position: absolute;
+    left: -15px;
+    /* background-color: #000; */
+    opacity: 0.2;
+    z-index: 1;
+    top: 217px;
+    background-color: #FDF2EB;
+  }
+
+  .product_bot {
+    max-width: 350px !important;
+    margin-left: 45px;
+  }
+
+  .lips-banner-sec .lips-sec-text {
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+    left: 253px;
+  }
+
+  .lips-banner-sec .banner-img img {
+    width: 87%;
+  }
+
+  .banner-img .banner-color {
+    width: 375px;
+    height: 285px;
+    display: inline-block;
+    position: absolute;
+    left: 472px;
+    background-color: #FDF2EB;
+    opacity: 0.2;
+    top: 262px;
+  }
+
+  .Lips-title span.Vagen {
+    font-size: 13px;
+    color: #494949;
+    padding-left: 12px;
+    font-weight: 600;
+    line-height: 32px;
+    font-family: "Avenir Next";
+  }
+
+  .lips-product-description .LipSolution {
+    padding-top: 20px;
+  }
+
+  .eyes-banner-sec .banner-img img {
+    width: 87%;
+    max-width: 1100px;
+  }
+
+  .face-banner-sec .banner-img img {
+    width: 87%;
+    max-width: 1100px;
+  }
+
+  .eyes-banner-sec .eyes-sec-text {
+    position: absolute;
+    top: 257px;
+    transform: translateY(-50%);
+    left: 254px;
+  }
+
+  .eyes-sec-text h1 {
+    line-height: 136px;
+  }
+
+  .eyes-sec-text span.gredient-boxs {
+    top: 216px;
+  }
+
+  .face-banner-sec .face-sec-text {
+    position: absolute;
+    top: 269px;
+    transform: translateY(-50%);
+    left: 259px;
+  }
+
+  span.gredient-box-face {
+    width: 150px;
+    height: 56px;
+    display: inline-block;
+    top: 389px;
+    position: absolute;
+    left: -30px;
+    z-index: -1;
+    background: linear-gradient(to left, #DE4579 0%, #F17BB1 100%);
+
+  }
+
+  .makeup-sec .product-des .pink-btn {
+    max-width: 220px;
+  }
+
+  .product-item-box .product-item .product-item-des {
+    margin-top: 70px;
+  }
+
+  .main-est-sec {
+    font-size: 16px;
+    line-height: 32px;
+    min-height: 375px;
+    max-width: 693px;
+    color: #494949;
+    width: 100%;
+    margin-left: 200px;
+  }
+
+  .about-content .est-sec {
+    float: left;
+  }
+
+  .est-sec .est-text .dots {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #494949;
+    font-weight: 100;
+    margin-top: 5px;
+    position: relative;
+    top: -10px;
+  }
+
+  .founder-text {
+    margin-left: 0px;
+    padding: 60px 0 0 32px;
+  }
+
+  .founder-text p.founder-title {
+    padding-right: 124px;
+  }
+
+  .founder-sec {
+    padding-top: 90px;
+    padding-bottom: 110px;
+  }
+
+  .doctor-img-sec img {
+    width: 100%;
+    max-width: 690px;
+    position: relative;
+  }
+
+  .doctor-img-sec:before {
+    content: "";
+    position: absolute;
+    width: 690px;
+    HEIGHT: 100%;
+    background: linear-gradient(to left, #DE4579 0%, #F17BB1 100%);
+    top: 10px;
+    left: 10px;
+    z-index: 0;
+  }
+
+  .doctor-text-sec p.Deneb-title {
+    max-width: 635px;
+    padding-top: 17px;
+  }
+
+  .ingredients-data span.gredient-box-box {
+    top: 534px;
+    left: 218px;
+  }
+
+  .ingredients-data h1 {
+    top: 493px;
+    left: 247px;
+  }
+
+  .intredients {
+    top: 174px !important;
+    width: 403px;
+    height: 400px;
+    left: 598px;
+  }
+
+  .ingridents-container {
+    max-width: 1280px;
+  }
+
+  .product-left-iimg img {
+    width: 100%;
+  }
+
+
+}
+
+
+@media (min-width:320px) and (max-width:480px) {
+  section.headerFixed {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-top: 15px;
+  }
+
+  .carousel-control-prev {
+    left: 33%;
+    transform: translateY(65%);
+  }
+
+  .carousel-control-next {
+    left: 52%;
+    transform: translateY(65%);
+  }
+
+  .filter-part i.fa.fa-caret-right {
+    width: unset;
+  }
+
+  .responsivehr {
+    margin-top: 5px !important;
+  }
+
+  .doctor-sec {
+    padding-top: 0px;
+  }
+
+  .about-buttonss {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+
+  .Made-with-sec.text-center {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .natural-clean-2 {
+    margin: 15px 0px 20px 0px;
+  }
+
+  .content-icon-sec .ingredientss {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .blog-tabs .tab-content {
+    padding: 0px 0 0px;
+  }
+
+  .activate_account {
+    padding-bottom: 20px;
+  }
+
+  .new-form-sec {
+    padding-top: 0px !important;
+  }
+
+  .preview.horizontal .preview-thumbnail.nav.nav-tabs .owl-carousel .owl-stage {
+    height: 200px;
+  }
+
+  .head-home {
+    margin-top: 20px !important;
+  }
+
+  .carousel-control-prev {
+    display: none;
+  }
+
+  .carousel-control-next {
+    display: none;
+  }
+
+  .head-home-bottom {
+    margin: 60px 0px 0px 0px;
+  }
+
+  li.ng-star-inserted {
+    margin-left: 8px;
+  }
+
+  .hm-slide.beauty-img.instaImg .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+  }
+
+  .hm-slide.beauty-img.instaImg .owl-theme .owl-dots .owl-dot span {
+    width: 4px;
+    height: 4px;
+    margin-top: 20px;
+  }
+
+  .perfect-resp {
+    padding-top: 0px !important;
+    margin-top: -10px;
+  }
+
+  .feature-res {
+    margin-top: -40px;
+  }
+
+  .skin-bottom {
+    margin-top: 110px !important;
+    margin-bottom: -7px !important;
+  }
+
+  .icon-xside img {
+    display: none;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #de4579 !important;
+  }
+
+  .new-res-top {
+    height: 94px;
+  }
+
+  .slider-owl .owl-carousel .owl-dots {
+    display: block !important;
+  }
+
+  .all-make-bann {
+    height: 110px;
+  }
+
+  .blog-tabs .pills-div #pills-tab a {
+    font-size: 10px;
+  }
+
+  .new-margin-item {
+    padding-top: 80px !important;
+  }
+
+  .banner-pro-par {
+    padding-top: 10px !important;
+  }
+
+  .list-view-item__title a {
+    font-size: 13px;
+  }
+
+  .pink-btn.check-btn {
+    top: -4px;
+    float: left;
+  }
+
+  .btn-text-title {
+    margin-left: 15px;
+  }
+
+  .main-form-sec .form-sec label.light {
+    font-size: 14px !important;
+  }
+
+  .Shipping-text h3 {
+    font-size: 14px !important;
+  }
+
+  .product-box span.lipstick {
+    font-size: 12px;
+  }
+
+  .banner-carousel2 .instaImg .left-part {
+    display: none;
+  }
+
+  .banner-carousel2 .instaImg .right-part {
+    display: none;
+  }
+
+  .product-left-img span {
+    display: none;
+  }
+
+  .product-left-img span.background-box {
+    display: block;
+  }
+
+  .product-left-img .eyes {
+    display: none;
+  }
+
+  .product-left-img span.background-box-eyes {
+    display: block;
+  }
+
+  .mid_product {
+    max-width: 400px;
+  }
+
+  .mobile-header .login {
+    left: 42px;
+    top: 15px;
+    position: relative;
+  }
+
+  .how-box-image .how-text {
+    max-width: 100%;
+  }
+
+  .onclick-colorfirst {
+    background-color: #fdf2eb;
+  }
+
+  .onclick-colorsecond {
+    background-color: #de4579;
+  }
+
+  .how-to-ues-sec .Key.Ingredients-text {
+    padding: 50px 0px 50px 13px;
+  }
+
+  .use-heading p {
+    max-width: 400px;
+  }
+
+  .use-heading1 p {
+    max-width: 400px;
+  }
+
+  .main-overlay .modal-dialog {
+    transform: translate(-50%, -24%) !important;
+    top: 42% !important;
+  }
+
+  .form-sec-title {
+    float: none !important;
+  }
+
+  .new-qan {
+    position: relative;
+    top: 11px;
+  }
+
+  .remove-res {
+    position: relative;
+    top: 32px;
+  }
+
+  .new-update-res {
+    position: relative;
+    top: 17px;
+  }
+
+  .new-quan {
+    display: block;
+  }
+
+  .margin-quan {
+    margin-top: 10px;
+  }
+
+  .up-class {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .top-class {
+    margin-top: -15px;
+  }
+
+  .new-new {
+    position: relative;
+  }
+
+  .invalid-res-code {
+    width: unset;
+    top: unset;
+    margin-top: -20px;
+  }
+
+  .p-res-total {
+    display: block;
+  }
+
+  .cart-res {
+    padding-top: 3px !important;
+  }
+
+  .invalid-res-thakun {
+    position: relative !important;
+    width: 100%;
+  }
+
+  .invalid-res-codethakun {
+    position: absolute !important;
+    top: -94px !important;
+    left: 101px !important;
+  }
+
+  .preview-pic.tab-content {
+    height: 370px;
+  }
+
+  .res-order {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .twelve {
+    order: 12;
+  }
+
+  .eleven {
+    order: 11;
+  }
+
+  .ten {
+    order: 10;
+  }
+
+  .nine {
+    order: 9;
+    margin-top: 0px;
+  }
+
+  .eight {
+    order: 8;
+  }
+
+  .seven {
+    order: 7;
+  }
+
+  .six {
+    order: 6;
+  }
+
+  .five {
+    order: 5;
+    margin-top: 10px;
+  }
+
+  .four {
+    order: 4;
+  }
+
+  .three {
+    order: 3;
+  }
+
+  .two {
+    order: 2;
+  }
+
+  .one {
+    order: 1
+  }
+
+  .size-top {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width:481px) and (max-width:575px) {
+  .invalid-feedback .feed-back {
+    position: absolute;
+    top: -26px;
+  }
+
+  .bred {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 70px;
+    background: #fcf6f6;
+  }
+
+  section.headerFixed {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-top: 15px;
+  }
+
+  .new-banner-sec .banner-img img {
+    width: 100%;
+    float: left;
+    opacity: 0;
+  }
+
+  .new-banner-sec .new-sec-text h1 {
+    font-size: 34px;
+  }
+
+  .banner-img {
+    background: #fcf6f6;
+    height: 40px;
+    width: 100%;
+    float: left;
+  }
+
+  .new-banner-sec .new-sec-text {
+    left: 5%;
+    top: 160px;
+  }
+
+  .mobile-show-filter-sidebar .filter-sidebar {
+    display: block;
+    background-color: #fcf6f6;
+    margin-top: 0px;
+    padding-bottom: 6px;
+  }
+
+  .innerbeauty .banner-carousel2 .beauty-img ul li.crousal-bar {
+    width: 23%;
+    float: left;
+    height: 135px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: 4px;
+    list-style-type: none;
+  }
+
+  .banner-carousel {
+    width: 100%;
+    height: 466px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 160% 100%;
+    position: relative;
+    margin-bottom: 0px;
+    overflow: hidden;
+    top: 78px;
+  }
+
+  .banner-carousel .carousel-inner {
+    text-align: left;
+    top: 8%;
+    left: 1%;
+    right: 20px;
+  }
+
+  .banner-carousel .carousel-inner .carousel-caption {
+    text-align: left;
+    top: 8%;
+    left: 6%;
+    right: 20px;
+  }
+
+  .banner-carousel .banner-content h2 {
+    font-size: 50px !important;
+    line-height: 54px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .banner-carousel .carousel-inner h6 {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 26px;
+    font-weight: 400;
+    height: auto;
+  }
+
+  .navbar-light .navbar-toggler {
+    font-size: 15px;
+    position: relative;
+    top: 6px;
+    border: 0px;
+  }
+
+  .mobile-header #demo-2 {
+    position: relative;
+    top: 10px;
+    display: block;
+  }
+
+  .heading h4 {
+    font-size: 24px;
+  }
+
+  .banner-box .main-skin-care-sec .skin-item {
+    padding: 10px;
+  }
+
+  .main-skin-care-sec .skin-item {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .banner-box .main-skin-care-sec .skin-item .skin-item-img {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+  }
+
+  .banner-box .main-skin-care-sec .skin-item .skin-item-img img {
+    width: auto !important;
+    height: 100%;
+    cursor: pointer;
+    margin-top: -33px;
+    max-width: 90px;
+    max-height: 130px;
+  }
+
+  .main-skin-care-sec .skin-item-des h5 {
+    min-height: 35px;
+  }
+
+  .learn-more {
+    background: #fff;
+    padding: 40px 0;
+    width: 100%;
+    float: left;
+    margin-top: -85px;
+  }
+
+  .learn-more .container {
+    margin-bottom: 26px;
+    padding-bottom: 140px;
+    padding-top: 40px;
+    background-position: top center;
+    background-size: 400px 400px;
+  }
+
+  .learn-more h1 {
+    font-size: 36px;
+    line-height: 45px;
+    width: 100%;
+    float: left;
+    font-weight: 300;
+  }
+
+  .skins.future {
+    padding: 0;
+    text-align: center;
+    padding-top: 43px;
+    margin-top: 20px;
+  }
+
+  .feature-d.text-center {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding: 33px;
+  }
+
+  .features .top-mar {
+    margin-top: -22px;
+  }
+
+  .features .top-mar h5 {
+    margin: 15px 0px 5px 0px;
+  }
+
+  .feature-d.text-center p {
+    font-size: 14px;
+    height: 100%;
+    max-width: 344px;
+  }
+
+  .innerbeauty {
+    padding-top: 15px;
+  }
+
+  .innerbeauty .head_pt {
+    padding: 10px;
+    margin-bottom: -12px;
+    margin-top: -10px;
+  }
+
+  .innerbeauty .mobile.banner-carousel2 {
+    display: none;
+  }
+
+  .banner-carousel2 .beauty-img img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 5px;
+  }
+
+  .carousel-control-prev {
+    display: none;
+  }
+
+  .carousel-control-next {
+    display: none;
+  }
+
+  .head-home-bottom {
+    margin: 60px 0px 0px 0px;
+  }
+
+  .mob-text {
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    padding: 10px;
+    font-weight: 300 !important;
+    font-size: 14px !important;
+  }
+
+  .new-banner-sec .new-sec-text h1 {
+    font-size: 34px;
+    margin-top: 44px;
+    line-height: 30px !important;
+    letter-spacing: 0px;
+  }
+
+  .banner-img {
+    background: #fcf6f6;
+    height: 30px;
+    width: 100%;
+    float: left;
+  }
+
+  .side-filter {
+    padding-bottom: 20px;
+    margin-left: 0px;
+    border: none;
+    margin-top: 0px;
+  }
+
+  .mobile-show-filter-sidebar .filter-sidebar h4 {
+    font-weight: 400;
+  }
+
+  .product-item-box {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .product-item-box .product-item {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .product-item-box .product-item .img-item-box {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+  }
+
+  .product-item-box .product-item .img-item-box img {
+    width: auto !important;
+    max-height: 130px;
+    cursor: pointer;
+    margin-top: -33px;
+    max-width: 125px;
+  }
+
+  .our-lineup .product-pro {
+    width: 100%;
+  }
+
+  .product-item-box .product-item .img-item-box {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+  }
+
+  li.ng-star-inserted {
+    margin-left: 8px;
+  }
+
+  .hm-slide.beauty-img.instaImg .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+  }
+
+  .hm-slide.beauty-img.instaImg .owl-theme .owl-dots .owl-dot span {
+    width: 5px;
+    height: 5px;
+    margin-top: 20px;
+  }
+
+  .feature-res {
+    margin-top: -40px;
+  }
+
+  img.left-part {
+    display: none;
+  }
+
+  img.right-part {
+    display: none;
+  }
+
+  .banner-skin-img img {
+    opacity: 0;
+  }
+
+  .skin-banner-sec .banner-skin-img {
+    background: #fcf6f6;
+    height: 120px;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+
+  .skin-sec-text h1 {
+    font-size: 55px;
+  }
+
+  .skin-banner-sec .skin-sec-text {
+    left: 9%;
+  }
+
+  .makeup-sec .row .col-md-6 {
+    padding-left: 16px;
+  }
+
+  .skin-care-product-des {
+    margin-left: 0px;
+  }
+
+  .product-item-box .product-item .dots-sec {
+    display: none;
+  }
+
+  .banner-img .banner-color {
+    display: none;
+  }
+
+  .lips-product-description {
+    padding-top: 20px;
+  }
+
+  .lips-product-description .lips-text-title {
+    width: 465px;
+  }
+
+  .lips-banner-sec .lips-sec-text {
+    top: 48%;
+  }
+
+  .lips-sec-text h1 {
+    font-size: 45px;
+    line-height: 58px;
+  }
+
+  .icon-xside img {
+    display: none;
+  }
+
+  .lips-product-description .LipSolution {
+    padding-top: 20px;
+  }
+
+  .res-banners {
+    height: auto;
+  }
+
+  .lips-product-page {
+    padding-top: 0px;
+  }
+
+  .banner-pic {
+    padding-left: 15px;
+  }
+
+  .lips-sideres {
+    margin-bottom: 10px;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #de4579 !important;
+  }
+
+  .eye-res-ban {
+    height: auto;
+  }
+
+  .eyes-sec-text h1 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+
+  .eyes-banner-sec .eyes-sec-text {
+    top: 52%;
+  }
+
+  .face-ban-top {
+    height: auto;
+  }
+
+  .face-banner-sec .face-sec-text {
+    top: 50%;
+    left: 30%;
+  }
+
+  .face-sec-text h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .all-make-bann {
+    height: 40px;
+  }
+
+  .bottom-image-set {
+    margin-top: 20px;
+  }
+
+  .set-page-sec {
+    padding-top: 0px;
+  }
+
+  .about-banner-sec .about-sec-text {
+    left: 11%;
+  }
+
+  .about-sec-text h1 {
+    font-size: 70px;
+  }
+
+  .about-banner-sec .banner-about-img {
+    padding-left: 0px;
+  }
+
+  .about-part {
+    width: 100%;
+  }
+
+  .filter-sidebar-sec {
+    width: 100%;
+  }
+
+  .filter-about {
+    margin-top: 10px;
+  }
+
+  .filter-part i.fa.fa-caret-right {
+    width: unset;
+  }
+
+  .about-content {
+    float: left;
+    width: 100%;
+  }
+
+  .founder-text p.founder-title {
+    padding-right: 0px;
+  }
+
+  .doctor-img-sec:before {
+    display: none;
+  }
+
+  .about-content .est-sec {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .doctor-img-sec h1.doctor-text {
+    font-size: 42px;
+    top: 74px;
+    left: 84px;
+    line-height: 44px;
+  }
+
+  .svg-box-about {
+    display: none;
+  }
+
+  .doctor-text-sec {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+
+  .about-buttonss {
+    margin-top: 35px !important;
+  }
+
+  .click-our-text h3.click-our-heading.text-center {
+    font-size: 28px;
+  }
+
+  .intredients {
+    display: none;
+  }
+
+  .ingredients-banner {
+    padding-left: 0px;
+  }
+
+  .ingredients-data h1 {
+    font-size: 56px;
+    top: 200px;
+    left: 40px;
+  }
+
+  .ingredients-data span.gredient-box-box {
+    left: 32px;
+    top: 228px;
+  }
+
+  .natural-clean-2 p.natural-text {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .blog-banner .data {
+    top: 70%;
+  }
+
+  .blog-tabs .tab-content {
+    padding: 60px 0 30px;
+  }
+
+  .blog-tabs .pills-div #pills-tab a {
+    font-size: 11px;
+  }
+
+  .banner-text .banner-contant {
+    font-size: 30px !important;
+    padding: 33px;
+    line-height: 36px;
+    position: relative;
+    bottom: 200px;
+    width: 100%;
+    height: auto;
+  }
+
+  .product-banner .banner-text {
+    position: absolute;
+    top: -51px;
+    width: 459px;
+    float: left;
+    right: 29px;
+  }
+
+  .banner-pro-par {
+    padding-top: 10px !important;
+  }
+
+  .banner-icon ul.banner-icon-sec {
+    position: absolute;
+    top: 70px;
+    right: 21px;
+  }
+
+  .Dummy-text h2 {
+    font-size: 30px;
+  }
+
+  .Add-to-cart-sec {
+    padding-top: 80px;
+  }
+
+  .cart__image-wrapper div {
+    padding-right: 0px;
+  }
+
+  .Add-to-cart-sec .form-sec2 .page-width {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .list-view-item__title a {
+    font-size: 12px;
+  }
+
+  .cart .cart__meta {
+    padding-right: 0px;
+  }
+
+  .btn-text-title {
+    margin-left: 10px;
+  }
+
+  .product-left-img span.background-box {
+    display: none;
+  }
+
+  .product-left-img span {
+    display: none;
+  }
+
+  .product-left-img span.background-box-eyes {
+    display: block;
+  }
+
+  .product-left-img .eyes {
+    display: none;
+  }
+
+  .product-left-img span.background-box {
+    display: block;
+  }
+
+  .product-left-img span {
+    display: none;
+  }
+
+  .product-left-img .makeup-image {
+    width: 100%;
+  }
+
+  .makeup h1 {
+    font-size: 70px;
+  }
+
+  .makeup-sec .product-des.mobile-h1 {
+    margin-bottom: 82px;
+  }
+
+  .makeup-sec .product-des p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .mid_product {
+    max-width: 450px !important;
+    margin-left: 0px;
+  }
+
+  .mobile-header .login {
+    left: 100px;
+    top: 15px;
+    position: relative;
+  }
+
+  .onclick-colorfirst {
+    background-color: #fdf2eb;
+  }
+
+  .onclick-colorsecond {
+    background-color: #de4579;
+  }
+
+  .how-box-image .how-text {
+    max-width: 100%;
+  }
+
+  .how-to-ues-sec .Key.Ingredients-text {
+    padding: 50px 0px 50px 0px;
+  }
+
+  .use-heading p {
+    max-width: 500px;
+  }
+
+  .main-overlay .modal-dialog {
+    transform: translate(-50%, -29%) !important;
+  }
+
+  .product-left-img span.background-box {
+    width: 315px;
+    left: 8px;
+    top: 124px;
+  }
+
+  .product-left-img span.background-box-eyes {
+    width: 310px;
+    top: 124px;
+    left: 10px;
+  }
+
+  .invalid-res-code {
+    width: unset;
+    top: unset;
+    margin-top: -20px;
+  }
+
+  .invalid-res-thakun {
+    position: relative !important;
+    width: 100%;
+  }
+
+  .invalid-res-codethakun {
+    position: absolute !important;
+    top: -94px !important;
+    left: 101px !important;
+  }
+
+  .use-heading1 .text-Dummy1 {
+    max-width: 500px;
+  }
+
+  .res-order {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .twelve {
+    order: 12;
+  }
+
+  .eleven {
+    order: 11;
+  }
+
+  .ten {
+    order: 10;
+  }
+
+  .nine {
+    order: 9;
+    margin-top: 0px;
+  }
+
+  .eight {
+    order: 8;
+  }
+
+  .seven {
+    order: 7;
+  }
+
+  .six {
+    order: 6;
+  }
+
+  .five {
+    order: 5;
+    margin-top: 10px;
+  }
+
+  .four {
+    order: 4;
+  }
+
+  .three {
+    order: 3;
+  }
+
+  .two {
+    order: 2;
+  }
+
+  .one {
+    order: 1
+  }
+
+  .size-top {
+    margin-top: 10px;
+  }
+
+}
+
+@media (min-width:576px) and (max-width:767px) {
+  .bred {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 70px;
+    background: #fcf6f6;
+  }
+
+  section.headerFixed {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-top: 15px;
+  }
+
+  .new-banner-sec .banner-img img {
+    width: 100%;
+    float: left;
+    opacity: 0;
+  }
+
+  .new-banner-sec .new-sec-text h1 {
+    font-size: 34px;
+  }
+
+  .banner-img {
+    background: #fcf6f6;
+    height: 40px;
+
+    width: 100%;
+    float: left;
+  }
+
+  .new-banner-sec .new-sec-text {
+    left: 5%;
+    top: 160px;
+  }
+
+  .mobile-show-filter-sidebar .filter-sidebar {
+    display: block;
+    background-color: #fcf6f6;
+    margin-top: 0px;
+    padding-bottom: 6px;
+  }
+
+  .innerbeauty .banner-carousel2 .beauty-img ul {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .innerbeauty .banner-carousel2 .beauty-img ul li.crousal-bar {
+    width: 23%;
+    float: left;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: 4px;
+    list-style-type: none;
+  }
+
+  .banner-carousel {
+    width: 100%;
+    height: 466px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 160% 100%;
+    position: relative;
+    margin-bottom: 0px;
+    overflow: hidden;
+    top: 78px;
+  }
+
+  .banner-carousel .carousel-inner {
+    text-align: left;
+    top: 8%;
+    left: 1%;
+    right: 20px;
+  }
+
+  .banner-carousel .carousel-inner .carousel-caption {
+    text-align: left;
+    top: 8%;
+    left: 6%;
+    right: 20px;
+  }
+
+  .banner-carousel .banner-content h2 {
+    font-size: 50px !important;
+    line-height: 54px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .banner-carousel .carousel-inner h6 {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 26px;
+    font-weight: 400;
+    height: auto;
+  }
+
+  .navbar-light .navbar-toggler {
+    font-size: 15px;
+    position: relative;
+    top: 6px;
+    border: 0px;
+  }
+
+  .mobile-header #demo-2 {
+    position: relative;
+    top: 10px;
+    display: none;
+  }
+
+  .heading h4 {
+    font-size: 24px;
+  }
+
+  .banner-box .main-skin-care-sec .skin-item {
+    padding: 10px;
+  }
+
+  .main-skin-care-sec .skin-item {
+    height: unset;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .banner-box .main-skin-care-sec .skin-item .skin-item-img {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+  }
+
+  .banner-box .main-skin-care-sec .skin-item .skin-item-img img {
+    width: auto !important;
+    height: 100%;
+    cursor: pointer;
+    margin-top: -33px;
+    max-width: 90px;
+    max-height: 130px;
+  }
+
+  .main-skin-care-sec .skin-item-des h5 {
+    min-height: 35px;
+  }
+
+  .main-skin-care-sec .skin-item-des .shop {
+    padding: 10px 50px;
+  }
+
+  .learn-more {
+    background: #fff;
+    padding: 40px 0;
+    width: 100%;
+    float: left;
+    margin-top: -85px;
+  }
+
+  .learn-more .container {
+    margin-bottom: 26px;
+    padding-bottom: 150px;
+    padding-top: 40px;
+    background-position: top center;
+    background-size: 450px 450px;
+  }
+
+  .learn-more h1 {
+    font-size: 45px;
+    line-height: 45px;
+    width: 100%;
+    float: left;
+    font-weight: 300;
+  }
+
+  .skins.future {
+    padding: 0;
+    text-align: center;
+    padding-top: 43px;
+    margin-top: 40px;
+  }
+
+  .feature-d.text-center {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding: 33px;
+  }
+
+  .features .top-mar {
+    margin-top: -22px;
+  }
+
+  .features .top-mar h5 {
+    margin: 15px 0px 5px 0px;
+  }
+
+  .feature-d.text-center p {
+    font-size: 14px;
+    height: 100%;
+    max-width: 344px;
+  }
+
+  .innerbeauty {
+    padding-top: 15px;
+  }
+
+  .innerbeauty .head_pt {
+    padding: 10px;
+    margin-bottom: -12px;
+    margin-top: -10px;
+  }
+
+  .innerbeauty .mobile.banner-carousel2 {
+    display: none;
+  }
+
+  .banner-carousel2 .beauty-img img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 5px;
+  }
+
+  .carousel-control-prev {
+    display: none;
+  }
+
+  .carousel-control-next {
+    display: none;
+  }
+
+  .head-home-bottom {
+    margin: 60px 0px 0px 0px;
+  }
+
+  li.ng-star-inserted {
+    margin-left: 8px;
+  }
+
+  .hm-slide.beauty-img.instaImg .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+  }
+
+  .hm-slide.beauty-img.instaImg .owl-theme .owl-dots .owl-dot span {
+    width: 6px;
+    height: 6px;
+    margin-top: 20px;
+  }
+
+  .perfect-resp-head {
+    margin-top: -20px;
+  }
+
+  .main-skin-care-sec .skin-item-des h5 {
+    line-height: 20px;
+  }
+
+  .feature-res {
+    margin-top: -40px;
+  }
+
+  .makeup-sec .row .col-md-6 {
+    padding-left: 16px;
+  }
+
+  .skin-banner-sec .banner-skin-img img {
+    opacity: 0;
+  }
+
+  .skin-care-product-des {
+    margin-left: 0px;
+  }
+
+  .new-res-top {
+    height: 10px;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #de4579 !important;
+  }
+
+  .res-banners {
+    height: auto;
+  }
+
+  .lips-banner-sec .lips-sec-text {
+    left: 14%;
+  }
+
+  .icon-xside img {
+    display: none;
+  }
+
+  .eye-res-ban {
+    height: auto;
+  }
+
+  .eyes-sec-text h1 {
+    font-size: 64px;
+  }
+
+  .eyes-banner-sec .eyes-sec-text {
+    left: 20%;
+    top: 50%;
+  }
+
+  .face-ban-top {
+    height: auto;
+  }
+
+  .face-banner-sec .face-sec-text {
+    top: 50%;
+    left: 10%;
+  }
+
+  .filter-part i.fa.fa-caret-right {
+    width: unset;
+  }
+
+  .doctor-img-sec:before {
+    display: none;
+  }
+
+  .about-content .est-sec {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .filter-about-section {
+    margin-top: 135px;
+  }
+
+  .new-top-arrow {
+    padding-bottom: 0px;
+  }
+
+  .colan-box img {
+    margin-top: 0px;
+    left: 3px;
+  }
+
+  .svg-box-about {
+    display: none;
+  }
+
+  .doctor-text-sec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-buttonss {
+    margin-top: 35px !important;
+  }
+
+  .click-our-text h3.click-our-heading.text-center {
+    font-size: 30px;
+  }
+
+  .natural-clean-2 p.natural-text {
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .blog-banner .data {
+    top: 68%;
+  }
+
+  .Add-to-cart-sec .form-sec2 .page-width {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .cart__image-wrapper div {
+    padding-right: 0px;
+  }
+
+  .list-view-item__title a {
+    font-size: 13px;
+  }
+
+  .cart .cart__meta {
+    padding-right: 0px;
+  }
+
+  .Add-to-cart-sec .form-sec2 div#PageContainer {
+    overflow: hidden;
+  }
+
+  .product-left-img span.background-box {
+    display: block;
+  }
+
+  .product-left-img .makeup-image {
+    width: 100%;
+  }
+
+  .makeup-sec .product-des.mobile-h1 {
+    margin-bottom: 65px;
+  }
+
+  .product-left-img span.background-box-eyes {
+    display: block;
+  }
+
+  .product-left-img .eyes {
+    display: none;
+  }
+
+  .mid_product {
+    margin-left: 0px;
+    max-width: 500px !important;
+  }
+
+  .makeup-sec .product-des p {
+    margin-top: 30px;
+  }
+
+  .mobile-header .login {
+    left: 122px;
+    top: 15px;
+    position: relative;
+  }
+
+  .onclick-colorfirst {
+    background-color: #fdf2eb;
+  }
+
+  .onclick-colorsecond {
+    background-color: #de4579;
+    padding-top: 127px;
+  }
+
+  .how-box-image .how-text {
+    max-width: 100%;
+    font-size: 11px;
+  }
+
+  .how-to-ues-sec .Key.Ingredients-text {
+    padding: 50px 0px 50px 0px;
+  }
+
+  .use-heading p {
+    max-width: 500px;
+  }
+
+  .how-text {
+    padding-top: 23px;
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .product-left-img span.background-box {
+    width: 345px;
+    left: 7px;
+    top: 106px !important;
+  }
+
+  .product-left-img span.background-box-eyes {
+    top: 108px;
+    left: 9px;
+    width: 315px;
+  }
+
+  .main-overlay .modal-dialog {
+    transform: translate(-50%, -31%) !important;
+  }
+
+  .invalid-res-code {
+    width: unset;
+    top: unset;
+    margin-top: -20px;
+  }
+
+  .invalid-res-thakun {
+    position: relative !important;
+    width: 100%;
+  }
+
+  .invalid-res-codethakun {
+    position: absolute !important;
+    top: -94px !important;
+    left: 101px !important;
+  }
+
+  .res-order {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .twelve {
+    order: 12;
+  }
+
+  .eleven {
+    order: 11;
+  }
+
+  .ten {
+    order: 10;
+  }
+
+  .nine {
+    order: 9;
+    margin-top: 0px;
+  }
+
+  .eight {
+    order: 8;
+  }
+
+  .seven {
+    order: 7;
+  }
+
+  .six {
+    order: 6;
+  }
+
+  .five {
+    order: 5;
+    margin-top: 10px;
+  }
+
+  .four {
+    order: 4;
+  }
+
+  .three {
+    order: 3;
+  }
+
+  .two {
+    order: 2;
+  }
+
+  .one {
+    order: 1
+  }
+
+  .size-top {
+    margin-top: 10px;
+  }
+}
+
+
+@media (min-width:768px) and (max-width:991px) {
+  .innerbeauty .banner-carousel2 .beauty-img ul {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .innerbeauty .banner-carousel2 .beauty-img ul li.crousal-bar {
+    width: 23%;
+    float: left;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: 4px;
+    list-style-type: none;
+  }
+
+  .banner-carousel {
+    height: 550px;
+    float: left;
+    background-position: left;
+  }
+
+  .banner-carousel .carousel-inner {
+    text-align: left;
+    bottom: 112px;
+    left: 1%;
+    right: 20px;
+  }
+
+  .learn-more {
+    margin-top: -46px;
+    height: auto;
+  }
+
+  .innerbeauty {
+    padding-top: 15px;
+  }
+
+  .main-box .svg-box {
+    display: none;
+  }
+
+  .feature-res {
+    margin-top: -10px;
+  }
+
+  .hm-slide.beauty-img.instaImg .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+  }
+
+  .hm-slide.beauty-img.instaImg .owl-theme .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+    margin-top: 20px;
+  }
+
+  .perfect-resp-head {
+    margin-top: -10px;
+  }
+
+  .new-items .item .p-top-r {
+    display: none;
+  }
+
+  .product-item-box .product-item .dots-sec {
+    display: none;
+  }
+
+  .lips-banner-sec .lips-sec-text {
+    left: 22%;
+    top: 48%;
+  }
+
+  .lips-sec-text h1 {
+    font-size: 82px;
+    line-height: 102px;
+  }
+
+  .eyes-sec-text h1 {
+    font-size: 53px;
+    line-height: 72px;
+  }
+
+  .face-banner-sec .face-sec-text {
+    top: 47%;
+    left: 15%;
+  }
+
+  .face-sec-text h1 {
+    font-size: 60px;
+  }
+
+  .filter-part i.fa.fa-caret-right {
+    width: unset;
+  }
+
+  img.left-part {
+    display: none;
+  }
+
+  img.right-part {
+    display: none;
+  }
+
+  .doctor-img-sec:before {
+    display: none;
+  }
+
+  .Dummy-text h2 {
+    font-size: 27px;
+    line-height: 46px;
+  }
+
+  .colan-box img {
+    left: -11px;
+    margin-top: -34px;
+  }
+
+  .svg-box-about {
+    display: none;
+  }
+
+  .doctor-img-sec h1.doctor-text {
+    top: 80px;
+    left: 65px;
+  }
+
+  .doctor-text-sec {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+  }
+
+  .about-buttonss {
+    margin-top: 50px !important;
+  }
+
+  .natural-clean-2 p.natural-text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .blog-banner .data {
+    top: 59%;
+  }
+
+  .blog-banner .data h1 {
+    font-size: 75px;
+    line-height: 0px;
+  }
+
+  .list-view-item__title a {
+    font-size: 15px;
+  }
+
+  .product-left-img.product-left-iimg img {
+    width: 100%;
+  }
+
+  .product-left-img span {
+    display: none;
+  }
+
+  .product-left-img .eyes {
+    display: none;
+  }
+
+  .product-left-img span {
+    display: none;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+  .banner-carousel {
+    height: 600px;
+    float: left;
+  }
+
+  .banner-carousel .carousel-inner .carousel-caption {
+    text-align: left;
+    top: 20%;
+    left: 100px;
+  }
+
+  .banner-carousel .banner-content h2 {
+    font-size: 60px;
+
+  }
+
+  .main-box .svg-box {
+    top: 366px;
+    max-width: 365px;
+  }
+
+  .learn-more {
+    padding-bottom: 0px;
+  }
+
+  .innerbeauty {
+    padding-top: 45px;
+  }
+
+  .feature-res {
+    margin-top: -30px;
+  }
+
+  .learn-more .container {
+    background-position: 200px;
+  }
+
+  .feature-res {
+    margin-top: -10px;
+  }
+
+  .product-item-box .product-item .img-item-box img {
+    height: auto;
+  }
+
+  .new-banner-sec .new-sec-text {
+    top: 418px;
+  }
+
+  .new-banner-sec .new-sec-text h1 {
+    font-size: 85px;
+  }
+
+  .face-sec-text h1 {
+    line-height: 75px;
+    font-size: 60px;
+  }
+
+  .face-banner-sec .face-sec-text {
+    left: 20%;
+    top: 48%;
+
+  }
+
+  .product-left-img.product-left-iimg img {
+    width: 100%;
+  }
+
+  .product-left-img span.background-box {
+    width: 313px;
+  }
+
+  .product-left-img span {
+    display: none;
+  }
+
+  .product-left-img span.background-box-eyes {
+    width: 266px;
+  }
+
+  .product-left-img .eyes {
+    display: none;
+  }
+
+  .makeup-sec.right .col-md-6.pull-left {
+    padding-left: 25px;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1279px) {
+
+  .learn-more .container {
+    background-position: 216px;
+    background-repeat: no-repeat;
+    padding-top: 202px;
+    background-size: 570px 570px;
+    padding-bottom: 124px;
+  }
+
+  .skins.future {
+    margin-left: 70px;
+  }
+
+  .learn-more {
+    padding-bottom: 70px;
+    margin-top: -66px;
+  }
+
+  .product-left-iimg img {
+    width: 100%;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1990px) {
+  .product-description {
+    padding-top: 50px;
+    padding-right: 60px !important;
+  }
+}
+
+@media (min-width: 1441px)and (max-width: 1599px) {
+  .learn-more .container {
+    background-position: 237px;
+  }
+
+  .product-left-img.product-left-iimg img {
+    width: 100%;
+  }
+
+  .product-left-img span {
+    width: 314px;
+    height: 224px;
+  }
+
+  .product-left-img span.background-box-eyes {
+    width: 356px;
+  }
+
+  .product-left-img .eyes {
+    width: 344px;
+    height: 216px;
+    left: 37px;
+  }
+
+}
+
+/***************4 june/
+
+/*************************************222222/
+/** 30-06***/

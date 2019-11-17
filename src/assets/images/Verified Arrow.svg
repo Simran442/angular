@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Circle Check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Product-Detail_Ingredient-Expanded" transform="translate(-1095.000000, -4003.000000)" stroke="#73C1DD" stroke-width="2">
+            <g id="Reviews" transform="translate(135.000000, 3757.000000)">
+                <g id="Review" transform="translate(0.000000, 171.000000)">
+                    <g id="Circle-Check" transform="translate(961.000000, 76.000000)">
+                        <path d="M13.3333333,6.717 L13.3333333,7.337 C13.3313333,11.019 10.3453333,14.0016667 6.66266667,13.9996667 C2.98133333,13.9976667 -0.002,11.0116667 -2.72374722e-14,7.32966667 C0.002,3.64766667 2.98866667,0.664333333 6.67066667,0.666333333 C7.604,0.667 8.52733333,0.863666667 9.38,1.24366667" id="Stroke-1"></path>
+                        <polyline id="Stroke-3" points="14 1.33713333 6.66666667 8.67046667 4.66666667 6.67046667"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

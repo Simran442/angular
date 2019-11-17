@@ -1,0 +1,308 @@
+<footer class="main-footer">
+  <div class="container footer-contain">
+
+
+    <div class="footer-inner">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="f-1">
+            <h4>Don't miss out!</h4>
+            <p>Save 10% on your first order when you sign up for inner beauty news & special offers</p>
+
+
+            <form [formGroup]="registerFormId" (ngSubmit)="onSubmit()">
+              <div class="errorMsgss  error_p invalid-res-thakun">
+                <div class="errorMsgs error_s invalid-res-codethakun">
+                  <div style="display: none;" class="alert-box myclass thanku">Thanku, Please check your mail</div>
+                  <div style="display: none;" class="alert-box myclass check">Email Already Exist.
+                  </div>
+
+                </div>
+              </div>
+              <div class="sign-up form-group">
+                <input type="email" formControlName="email" placeholder="Enter your email" class="form-control"
+                  [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+
+                <button class="pink-btn">Sign Up
+                </button>
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback feed-back invalid-res-code
+                ">
+                  <div *ngIf="f.email.errors.required">Email is required</div>
+                  <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                </div>
+              </div>
+
+            </form>
+
+
+            <div class="contact-d">
+              <span>
+                <img src="../assets/images/Mail.svg"> support@innerbeautyco.com</span>
+              <span>
+                <img src="../assets/images/Phone.svg"> (302) 241-2144</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="row foot-space">
+            <div class="col-md-3">
+              <ul class="f-2">
+                <li>
+                  <a routerLink="/new" routerLinkActive="active">New</a>
+                </li>
+                <li>
+                  <a routerLink="/Skincare" routerLinkActive="active">Skincare</a>
+                </li>
+                <li>
+                  <a routerLink="/Sets" routerLinkActive="active">Sets</a>
+                </li>
+                <li>
+                  <a routerLink="/AboutUs" routerLinkActive="active">About</a>
+                </li>
+                <li>
+                  <a routerLink="/Ingredients" routerLinkActive="active">Ingredients</a>
+                </li>
+                <li>
+                  <a routerLink="/blog" routerLinkActive="active">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="f-3">
+                <li>
+                  <a routerLink="/lips/81913872433" routerLinkActive="active" title="Lips"
+                    (click)="getbred('')">Lips</a>
+                </li>
+                <li (click)="checkbox('81913675825',$event,'Lipstick')">
+                  <a routerLink="/lips/81913675825" routerLinkActive="active" title="Lipstick"
+                    (click)="getbred('Lipstick')">Lipstick</a>
+                </li>
+                <li (click)="checkbox('88418123825',$event,'Lip Sheer')">
+                  <a routerLink="/lips/88418123825" routerLinkActive="active" title="Lip Sheer"
+                    (click)="getbred('Lip Sheer')">Lip Sheer</a>
+                </li>
+                <li (click)="checkbox('81913741361',$event,'Lip Gloss')">
+                  <a routerLink="/lips/81913741361" routerLinkActive="active" title="Lip Gloss"
+                    (click)="getbred('Lip Gloss')">Lip Gloss</a>
+                </li>
+                <li (click)="checkbox('81913774129',$event,'Lip Oil')">
+                  <a routerLink="/lips/81913774129" routerLinkActive="active" title="Lip Oil"
+                    (click)="getbred('Lip Oil')">Lip Oil</a>
+                </li>
+                <li (click)="checkbox('81913806897',$event,'Lip Balm')">
+                  <a routerLink="/lips/81913806897" routerLinkActive="active" title="Lip Balm"
+                    (click)="getbred('Lip Balm')">Lip Balm</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="f-3">
+                <li>
+                  <a routerLink="/eyes/81913905201" routerLinkActive="active" title="Eyes"
+                    (click)="getbred('')">Eyes</a>
+                </li>
+                <li (click)="checkbox('81913479217',$event,'Mascara')">
+                  <a routerLink="/eyes/81913479217" routerLinkActive="active" title="Mascara"
+                    (click)="getbred('Mascara')">Mascara</a>
+                </li>
+                <li (click)="checkbox('81913413681',$event,'Eye Shadow')">
+                  <a routerLink="/eyes/81913413681" routerLinkActive="active" title="Eye Shadow"
+                    (click)="getbred('Eye Shadow')">Eye Shadow</a>
+                </li>
+                <li (click)="checkbox('81913446449',$event,'Eye Liner')">
+                  <a routerLink="/eyes/81913446449" routerLinkActive="active" title="Eye Liner"
+                    (click)="getbred('Eye Liner')">Eye Liner</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="f-3">
+                <li>
+                  <a routerLink="/face/81913937969" routerLinkActive="active" title="Face"
+                    (click)="getbred('')">Face</a>
+                </li>
+                <li (click)="checkbox('81913511985',$event,'Foundation')">
+                  <a routerLink="/face/81913511985" routerLinkActive="active" title="Foundation"
+                    (click)="getbred('Foundation')">Foundation</a>
+                </li>
+                <li (click)="checkbox('81913544753',$event,'Concealer')">
+                  <a routerLink="/face/81913544753" routerLinkActive="active" title="Concealer"
+                    (click)="getbred('Concealer')">Concealer</a>
+                </li>
+                <li (click)="checkbox('81913610289',$event,'Blush')">
+                  <a routerLink="/face/81913610289" routerLinkActive="active" title="Blush"
+                    (click)="getbred('Blush')">Blush</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h6 class="f-b">Copyright &copy; 2018 Inner Beauty Co. All rights reserved.
+        <a href="#"> Privacy Policy </a> <span class="left_fot">|</span>
+        <a href="#"> Terms & Conditions </a>
+      </h6>
+    </div>
+  </div>
+</footer>
+<!-- main-footer -->
+
+<footer class="mobile-footer">
+  <div class="container">
+    <div class="f-1">
+      <h4>Don't miss out!</h4>
+      <p class="mob-text">Save 10% on your first order when you sign up for inner beauty news &amp; special offers</p>
+      <!-- <div class="sign-up">
+        <input type="text" placeholder="Enter your email">
+        <button class="pink-btn" type="button">Sign Up</button>
+      </div> -->
+      <form [formGroup]="registerFormId" (ngSubmit)="onSubmit()">
+        <div class="errorMsgss  error_p ">
+          <div class="errorMsgs error_s">
+            <div style="display: none;" class="alert-box myclass thanku ">Thanku, Please check your mail</div>
+            <div style="display: none;" class="alert-box myclass check">Email Already Exist.
+            </div>
+
+          </div>
+        </div>
+        <div class="sign-up form-group">
+          <input type="email" formControlName="email" placeholder="Enter your email" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+
+          <button class="pink-btn">Sign Up
+          </button>
+          <div *ngIf="submitted && f.email.errors" class="invalid-feedback emailrequired">
+            <div *ngIf="f.email.errors.required">Email is required</div>
+            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="f-menu">
+      <div id="accordion">
+        <div class="card">
+          <div class="" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne" [routerLink]="['/new']" routerLinkActive="active">
+                New
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo" [routerLink]="['/Skincare']"
+                routerLinkActive="active">
+                Skincare
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree" [routerLink]="['/Sets']" routerLinkActive="active">
+                Sets
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                aria-expanded="false" aria-controls="collapseFour" routerLink="/AboutUs" routerLinkActive="active">
+                About
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                aria-expanded="false" aria-controls="collapseFive" routerLink="/Ingredients" routerLinkActive="active">
+                Ingredients
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="" id="headingSix">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                aria-expanded="false" aria-controls="collapseSix" routerLink="/blog" routerLinkActive="active">
+                Blog
+              </button>
+            </h5>
+          </div>
+          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+
+          </div>
+        </div>
+
+      </div>
+      <!-- accordion -->
+    </div>
+    <!-- f-menu -->
+
+    <div class="f-1">
+      <div class="contact-d">
+        <span>
+          <img src="../assets/images/Mail.svg"> support@innerbeautyco.com</span>
+        <span>
+          <img src="../assets/images/Phone.svg"> (302) 241-2144</span>
+      </div>
+    </div>
+    <h6 class="f-b f-copy">
+      <div>Copyright © 2018 Inner Beauty Co. All rights reserved.</div>
+      <div>
+        <a href="#">Privacy Policy</a> <span class="fo-left"> |</span>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </h6>
+  </div>
+</footer>
+<div class="home-overlay">
+  <div class="modal fade" id="Thanku" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content overlay">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><img src="../assets/images/X.svg"></button>
+        </div>
+        <div class="modal-body">
+          <h1>Join the<br>Inner Circle</h1>
+          <h5>Save Up & Save 15%</h5>
+          <h2>Thank You for Signup. Please check your email</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

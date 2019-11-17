@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<ng4-loading-spinner></ng4-loading-spinner>
+
+<body>
+  <app-header></app-header>
+
+  <section class="headerFixed">
+    <div class="main-Add-to-cart-sec">
+      <div class="container">
+        <div class="errorMsgss  error_p">
+          <div class="errorMsgs error_s">
+            <div style="display: none;" class="alert-box myclass success"> 1 Item has been
+              added to your cart !!!
+            </div>
+            <div style="display: none;" class="alert-box myclass warning"> Product has been
+              removed to your cart !!!
+            </div>
+
+          </div>
+        </div>
+        <div class="Add-to-cart-sec">
+          <div class="chechout-sec">
+            <div class="cart-img-sec">
+              <img class="cart-img" src="../assets/images/cart.png" alt="cart">
+            </div>
+            <div class="header-sec">
+              <h2 class="shoping-text">Shopping cart</h2>
+            </div>
+          </div>
+
+          <div class="form-sec2">
+            <div class="page-container drawer-page-content" id="PageContainer" *ngIf="this.checkout.lineItems[0]">
+              <!--        <div class="page-container drawer-page-content" id="PageContainer" > -->
+              <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
+
+
+                <div id="shopify-section-cart-template" class="shopify-section">
+                  <div class="page-width" data-section-id="cart-template" data-section-type="cart-template">
+
+                    <form class="cart">
+
+                      <table>
+                        <thead class="cart__row">
+                          <tr>
+                            <th colspan="2" scope="col">Product</th>
+                            <th class="cart__row-price" scope="col">Price</th>
+                            <th class="text-center small--hide" scope="col">Quantity</th>
+                            <th class="text-right small--hide" scope="col">Total</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                          <tr class="cart__row border-bottom line1 border-top"
+                            *ngFor="let item of this.checkout.lineItems">
+                            <td class="cart__image-wrapper">
+                              <div>
+                                <img class="cart__image" value="" src="{{item.variant.image.src}}"
+                                  style="cursor: pointer;">
+                              </div>
+                              <div>
+                                <input type="hidden" value="{{item.id}}" style="cursor: pointer;">
+                              </div>
+                            </td>
+                            <td class="cart__meta small--text-left">
+                              <div class="list-view-item__title">
+                                <a>{{item.title}}</a>
+                              </div>
+
+                              <div class="cart__meta-text">
+
+                                {{item.variant.selectedOptions[0].name}}: {{item.variant.selectedOptions[0].value}}<br>
+
+                                {{item.variant.selectedOptions[1].name}}: {{item.variant.selectedOptions[1].value}}<br>
+
+                              </div>
+                              <p class="small--hide">
+                                <a (click)="removeItem(item.id,item.quantity)"
+                                  class="btn btn--small btn--tertiary cart__remove"
+                                  aria-label="Remove new blush face">Remove
+                                </a>
+                              </p>
+                            </td>
+                            <td class="cart__price-wrapper">
+                              $ {{item.variant.price}}
+                              <div class="cart__edit medium-up--hide">
+                                <button type="button" (click)="removeItem(item.id,item.quantity)"
+                                  class="btn btn--secondary btn--small js-edit-toggle cart__edit--active"
+                                  data-target="line1" aria-label="Edit lip Oil stick" aria-expanded="false">
+                                  <span class="cart__edit-text--cancel">Cancel</span>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="text-right small--hide">
+
+                              <div class="quantity buttons_added">
+                                <input type='button' value='-' class='minus' field='quantity'
+                                  (click)="sub(item.quantity, item.id, $event)" />
+                                <input type="number" step="1" name="quantity" id="item.variant.id"
+                                  value={{item.quantity}} #quantity title="Qhow-to-ues-secty"
+                                  class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type='button' value='+' class='plus' field='quantity'
+                                  (click)="add(item.quantity, item.id,$event)" />
+
+                              </div>
+                            </td>
+                            <td class="text-right small--hide">
+
+                              <div class="checkoutTotalPrice">
+
+                                $ {{item.variant.price*item.quantity | number:'1.2-2' }}
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <div class="cart__footer">
+                        <div class="grid">
+
+                          <div class="grid__item text-right small--text-center">
+                            <div>
+                              <span class="cart__subtotal-title">Subtotal</span>
+                              <span class="cart__subtotal">$ {{this.checkout.subtotalPrice}}</span>
+                            </div>
+
+                            <div class="cart__shipping rte">Taxes and shipping calculated at checkout
+                            </div>
+                            <div class="cart__submit-controls">
+                              <a (click)="history()"
+                                class="btn btn--secondary cart__continue small--hide cart__submit-control">
+                                Continue shopping
+                              </a>
+                              <input type="submit" name="update"
+                                class="btn btn--secondary small--hide cart__submit-control" (click)=UpdateItem()
+                                value="Update">
+                              <input type="submit" name="checkout" routerLink="/checkout"
+                                class="btn btn--small-wide cart__submit cart__submit-control" value="Check out">
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                </div>
+              </main>
+            </div>
+            <div class="cart-empty" *ngIf="!this.checkout.lineItems[0]">Your cart is empty</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- start-footer -->
+
+  <app-footer></app-footer>
+
+  <script>
+    $('.f-menu .collapse').collapse();
+
+  </script>
+
+</body>
+
+</html>

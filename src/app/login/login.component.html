@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<ng4-loading-spinner> </ng4-loading-spinner>
+
+<body>
+  <app-header></app-header>
+
+  <section class="headerFixed">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-md-12 col-xl-12">
+          <div class="top_activate">
+            <div class="activate_account">
+              <h1>Login</h1>
+            </div>
+            <div class="errorMsg">
+              <div class="alert-box failure">Invalid login credentials. !!!</div>
+              <div class="alert-box success">Successful !!!</div>
+            </div>
+            <form [formGroup]="registerFormId" (ngSubmit)="onLogin()" *ngIf="this.status != true" >
+              <div class="form-group">
+                <input type="email" formControlName="email" maxlength="35" placeholder="Enter your email"
+                  class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                <div *ngIf="submitted && f.email.errors" class="loginVali">
+                  <div *ngIf="f.email.errors.required">Email is required</div>
+                  <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                </div>
+
+              </div>
+
+              <div class="form-group">
+                <input type="password" formControlName="password" maxlength="20" placeholder="Enter your password"
+                  class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                <div *ngIf="submitted && f.email.errors" class="loginVali">
+                  <div *ngIf="f.email.errors.required">password is required</div>
+
+                </div>
+
+              </div>
+              <div class="sign-up-me">
+                <button class="pink-btn">Log In <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="login-signup">
+                New to InnerBeauty?   <a [routerLink]="['/account/signup']" routerLinkActive="active">Sign Up</a>
+              </div>
+               <div class="login-signup">
+                  <a [routerLink]="['/resetpassword']" routerLinkActive="active" >Forgot your password? </a>
+                </div>
+
+            </form>
+
+            <div *ngIf="this.status == true">
+              <button class="pink-btn" (click)="Logout()" title="LogOut">LogOut <i class="fa fa-long-arrow-right"
+                  aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- start-main-footer -->
+
+  <app-footer></app-footer>
+
+
+  <script>
+    $('.f-menu .collapse').collapse();
+
+  </script>
+
+</body>
+
+</html>

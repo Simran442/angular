@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <app-header></app-header>
+  <ng4-loading-spinner></ng4-loading-spinner>
+  <section class="headerFixed" *ngIf="!isLoading">
+    <section>
+      <div class="bred">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li><a [routerLink]="['/makeup']">MAKEUP</a></li>
+            <li><a [routerLink]="['/lips/81913872433']">Lips</a></li>
+            <li class="li1" style="display:none;"><a [routerLink]="['/lips/81913675825']">{{bred}}</a></li>
+            <li><a [routerLink]="['/']" routerLinkActive="active">{{this.products.title}}</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="single-product-page">
+        <div class="icon-bar">
+          <div class="banner-icon-sec">
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram" title="instagram"></i></a>
+            <a href="https://www.pinterest.co.uk/"><i class="fa fa-pinterest" title="pinterest"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook" title="facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa fa-twitter" title="twitter"></i></a>
+          </div>
+
+        </div>
+
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+              <div class="both-arrow preview horizontal slide" *ngIf="this.products.image != null else other_content">
+
+                <div class="preview-pic tab-content">
+
+                  <div class="tab-pane active" id="pic-0"><img src="{{activeProductImage}}" class="img" />
+                  </div>
+
+
+
+                </div>
+                <!--     <div id="preview" style="visibility: hidden;"></div> -->
+                <ul class="preview-thumbnail nav nav-tabs">
+
+                  <owl-carousel-o [options]="customOptions">
+                    <ng-container *ngFor="let image of variantImages;let j = index">
+                      <ng-template carouselSlide>
+                        <li class="active" (click)="changeActiveProductImage(image.src)"><a data-target="#pic-{{j+1}}"
+                            data-toggle="tab"><img src="{{image.src}}" id={{image.id}} /></a></li>
+                      </ng-template>
+                    </ng-container>
+                  </owl-carousel-o>
+                </ul>
+              </div>
+            </div>
+            <ng-template #other_content>
+              <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                <div class="preview horizontal">
+                  <img src="../assets/images/NoImageFound.png" alt="item">
+                </div>
+              </div>
+            </ng-template>
+
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+              <div class="product-description on-click-discription res-order">
+                <div class="natural-sec one">
+                  <div class="natural-title">
+                    <p class="natural" *ngIf="productIngrediant">{{productIngrediant.Natural}}% Natural</p>
+                  </div>
+                </div>
+                <h2 class="product-title two"><span class="p-title"> {{this.products.title}}</span><span
+                    class="product-price pullright-box"><b id="myId" #myId>$ {{this.price}}</b></span>
+                </h2>
+                <p class="product-meta-description three">
+                  {{shortdescription}}<b></b></p>
+                <a routerLink="/review/{{this.products.id}}" class="four"><i class="fa fa-heart"></i> <span
+                    class="number-sec">{{RatingAverage|number:'1.1-1'}} /
+                  </span><span class="review-sec">{{ratingSize}}
+                    Reviews</span></a>
+                <p class="text-title twelve" id="longdescription">{{longdescription}}</p>
+                <p class="size-text five" *ngIf="this.products.options[0].name != 'Title'"><span _ngcontent-c1=""
+                    class="size-inner">{{this.products.options[0].name}}:
+                  </span>{{this.products.options[0].values[0]}}</p>
+                <p class="size-text six" *ngIf="this.products.options[2]"><span _ngcontent-c1=""
+                    class="size-inner">{{this.products.options[2].name}}:
+                  </span>{{this.products.options[2].values[0]}}</p>
+
+                <div class="errorMsgs notification eight">
+                  <div style="display: none;" class="alert-box myclass warning">Please add a shade</div>
+                  <div style="display: none;" class="alert-box myclass failure">Out Of Stock</div>
+                  <div style="display: none;" class="alert-box myclass success"> {{ids}} Item has been
+                    added to cart
+                  </div>
+                </div>
+                <ul class="circle-sec nine"
+                  *ngIf="this.products.options[0].values&&this.products.options[1]&&this.products.options[0].values[0]!= 'Default Title' else other_div">
+                  <li class="shade-common" *ngFor="let item of products.options[1].values let i = index;"
+                    (click)="selectshades(item, this.products.variants[i].id, $event,this.products.variants[i])"
+                    (mouseover)="onMouseMove(item, this.products.variants[i].id, $event,this.products.variants[i])">
+                    <i [ngClass]="{'fa fa-circle': true }" [attr.initialColor]="item" [ngStyle]="{color:item}"></i>
+                  </li>
+
+                </ul>
+                <ng-template #other_div>
+                  <ul class="circle-sec">
+                    <li>Product has no variants</li>
+                  </ul>
+                </ng-template>
+
+                <div class="select-btn ten">
+                  <div class="row">
+                    <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9"
+                      *ngIf="this.products.options[0].values &&this.products.options[0].values[0]!= 'Default Title' else other_divs">
+                      <select class="form-control shades" name="shade" id="shedes" [(ngModel)]="selectedColorDropdown"
+                        name="selectedColorDropdown" #name
+                        (change)="selectshades('color', $event.target.value, $event,'variantId')">
+                        <option [value]="SelectAShade">select a shade</option>
+                        <option *ngFor="let items of products.variants let i = index;"
+                          [attr.initialColor]="items.option2" [value]="items.id">{{items.option2}}</option>
+                      </select>
+                    </div>
+
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 qunti">
+                      <div class="form-sec-title"
+                        *ngIf="this.products.options[0].values &&this.products.options[0].values[0]!= 'Default Title'">
+
+                        <div class="quantity buttons_added popup-button-quantity quan-buttons">
+                          <input type='button' value='-' class='minus' field='quantity' (click)="subs()" />
+                          <input type="number" step="1" name="quantity" min="0" value={{count}} #quantity
+                            title="Qhow-to-ues-secty" class="input-text qty text" size="4" pattern="" inputmode="">
+                          <input type='button' value='+' class='plus' field='quantity' (click)="add()" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart-btn eleven"
+                  *ngIf="this.products.options[0].values &&this.products.options[0].values[0]!= 'Default Title'">
+                  <button class="pink-btn text-center" type="button" (click)="addtocart(productvariant)">Add
+                    to Cart</button>
+                  <p class="italy-text textiright made-italy">Made in Italy</p>
+                </div>
+                <flash-messages></flash-messages>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--start-how-to-ues-sec -->
+
+    <div class="how-to-ues-sec">
+      <div class="left_sec"></div>
+      <div class="container">
+        <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+
+          <iframe class="embed-responsive-item" width="854" height="480" class="yvideo"
+            src="https://www.youtube.com/embed/qN3OueBm9F4?autoplay=1" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+
+          <button type="button" class="close" aria-label="Close" (click)="videopopup()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 how-to-ues-container onclick-colorfirst">
+            <div class="uses-sec">
+              <h3 class="ues-title onclick-page-div">How to Use:- {{bred}}</h3>
+
+              <!-- <div class="how-box-image">
+                <img src="../assets/images/single-img.jpg" alt="single-img">
+                <p class="how-text" *ngIf="productIngrediant">{{productIngrediant.How_to_Use}}</p>
+              </div> -->
+
+              <div class="how-box-image" *ngIf="productIngrediant else other_content">
+
+                <img (click)="videoplay()"
+                  src="http://ec2-13-58-229-161.us-east-2.compute.amazonaws.com:3000/be/uploads/{{productIngrediant.profile_Pic}}"
+                  id="headerVideoLink" target="_blank" style="width:100%">
+                <p class="how-text" *ngIf="productIngrediant">{{productIngrediant.How_to_Use}} {{bred}}</p>
+
+              </div>
+              <ng-template #other_content>
+                <img src="../assets/images/single-img.jpg" (click)="videoplay()" alt="single-img" id="headerVideoLink"
+                  target="_blank" style="width:100%">
+
+                <p class="how-text">Using your fingertips, take a small amount of cream, about the size of a pearl and
+                  apply with small touches to your forehead, cheeks and chin. Help it to absorb by using smoothing
+                  movements from the center of your face, working outward, and including your neck. Repeat morning and
+                  evening. For best results, start your routine with the Gelee Cleanser. Then apply the Cleansing
+                  Water,
+                  followed by the the Crème Gel Moisturizer</p>
+
+
+              </ng-template>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 how-to-ues-container onclick-colorsecond">
+            <div class="Key Ingredients-text">
+              <div class="row Key-right-sec">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <div class="colam-right-title">
+                    <h3 class="ues-title">Key Ingredients for {{bred}}</h3>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                      <div class="use-heading">
+                        <h5 class="Baobab-text">Baobab Seed Oil</h5>
+                        <p class="text-Dummy" *ngIf="productIngrediant">{{productIngrediant.Key_Ingrediants}}</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                      <div class="use-heading">
+                        <h5 class="Baobab-text">Jojoba Seed Oil</h5>
+                        <p class="text-Dummy">Dummy text: Its function as a filler or as a tool for comparing the visual
+                          impression of different typefaces
+                          Dummy text</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                      <div class="use-heading">
+                        <h5 class="Baobab-text">Kiwi Furit Extract</h5>
+                        <p class="text-Dummy">Dummy text: Its function as a filler or as a tool for comparing the visual
+                          impression of different typefaces
+                          Dummy text</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="use-product-part">
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="use-heading1">
+                          <h5 class="Baobab-text1">Mango Seed Butter</h5>
+                          <p class="text-Dummy1">Dummy text: Its function as a filler or as a tool for comparing the
+                            visual
+                            impression of different typefaces
+                            Dummy text</p>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="use-heading1">
+                          <h5 class="Baobab-text1">Sunflower Seed Oil</h5>
+                          <p class="text-Dummy1">Dummy text: Its function as a filler or as a tool for comparing the
+                            visual
+                            impression of different typefaces
+                            Dummy text</p>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="use-heading1">
+                          <h5 class="Baobab-text1">Passionfruit Oil</h5>
+                          <p class="text-Dummy1">Dummy text: Its function as a filler or as a tool for comparing the
+                            visual
+                            impression of different typefaces
+                            Dummy text</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 Ingredients-inner">
+                  <div id="demo" class="collapse Ingredients-section see-more-btn" *ngIf="productIngrediant" else
+                    other_contenct>
+                    <h5 class="enter-text">Ingredients:</h5>
+                    <p class="enter-content">
+                      {{productIngrediant.Ingredients}} </p>
+                    <ng-template #other_contenct>
+                      <h5 class="enter-text">Ingredients:</h5>
+                      <p class="enter-content">Actinidia Chinensis Fruit Extract / Actinidia Chinensis (Kiwi) Fruit
+                        Extract, Adansonia Digitata Seed Oil, Alcohol, Aqua / Water, Balanites Roxburghii Seed Oil,
+                        Benzoic Acid, Benzyl Alcohol, C10-18 Triglycerides, Candelilla/Jojoba/Rice Bran Polyglyceryl-3
+                        Esters, Cellulose Gum, Cetearyl Alcohol, Cetyl Alcohol, Glycerin, Glyceryl Stearate, Helianthus
+                        Annuus Seed Oil / Helianthus Annuus (Sunflower) Seed Oil, Isoamyl Laurate, Lauroyl Lysine,
+                        Mangifera Indica Seed Butter / Mangifera Indica (Mango) Seed Butter, Microcrystalline Cellulose,
+                        Oryza Sativa Starch / Oryza Sativa (Rice) Starch, Passiflora Edulis Seed Oil, Pentylene Glycol,
+                        Potassium Sorbate, Rosa Damascena Flower Water, SImmondsia Chinensis Seed Oil / Simmondsia
+                        Chinensis (Jojoaba) Seed Oil, Sodium Benzoate, Sodium Phytate, Sodium Stearoyl Lactylate,
+                        Tocopherol, Tridecane, Undecane, Xanthan Gum.</p>
+                    </ng-template>
+
+
+
+                  </div>
+                  <button class="seeMoreBtn collapsed" data-toggle="collapse" data-target="#demo"><span
+                      class="see-m">See
+                      More</span><span class="close-view">Close</span></button>
+                </div>
+
+                <div class="col-md-12 free-inner">
+                  <div class="free-section see-more-btn1 free-of-text">
+                    <h5 class="enter-text">Free of</h5>
+
+                    <p id="free-sho-content" class="collapse" *ngIf="productIngrediant">{{productIngrediant.Free_of}}
+                    </p>
+                  </div>
+                  <button class="seeMoreBtn collapsed" data-toggle="collapse" data-target="#free-sho-content"><span
+                      class="see-m">See
+                      More</span><span class="close-view">Close</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--start-innerbeauty-page -->
+    <div class="innerbeauty new-pairs">
+      <div class="container">
+        <div class="heading">
+          <h4>#innerbeautycosolutions</h4>
+          <p>Hashtag your photos to share your inner beauty solution & be featured on our site</p>
+        </div>
+      </div>
+      <div class="fhfj">
+        <div class="banner-carousel2">
+          <div class="container">
+            <div class="beauty-img instaImg newinsta">
+              <ul>
+                <owl-carousel-o [options]="images">
+                  <ng-container *ngFor="let image of InstaMedia.data">
+                    <ng-template carouselSlide>
+                      <li class="slide-images"><a href="{{image.link}}"><img
+                            src="{{image.images.standard_resolution.url}}"></a></li>
+                    </ng-template>
+                  </ng-container>
+                </owl-carousel-o>
+              </ul>
+
+            </div>
+          </div>
+        </div> <!-- carousel-item-->
+      </div> <!-- carouselExampleIndicators2 -->
+
+
+      <!-- <div class="mobile banner-carousel2">
+        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="beauty-img">
+                  <img src="../assets/images/b1.png" class="img-fluid">
+                  <img src="../assets/images/b2.png" class="img-fluid">
+                </div>
+              </div>
+            </div> 
+
+            <div class="carousel-item">
+              <div class="container">
+                <div class="beauty-img">
+                  <img src="../assets/images/b3.png" class="img-fluid">
+                  <img src="../assets/images/b4.png" class="img-fluid">
+                </div>
+              </div>
+            </div> 
+
+            <div class="carousel-item">
+              <div class="container">
+                <div class="beauty-img">
+                  <img src="../assets/images/b1.png" class="img-fluid">
+                  <img src="../assets/images/b2.png" class="img-fluid">
+                </div>
+              </div>
+
+            </div> 
+          </div> 
+
+          <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+          </a>
+
+        </div> 
+      </div> -->
+    </div> <!-- innerbeauty -->
+    <div class="container">
+      <hr>
+    </div>
+    <div class="new-items our-lineup well-part">
+      <div class="container">
+        <div class="heading">
+          <h4>Pairs Well With</h4>
+        </div>
+        <div class="banner-box">
+          <div class="slider-owl">
+            <div class="">
+
+              <!-- <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let items of products">
+                  <ng-template carouselSlide>
+                    <div class="item">
+                      <div class="main-skin-care-sec">
+                        <div class="skin-item">
+                          <h6 class="skin-new">NEW</h6>
+                          <div class="p-top-r">
+                            <span class="c1"></span>
+                            <span class="c2"></span>
+                            <span class="c3"></span>
+                            <span class="c4"></span>
+                          </div>
+                          <div class="skin-item-img">
+                            <img src="{{items.images[0].src}}" alt="items" routerLink="/onclick/{{items.id}}">
+                          </div>
+                          <div class="skin-item-des">
+                            <h6 class="rate_list"><img src="../assets/images/Heart.svg" class="img-fluid"> 4.5</h6>
+                            <h5>{{items.title}}</h5>
+                            <h6 class="m-y">{{items.body_html}}</h6>
+                            <h5 class="p_price">${{items.variants[0].price}}</h5>
+                            <button class="shop" (click)="popup(items.id)">Quick Shop</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o> -->
+            </div>
+          </div>
+        </div>
+      </div> <!-- container-->
+    </div> <!-- new -->
+
+    <div class="main-sec-overall">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="overall-review">
+              <h5 class="overall-review-text">Overall Review</h5>
+              <a><i class="fa fa-heart"></i> <span class="number-sec">{{RatingAverage| number:'1.1-1'}} /</span> <span
+                  class="review-sec">{{ratingSize}}
+                  Reviews</span></a>
+              <a routerLink="/review/{{this.products.id}}"><button routerLink="/review/{{this.products.id}}"
+                  class="leave-btn">Leave a Review</button></a>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="section-overall-rev">
+          <div class="section-overall" *ngFor="let rating of this.ratingReview">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="overall-review">
+                  <h5 class="overall-review-text-heading">Literally the best thing ever</h5>
+                  <a href="#"><i class="fa fa-heart"></i> <span class="number-sec"
+                      *ngIf="rating">{{rating.rating}}</span></a>
+                  <p class="overall-review-title" *ngIf="rating">{{rating.comments}}</p>
+                  <p class="overall-review-title1">Yes,Irecommend this product</p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="overall-review-right">
+                  <p class="overall-review-title-right"><b class="bold-text">Submittted:</b> 12 days ago</p>
+                  <p class="overall-review-title-right" *ngIf="rating"><b class="bold-text">By:</b> {{rating.nickname}}
+                  </p>
+
+                  <p class="overall-review-title-right" *ngIf="rating"><b class="bold-text">From:</b>
+                    {{rating.location}}</p>
+                  <a><i class="fa fa-check-square-o"></i> <span class="number-sec">Verified Reviewer</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+        </div>
+
+      </div>
+    </div>
+
+    <!--   <div class="container">
+      <div class="btn-next">
+        <span class="display-review">Displaying Review<b class="bold-title">1-3</b></span>
+        <div class="btn-previous">
+          <a href="#" class="previous">&laquo; Previous <span class="line">|</span> </a>
+          <a href="#" class="previous"> Next &raquo;</a>
+        </div>
+      </div>
+    </div> -->
+
+  </section>
+
+  <app-footer *ngIf="!isLoading"></app-footer>
+
+</body>
+
+</html>

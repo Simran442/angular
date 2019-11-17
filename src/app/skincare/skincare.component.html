@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<ng4-loading-spinner> </ng4-loading-spinner>
+
+<body>
+  <app-header></app-header>
+  <section class="headerFixed">
+    <div class="bred">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><a [routerLink]="['/Skincare']" routerLinkActive="active">SKINCARE</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="skin-banner-sec">
+      <div class="skin-item">
+        <div class="banner-skin-img">
+          <img src="../assets/images/banner-new.jpg" alt="banner-new">
+          <div class="skin-sec-text">
+            <h1>Skin Care</h1>
+          </div>
+        </div>
+      </div>
+    </div> <!-- banner-sec-->
+
+
+
+    <div class="skin-care">
+      <div class="makeup-heading">
+        <div class="container text-center"> </div>
+      </div> <!-- makeup-heading -->
+    </div> <!-- makeup -->
+
+    <div class="makeup-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="product-left-img">
+              <img src="../assets/images/lipsorignal.jpg" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="skin-care-product-des">
+              <div class="text-bg">
+                <span></span>
+                <h1>{{content}}</h1>
+              </div>
+              <p class="skin-care-text">{{description}}</p>
+              <button class="pink-btn-sets" type="button" routerLink="/skincare" title="Shop Now" id="products">Shop Now
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div> <!-- row -->
+      </div>
+    </div> <!-- makeup-sec -->
+
+
+
+    <div class="new-items our-lineup responsive-skin">
+      <div class="container">
+        <div class="heading head">
+          <h4 class="skin-cares">Featured Products</h4>
+        </div>
+        <div class="banner-box">
+          <div class="slider-owl">
+            <div class="">
+
+              <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let items of products">
+                  <ng-template carouselSlide>
+                    <div class="item">
+                      <div class="main-skin-care-sec">
+                        <div class="skin-item">
+                          <h6 class="skin-new">{{items.new}}</h6>
+                          <div class="p-top-r">
+                            <div class="p-top-r" *ngIf="items.options[1]">
+                              <span class="fa fa-circle" *ngFor="let item of items.variants; let i = index"
+                                [ngStyle]="{'color': item.option2}"
+                                (click)="selectshadess(item, item.id,item.option2, $event, items)"></span>
+                            </div>
+                          </div>
+                          <div class="skin-item-img" *ngIf="items.image != null else other_content ">
+                            <img src="{{items.activeVariant}}" alt="item" title="{{items.title}}"
+                              routerLink="/onclick/{{items.id}}">
+                          </div>
+                          <ng-template #other_content>
+                            <div class="skin-item-img">
+                              <img src="../assets/images/NoImageFound.png" alt="item">
+                            </div>
+                          </ng-template>
+                          <div class="skin-item-des">
+                            <h6 class="rate_list"><img src="../assets/images/Heart.svg" class="img-fluid"> 4.5</h6>
+                            <h5>{{items.title}}</h5>
+                            <h6 class="m-y" *ngIf="items.shortdescription">{{items.shortdescription}}</h6>
+                            <h5 class="p_price">$ {{items.activeprice}}</h5>
+
+                            <button class="shop" (click)="popup(items.id,items)" title="Quick Shop">Quick Shop</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+            </div>
+          </div>
+        </div>
+      </div> <!-- container-->
+    </div>
+
+
+
+    <!-- start-skin care-product -->
+    <div class="product-list">
+      <div class="main-Skincare-Product-sec res-skins">
+        <div class="new-items combinations top-product-list
+        ">
+          <div class="container">
+            <div _ngcontent-c1="" class="skin-care-heading">
+              <h4 _ngcontent-c1="" class="skin-bottom skin-resp">All Other Skincare Products</h4>
+            </div>
+            <div class="new-items our-lineup">
+              <div class="banner-box ">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4" *ngFor="let items of products">
+                      <div class="product-item-box">
+                        <div class="product-item">
+                          <h6 class="new-text">{{items.new}}</h6>
+                          <div class="dots-sec" *ngIf="items.options[1]">
+                            <span class="fa fa-circle" *ngFor="let item of items.variants; let i = index"
+                              [ngStyle]="{'color': item.option2}"
+                              (click)="selectshadess(item, item.id,item.option2, $event, items)"></span>
+                          </div>
+
+                          <div class="img-item-box" *ngIf="items.image != null else other_content ">
+                            <img src="{{items.activeVariant}}" alt="item" title="{{items.title}}"
+                              routerLink="/onclick/{{items.id}}">
+                          </div>
+                          <ng-template #other_content>
+                            <div class="img-item-box">
+                              <img src="../assets/images/NoImageFound.png" alt="item">
+                            </div>
+                          </ng-template>
+                          <div class="product-item-des">
+                            <h6 class="raiting"><img class="heart" src="../assets/images/Heart.svg" alt="Heart">4.5</h6>
+                            <h5 class="product-name">{{items.title}}</h5>
+
+                            <h6 class="Secondary-text" *ngIf="items.shortdescription">{{items.shortdescription}}</h6>
+                            <h5 class="price">$ {{items.activeprice}}</h5>
+                            <button class="btn-shop" (click)="popup(items.id,items)" title="Quick Shop">Quick
+                              Shop</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- container-->
+        </div> <!-- new-items -->
+      </div>
+    </div>
+  </section>
+
+  <div class="main-overlay">
+    <div class="modal fade" id="popup" role="dialog">
+      <div class="modal-dialog">
+
+        <div class="modal-content overlay">
+          <div class="modal-header">
+            <button type="button" (click)="closePopup()" class="close" data-dismiss="modal"><img
+                src="../assets/images/X.svg"></button>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="popup-sec">
+              <div class="container">
+                <div class="row" *ngIf="reviewProduct">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+                    *ngIf="this.reviewProduct.product.image != null else other_content">
+                    <div class="preview popup-view">
+                      <div class="preview-pic tab-content">
+
+                        <div class="tab-pane active" id="pic-0"><img src="{{activeProductImage}}" />
+                        </div>
+                      </div>
+                      <ul class="preview-thumbnail nav nav-tabs">
+                        <li (click)="changeActiveProductImage(image, image.id)"
+                          *ngFor="let image of variantImages;let j = index" class="active"><a data-target="#pic-{{j+1}}"
+                            data-toggle="tab"><img src="{{image.src}}" id="{{image.id}}" /></a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <ng-template #other_content>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div class="preview popup-view">
+                        <img src="../assets/images/NoImageFound.png" alt="item">
+                      </div>
+                    </div>
+                  </ng-template>
+
+
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                    <div class="product-description res-order">
+                      <h2 class="product-title one"><span
+                          class="p-title">{{this.reviewProduct.product.title}}</span><span
+                          class="product-price pullright-box"><b>$
+                            {{price}}</b></span>
+                      </h2>
+                      <p class="product-meta-description two" *ngIf="shortdescription">{{shortdescription}}<b></b></p>
+                      <a routerLink="/review/{{this.reviewProduct.product.id}}"><i class="fa fa-heart"></i> <span
+                          class="number-sec">4.5 / </span> <span class="review-sec">10 Review</span></a>
+                      <p class="text-title nine">{{longdescription}}</p>
+                      <p class="size-text four size-top" *ngIf="this.reviewProduct.product.options[0].name != 'Title'">
+                        <span class="size-inner">{{this.reviewProduct.product.options[0].name}}:</span>
+                        {{this.reviewProduct.product.options[0].values[0]}} </p>
+                      <p class="size-text five" *ngIf="this.reviewProduct.product.options[2]"><span
+                          class="size-inner">{{this.reviewProduct.product.options[2].name}}:</span>
+                        {{this.reviewProduct.product.options[2].values[0]}} </p>
+
+                      <div class="errorMsgs notification">
+                        <div style="display: none;" class="alert-box myclass warning">Please add a shade</div>
+                        <div style="display: none;" class="alert-box myclass failure">Out Of Stock</div>
+                        <div style="display: none;" class="alert-box myclass success">{{ids}} Product has been
+                          added to cart
+                        </div>
+                      </div>
+                      <ul class="circle-sec six"
+                        *ngIf="this.reviewProduct.product.options[1]&&this.reviewProduct.product.options[0].values &&this.reviewProduct.product.options[0].values[0]!= 'Default Title' else other_div">
+
+                        <li class="shade-common"
+                          *ngFor="let item of reviewProduct.product.options[1].values let i = index;"
+                          (click)="selectshades(item, this.reviewProduct.product.variants[i].id, $event,this.reviewProduct.product.variants[i] )"
+                          (mouseover)="onMouseMove(item, this.reviewProduct.product.variants[i].id, $event,this.reviewProduct.product.variants[i])">
+                          <i [ngClass]="{'fa fa-circle': true, 'active':this.reviewProduct.product.variants[i].id==selectedColorDropdown }"
+                            [attr.initialColor]="item"
+                            [ngStyle]="{color:item, 'background-color':this.reviewProduct.product.variants[i].id==selectedColorDropdown ? itemsColour :''}"></i>
+                        </li>
+                      </ul>
+
+                      <ng-template #other_div>
+
+                        <ul class="circle-sec">
+                          <li>Product has no variants</li>
+                        </ul>
+                      </ng-template>
+
+
+
+                      <div class="select-btn seven">
+                        <div class="row">
+                          <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 "
+                            *ngIf="this.reviewProduct.product.options[0].values &&this.reviewProduct.product.options[0].values[0]!= 'Default Title' else other_divs">
+                            <select class="form-control shades" id="shedes" [(ngModel)]="selectedColorDropdown"
+                              name="selectedColorDropdown" #name
+                              (change)="selectshades('color',$event.target.value,$event,'variantId')">
+                              <option [value]="SelectAShade">select a shade</option>
+                              <option *ngFor="let items of reviewProduct.product.variants"
+                                [attr.initialColor]="items.option2" [value]="items.id">
+                                {{items.option2}}</option>
+
+                            </select>
+
+                          </div>
+
+                          <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                            <div class="form-sec-title"
+                              *ngIf="this.reviewProduct.product.options[0].values &&this.reviewProduct.product.options[0].values[0]!= 'Default Title'">
+
+                              <div class="quantity buttons_added popup-button-quantity quan-buttons">
+                                <input type='button' value='-' class='minus' field='quantity' (click)="sub()" />
+                                <input type="number" step="1" name="quantity" min="0" value={{count}} #quantity
+                                  title="Qhow-to-ues-secty" class="input-text qty text" size="4" pattern=""
+                                  inputmode="">
+                                <input type='button' value='+' class='plus' field='quantity' (click)="add()" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cart-btn eight"
+                        *ngIf="this.reviewProduct.product.options[0].values &&this.reviewProduct.product.options[0].values[0]!= 'Default Title'">
+
+                        <button class="pink-btn text-center" type="button" title="add to cart"
+                          (click)="addtocart(productvariant)">Add
+                          to Cart</button>
+
+
+                        <p class="italy-text textiright made-italy">Made in Italy</p>
+                      </div>
+                      <ul class="media-icon-sec nine">
+                        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.pinterest.co.uk/"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+  <!-- start-footer -->
+
+  <script>
+    $('.f-menu .collapse').collapse();
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+   /*.countity-bag*/
+
+
+   .right-div a.countity {
+    position: relative;
+}   
+.countity span {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50px;
+    background: #be3d73;
+    top: -11px;
+    right: -9px;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    line-height: 17px;
+}

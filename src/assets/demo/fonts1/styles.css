@@ -1,0 +1,32 @@
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Bold';
+  src: url('AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),  url('AvenirNextLTPro-Bold.otf')  format('opentype'),
+	     url('AvenirNextLTPro-Bold.woff') format('woff'), url('AvenirNextLTPro-Bold.ttf')  format('truetype'), url('AvenirNextLTPro-Bold.svg#AvenirNextLTPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Demi';
+  src: url('AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),  url('AvenirNextLTPro-Demi.otf')  format('opentype'),
+	     url('AvenirNextLTPro-Demi.woff') format('woff'), url('AvenirNextLTPro-Demi.ttf')  format('truetype'), url('AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Medium';
+  src: url('AvenirNextLTPro-Medium.eot?#iefix') format('embedded-opentype'),  url('AvenirNextLTPro-Medium.otf')  format('opentype'),
+	     url('AvenirNextLTPro-Medium.woff') format('woff'), url('AvenirNextLTPro-Medium.ttf')  format('truetype'), url('AvenirNextLTPro-Medium.svg#AvenirNextLTPro-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Regular';
+  src: url('AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),  url('AvenirNextLTPro-Regular.otf')  format('opentype'),
+	     url('AvenirNextLTPro-Regular.woff') format('woff'), url('AvenirNextLTPro-Regular.ttf')  format('truetype'), url('AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,341 @@
+<header class="main-header">
+  <div class="container-fluid">
+    <div class="top-header">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <h6>FREE SHIPPING ON $35+ /FREE RETURNS</h6>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="right-div">
+            <button class="login" title="Login" (click)="login()" routerLinkActive="active">LOGIN</button>
+            <form id="demo-2">
+              <input type="search" placeholder="Search">
+              <a class="countity" (click)="aadtocart()" data-toggle="modal" data-target="#imagesBag"><img
+                  src="../assets/images/Bag.svg" class="imagesBag">
+                <span>{{quantity}}</span>
+              </a>
+            </form>
+          </div> <!-- right-div -->
+        </div>
+      </div>
+    </div> <!-- top-header -->
+
+    <div class="header-logo text-center" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <a [routerLink]="['']"><img src="../assets/images/logo.png" class="img-fluid" title="home"
+          [routerLink]="['']" /></a>
+    </div> <!-- top-header -->
+
+    <ul class="nav justify-content-center">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/new" routerLinkActive="active" title="New">New</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Skincare" routerLinkActive="active" title="Skin Care">SkinCare</a>
+      </li>
+      <li class="nav-item dropdown makeup1 parent-container-dropdown">
+        <a class="nav-link" routerLink="/makeup" routerLinkActive="active" title="Makeup">Makeup</a>
+        <div class="dropdown-content makeup">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+                <li>
+                  <a class="makeup" routerLink="/lips/81913872433" routerLinkActive="active" title="Lips"
+                    (click)="getbred('')">Lips</a>
+                </li>
+                <li (click)="checkbox('81913675825',$event,'Lipstick')">
+                  <a class="makeup" routerLink="/lips/81913675825" routerLinkActive="active" title="Lipstick"
+                    (click)="getbred('Lipstick')">Lipstick</a>
+                </li>
+                <li (click)="checkbox('88418123825',$event,'Lip Sheer')">
+                  <a class="makeup" routerLink="/lips/88418123825" routerLinkActive="active" title="Lip Sheer"
+                    (click)="getbred('Lip Sheer')">Lip Sheer</a>
+                </li>
+                <li (click)="checkbox('81913741361',$event,'Lip Gloss')">
+                  <a class="makeup" routerLink="/lips/81913741361" routerLinkActive="active" title="Lip Gloss"
+                    (click)="getbred('Lip Gloss')">Lip Gloss</a>
+                </li>
+                <li (click)="checkbox('81913774129',$event,'Lip Oil')">
+                  <a class="makeup" routerLink="/lips/81913774129" routerLinkActive="active" title="Lip Oil"
+                    (click)="getbred('Lip Oil')">Lip Oil</a>
+                </li>
+                <li (click)="checkbox('81913806897',$event,'Lip Balm')">
+                  <a class="makeup" routerLink="/lips/81913806897" routerLinkActive="active" title="Lip Balm"
+                    (click)="getbred('Lip Balm')">Lip Balm</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li (click)="checkbox('81913905201',$event,'Eyes')">
+                  <a class="makeup" routerLink="/eyes/81913905201" routerLinkActive="active" title="Eyes"
+                    (click)="getbred('')">Eyes</a>
+                </li>
+                <li (click)="checkbox('81913479217',$event,'Mascara')">
+                  <a class="makeup" routerLink="/eyes/81913479217" routerLinkActive="active" title="Mascara"
+                    (click)="getbred('Mascara')">Mascara</a>
+                </li>
+                <li (click)="checkbox('81913413681',$event,'Eye Shadow')">
+                  <a class="makeup" routerLink="/eyes/81913413681" routerLinkActive="active" title="Eye Shadow"
+                    (click)="getbred('Eye Shadow')">Eye Shadow</a>
+                </li>
+                <li (click)="checkbox('81913446449',$event,'Eye Liner')">
+                  <a class="makeup" routerLink="/eyes/81913446449" routerLinkActive="active" title="Eye Liner"
+                    (click)="getbred('Eye Liner')">Eye Liner</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li (click)="checkbox('81913937969',$event,'Face')">
+                  <a class="makeup" routerLink="/face/81913937969" routerLinkActive="active" title="Face"
+                    (click)="getbred('')">Face</a>
+                </li>
+                <li (click)="checkbox('81913511985',$event,'Foundation')">
+                  <a class="makeup" routerLink="/face/81913511985" routerLinkActive="active" title="Foundation"
+                    (click)="getbred('Foundation')">Foundation</a>
+                </li>
+                <li (click)="checkbox('81913544753',$event,'Concealer')">
+                  <a class="makeup" routerLink="/face/81913544753" routerLinkActive="active" title="Concealer"
+                    (click)="getbred('Concealer')">Concealer</a>
+                </li>
+                <li (click)="checkbox('81913610289',$event,'Blush')">
+                  <a class="makeup" routerLink="/face/81913610289" routerLinkActive="active" title="Blush">Blush</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="shop-all">
+            <i class="fa fa-caret-right" aria-hidden="true" title="Shop All MakeUp"></i><a routerLink="/allmakeup">Shop
+              All Makeup</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Sets" routerLinkActive="active" title="Sets">Sets</a>
+      </li>
+      <li class="nav-item dropdown about1">
+        <a class="nav-link" routerLink="/AboutUs" routerLinkActive="active" title="About">About</a>
+        <div class="dropdown-content about">
+          <ul class="text-center">
+            <li>
+              <a routerLink="/AboutUs" routerLinkActive="active" title="About Us">About Us</a>
+            </li>
+            <li>
+              <a routerLink="/AboutUs" routerLinkActive="active" title="Our Story">Our Story</a>
+            </li>
+            <li>
+              <a routerLink="/AboutUs" routerLinkActive="active" title="Founder">Founder</a>
+            </li>
+            <li>
+              <a routerLink="/AboutUs" routerLinkActive="active" title="Naturopath">Naturopath</a>
+            </li>
+            <li>
+              <a routerLink="/Ingredients" routerLinkActive="active" title="Ingredients">Ingredients</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/blog" routerLinkActive="active" title="Blog">Blog</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<header class="mobile-header">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-md">
+      <div class="row w-100">
+        <div class="col-4">
+          <button class="navbar-toggler navbar-toggler-right collapsed close_div" type="button" data-toggle="collapse"
+            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="close_font close" (click)="crossBar()">X</span>
+            <span class="navbar-toggler-icon" (click)="searchBar()"></span></button>
+
+        </div>
+
+        <div class="col-4 text-center">
+          <a class="navbar-brand" [routerLink]="['/']"><img src="../assets/images/mobile-logo.png"
+              class="img-fluid"></a>
+        </div>
+
+
+
+        <div class="col-4">
+          <div class="right-div">
+            <button class="login" routerLinkActive="active" (click)="login()">LOGIN</button>
+            <form id="demo-2">
+              <input type="search" placeholder="Search">
+              <!--       <a class="countity" data-toggle="modal" (click)="aadtocart()" data-target="#imagesBag">
+                <img src="../assets/images/Bag.svg" class="imagesBag" title="bag">
+                <span>{{this.addtoCartCount}}</span>
+
+              </a> -->
+
+              <a class="countity" (click)="aadtocart()" data-toggle="modal" data-target="#imagesBag"><img
+                  src="../assets/images/Bag.svg" class="imagesBag">
+                <span>{{quantity}}</span>
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="f-menu">
+          <div id="accordion1">
+            <div class="card">
+              <div class="" id="headingOne1">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true"
+                    aria-controls="collapseOne1" [routerLink]="['/new']" routerLinkActive="active"> New</button>
+                </h5>
+              </div>
+
+              <!--   <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne1" data-parent="#accordion1">
+                <div class="card-body">Lorem</div>
+              </div> -->
+            </div>
+            <div class="card">
+              <div class="" id="headingTwo2">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo2"
+                    aria-expanded="false" aria-controls="collapseTwo2" [routerLink]="['/Skincare']"
+                    routerLinkActive="active">Skincare</button>
+                </h5>
+              </div>
+              <!--   <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordion1">
+                <div class="card-body">Lorem</div>
+              </div> -->
+            </div>
+
+            <div class="card">
+              <div class="" id="headingThree3">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree3"
+                    aria-expanded="false" aria-controls="collapseThree3" [routerLink]="['/makeup']"
+                    routerLinkActive="active"> Makeup</button>
+                </h5>
+              </div>
+              <div id="collapseThree3" class="collapse" aria-labelledby="headingThree3" data-parent="#accordion1">
+                <div class="card-body">
+                  <ul>
+                    <li>
+                      <a routerLink="/lips/81913872433" routerLinkActive="active" title="Lips">Lips</a>
+                    </li>
+                    <li>
+                      <a routerLink="/lips/81913675825" routerLinkActive="active" title="Lipstick">Lipstick</a>
+                    </li>
+                    <li>
+                      <a routerLink="/lips/88418123825" routerLinkActive="active" title="Lip Sheer">Lip Sheer</a>
+                    </li>
+                    <li>
+                      <a routerLink="/lips/81913741361" routerLinkActive="active" title="Lip Gloss">Lip Gloss</a>
+                    </li>
+                    <li>
+                      <a routerLink="/lips/81913774129" routerLinkActive="active" title="Lip Oil">Lip Oil</a>
+                    </li>
+                    <li>
+                      <a routerLink="/lips/81913806897" routerLinkActive="active" title="Lip Balm">Lip Balm</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a routerLink="/eyes/81913905201" routerLinkActive="active" title="Eyes">Eyes</a>
+                    </li>
+                    <li>
+                      <a routerLink="/eyes/81913479217" routerLinkActive="active" title="Mascara">Mascara</a>
+                    </li>
+                    <li>
+                      <a routerLink="/eyes/81913413681" routerLinkActive="active" title="Eye Shadow">Eye Shadow</a>
+                    </li>
+                    <li>
+                      <a routerLink="/eyes/81913446449" routerLinkActive="active" title="Eye Liner">Eye Liner</a>
+                    </li>
+
+                  </ul>
+                  <ul>
+                    <li>
+                      <a routerLink="/face/81913937969" routerLinkActive="active" title="Face">Face</a>
+                    </li>
+                    <li>
+                      <a routerLink="/face/81913511985" routerLinkActive="active" title="Foundation">Foundation</a>
+                    </li>
+                    <li>
+                      <a routerLink="/face/81913544753" routerLinkActive="active" title="Concealer">Concealer</a>
+                    </li>
+                    <li>
+                      <a routerLink="/face/81913610289" routerLinkActive="active" title="Blush">Blush</a>
+                    </li>
+                  </ul>
+
+                  <div class="shop-all">
+                    <i class="fa fa-caret-right" aria-hidden="true"></i><a routerLink="/allmakeup">Shop All Makeup</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="" id="headingFour4">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour4"
+                    aria-expanded="false" aria-controls="collapseFour4" routerLink="/Sets"> Sets</button>
+                </h5>
+              </div>
+              <!--  <div id="collapseFour4" class="collapse" aria-labelledby="headingFour4" data-parent="#accordion1">
+                <div class="card-body">Lorem</div>
+              </div> -->
+            </div>
+
+            <div class="card">
+              <div class="" id="headingFive5">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive5"
+                    aria-expanded="false" aria-controls="collapseFive5" routerLink="/AboutUs"
+                    routerLinkActive="active">About</button>
+                </h5>
+              </div>
+              <div id="collapseFive5" class="collapse" aria-labelledby="headingFive5" data-parent="#accordion1">
+                <div class="card-body">
+                  <ul class="text-center">
+                    <li>
+                      <a routerLink="/AboutUs" routerLinkActive="active">About Us</a>
+                    </li>
+                    <li>
+                      <a routerLink="/AboutUs" routerLinkActive="active" id="scorll1">Our Story</a>
+                    </li>
+                    <li>
+                      <a routerLink="/AboutUs" routerLinkActive="active">Founder</a>
+                    </li>
+                    <li>
+                      <a routerLink="/AboutUs" routerLinkActive="active">Naturopath</a>
+                    </li>
+                    <li>
+                      <a routerLink="/Ingredients" routerLinkActive="active">Ingredients</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="" id="headingSix6">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix6"
+                    aria-expanded="false" aria-controls="collapseSix6" routerLink="/blog"
+                    routerLinkActive="active">Blog</button>
+                </h5>
+              </div>
+              <!--             <div id="collapseSix6" class="collapse" aria-labelledby="headingSix6" data-parent="#accordion1">
+                <div class="card-body">Lorem</div>
+              </div> -->
+            </div>
+          </div> <!-- accordion1 -->
+        </div>
+      </div> <!-- navbar-collapse-->
+    </nav>
+  </div>
+</header> <!-- mobile-header -->

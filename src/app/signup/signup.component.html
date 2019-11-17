@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<ng4-loading-spinner> </ng4-loading-spinner>
+
+<body>
+  <app-header></app-header>
+
+  <section class="headerFixed">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div class="top_activate">
+            <div class="activate_account">
+              <h1>Sign Up</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="new-sign-top">
+          <div class="new-sign-up">
+            <form [formGroup]="registerFormId" (ngSubmit)="onSubmit()">
+              <div class="errorMsg ">
+                <div class="alert-box success"></div>
+                <div class="alert-box failure"></div>
+
+              </div>
+              <div class="row form-group">
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form-group">
+                  <div class="new-form-sec form-group">
+                    <input type="text" formControlName="first_name" placeholder="First name" class="form-control"
+                      [ngClass]="{ 'is-invalid': submitted && f.first_name.errors }">
+                    <div *ngIf="submitted && f.first_name.errors" class="invalid-feedback">
+                      <div *ngIf="f.first_name.errors.required">First Name is required</div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form-group">
+                  <div class="new-form-sec form-group">
+                    <input type="text" formControlName="last_name" placeholder="Last name" class="form-control"
+                      [ngClass]="{ 'is-invalid': submitted && f.last_name.errors }">
+                    <div *ngIf="submitted && f.last_name.errors" class="invalid-feedback">
+                      <div *ngIf="f.last_name.errors.required">Last Name is required</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 form-group">
+                  <div class="new-form-sec form-group">
+                    <input type="text" formControlName="Username" placeholder="Username" class="form-control"
+                      [ngClass]="{ 'is-invalid': submitted && f.Username.errors }">
+                    <div *ngIf="submitted && f.Username.errors" class="invalid-feedback">
+                      <div *ngIf="f.Username.errors.required">Username is required</div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 form-group">
+                  <div class="new-form-sec form-group">
+                    <input type="email" formControlName="email" placeholder="Enter your Email" class="form-control"
+                      [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                      <div *ngIf="f.email.errors.required">email is required</div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 form-group">
+                  <div class="new-form-sec form-group">
+                    <input type="number" placeholder="phone" formControlName="phone" class="form-control"
+                      [ngClass]="{ 'is-invalid': submitted && f.phone.errors }">
+                    <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                      <div *ngIf="f.phone.errors.required">phone is required</div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <button _ngcontent-c6="" class="pink-btn new-pos">Sign Up <i _ngcontent-c6="" aria-hidden="true"
+                      class="fa fa-long-arrow-right"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="home-overlay">
+      <div class="modal fade" id="Thanku" role="dialog">
+        <div class="modal-dialog">
+
+          <div class="modal-content overlay">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><img src="../assets/images/X.svg"></button>
+            </div>
+            <div class="modal-body">
+              <h1>Join the<br>Inner Circle</h1>
+              <h5>Save Up & Save 15%</h5>
+              <h2>Thank You for Signup. Please check your email</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start-main-footer -->
+
+  <app-footer></app-footer>
+
+
+  <script>
+    $('.f-menu .collapse').collapse();
+
+  </script>
+
+</body>
+
+</html>

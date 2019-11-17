@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+  <app-header></app-header>
+  <ng4-loading-spinner> </ng4-loading-spinner>
+  <section class="headerFixed">
+    <div class="bred">
+      <div class="container">
+        <ul class="breadcrumb">
+
+          <li><a [routerLink]="['/makeup']" routerLinkActive="active">MAKEUP</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="makeup">
+      <div class="makeup-heading">
+        <div class="container text-center">
+          <div class="make-heart" style="background-image:url(../assets/images/Heart_Loop.svg)">
+
+            <h1>Makeup</h1>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <!-- makeup-heading -->
+
+      <div class="makeup-heading mobile-view">
+        <div class="container">
+          <h1>Makeup</h1>
+        </div>
+      </div>
+      <!-- makeup-heading -->
+
+    </div>
+    <!-- makeup -->
+
+
+    <div class="makeup-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="product-des mobile-h1">
+              <div class="text-bg">
+                <span></span>
+                <h1>Lips</h1>
+              </div>
+            </div>
+            <div class="product-left-img product-left-iimg">
+              <img src="../assets/images/lipslanding.jpg" class="makeup-image">
+              <span></span>
+              <span class="background-box "></span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="product-des product_new">
+              <div class="text-bg">
+                <span></span>
+                <h1>Lips</h1>
+              </div>
+              <p>{{description}}</p>
+
+
+              <button class="pink-btn" routerLink="/lips/81913872433" type="button" title="Shop All Makeup">Shop All
+                Makeup <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+    </div>
+    <!-- makeup-sec -->
+
+    <div class="new-items our-lineup">
+      <div class="container" style="max-width:1140px">
+        <div class="heading top-makeup">
+          <h4>Featured Lip Products</h4>
+        </div>
+        <div class="banner-box">
+          <div class="slider-owl">
+            <div class="">
+
+              <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let items of lipsProduct">
+                  <ng-template carouselSlide>
+                    <div class="item">
+                      <div class="main-skin-care-sec">
+                        <div class="skin-item">
+                          <h6 class="skin-new">{{items.new}}</h6>
+                          <div class="p-top-r">
+                            <div class="p-top-r" *ngIf="items.options[1]">
+                              <span class="fa fa-circle" *ngFor="let item of items.variants; let i = index"
+                                [ngStyle]="{'color': item.option2}"
+                                (click)="selectshadess(item, item.id,item.option2, $event, items)"></span>
+                            </div>
+                          </div>
+                          <div class="skin-item-img" *ngIf="items.image != null else other_content ">
+                            <img src="{{items.activeVariant}}" alt="item" title="{{items.title}}"
+                              routerLink="/onclick/{{items.id}}">
+                          </div>
+                          <ng-template #other_content>
+                            <div class="skin-item-img">
+                              <img src="../assets/images/NoImageFound.png" alt="item">
+                            </div>
+                          </ng-template>
+                          <div class="skin-item-des">
+                            <h6 class="rate_list"><img src="../assets/images/Heart.svg" class="img-fluid"> 4.5</h6>
+                            <h5>{{items.title}}</h5>
+                            <h6 class="m-y" *ngIf="items.shortdescription">{{items.shortdescription}}</h6>
+                            <h5 class="p_price">$ {{items.activeprice}}</h5>
+                            <button class="shop" (click)="popup(items.id,items)" title="Quick Shop">Quick Shop</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+            </div>
+          </div>
+        </div>
+      </div> <!-- container-->
+    </div>
+    <!-- new-items -->
+
+
+    <div class="makeup-sec right">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pull-right">
+            <div class="product-des mobile-h1">
+              <div class="text-bg">
+                <span></span>
+                <h1>Eyes</h1>
+              </div>
+            </div>
+            <div class="product-left-img">
+              <img src="../assets/images/eyelanding.jpg" class="img-fluid eyes-d  makeup-image">
+              <span class="eyes"></span>
+              <span class="background-box-eyes"></span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pull-left face-text">
+            <div class="product-des mid_product eye-mid">
+              <div class="text-bg">
+                <span></span>
+                <h1>Eyes</h1>
+              </div>
+              <p>{{eyedescription}}.</p>
+              <button class="pink-btn" type="button" routerLink="/eyes/81913905201" title="Shop All Makeup">Shop All
+                Makeup
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+    </div>
+    <!-- makeup-sec right -->
+
+
+
+
+
+    <div class="new-items our-lineup">
+      <div class="container">
+        <div class="heading top-makeups">
+          <h4>Featured Eye Products</h4>
+        </div>
+        <div class="banner-box">
+          <div class="slider-owl">
+            <div class="">
+
+              <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let items of eyesProduct">
+                  <ng-template carouselSlide>
+                    <div class="item">
+                      <div class="main-skin-care-sec">
+                        <div class="skin-item">
+                          <h6 class="skin-new">NEW</h6>
+                          <div class="p-top-r">
+                            <div class="p-top-r" *ngIf="items.options[1]">
+                              <span class="fa fa-circle" *ngFor="let item of items.variants; let i = index"
+                                [ngStyle]="{'color': item.option2}"
+                                (click)="selectshadess(item, item.id,item.option2, $event, items)"></span>
+                            </div>
+                          </div>
+                          <div class="skin-item-img" *ngIf="items.image != null else other_content ">
+                            <img src="{{items.activeVariant}}" alt="item" title="{{items.title}}"
+                              routerLink="/onclick/{{items.id}}">
+                          </div>
+                          <ng-template #other_content>
+                            <div class="skin-item-img">
+                              <img src="../assets/images/NoImageFound.png" alt="item">
+                            </div>
+                          </ng-template>
+                          <div class="skin-item-des">
+                            <h6 class="rate_list"><img src="../assets/images/Heart.svg" class="img-fluid"> 4.5</h6>
+                            <h5>{{items.title}}</h5>
+                            <h6 class="m-y" *ngIf="items.shortdescription">{{items.shortdescription}}</h6>
+                            <h5 class="p_price">$ {{items.activeprice}}</h5>
+                            <button class="shop" (click)="popup(items.id,items)" title="Quick Shop">Quick Shop</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+            </div>
+          </div>
+        </div>
+      </div> <!-- container-->
+    </div>
+    <!-- new-items -->
+
+
+    <div class="makeup-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="product-des mobile-h1">
+              <div class="text-bg">
+                <span></span>
+                <h1>Face</h1>
+              </div>
+            </div>
+            <div class="product-left-img">
+              <img src="../assets/images/facelanding.jpg" class="img-fluid makeup-image">
+              <span class="front-box"></span>
+              <span class="background-box"></span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="product-des product_bot face-mid">
+              <div class="text-bg">
+                <span></span>
+                <h1>Face</h1>
+              </div>
+              <p>{{facedescription}}.</p>
+              <button class="pink-btn" type="button" routerLink="/face/81913937969" title="Shop All Makeup">Shop All
+                Makeup
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+    </div>
+    <!-- makeup-sec -->
+
+    <div class="new-items our-lineup">
+      <div class="container">
+        <div class="heading top-makeupsa">
+          <h4>Featured Face Products</h4>
+        </div>
+        <div class="banner-box">
+          <div class="slider-owl">
+            <div class="">
+              <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let items of faceProduct">
+                  <ng-template carouselSlide>
+                    <div class="item">
+                      <div class="main-skin-care-sec">
+                        <div class="skin-item">
+                          <h6 class="skin-new">{{items.new}}</h6>
+                          <div class="p-top-r">
+                            <div class="p-top-r" *ngIf="items.options[1]">
+                              <span class="fa fa-circle" *ngFor="let item of items.variants; let i = index"
+                                [ngStyle]="{'color': item.option2}"
+                                (click)="selectshadess(item, item.id,item.option2, $event, items)"></span>
+                            </div>
+                          </div>
+                          <div class="skin-item-img" *ngIf="items.image != null else other_content ">
+                            <img src="{{items.activeVariant}}" alt="item" title="{{items.title}}"
+                              routerLink="/onclick/{{items.id}}">
+                          </div>
+                          <ng-template #other_content>
+                            <div class="skin-item-img">
+                              <img src="../assets/images/NoImageFound.png" alt="item">
+                            </div>
+                          </ng-template>
+                          <div class="skin-item-des">
+                            <h6 class="rate_list"><img src="../assets/images/Heart.svg" class="img-fluid"> 4.5</h6>
+                            <h5>{{items.title}}</h5>
+                            <h6 class="m-y" *ngIf="items.shortdescription">{{items.shortdescription}}</h6>
+                            <h5 class="p_price">$ {{items.activeprice}}</h5>
+                            <button class="shop" (click)="popup(items.id,items)" title="Quick Shop">Quick Shop</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+            </div>
+          </div>
+        </div>
+      </div> <!-- container-->
+    </div>
+    <!-- new-items -->
+    <div class="main-overlay">
+      <div class="modal fade" id="popup" role="dialog">
+        <div class="modal-dialog">
+
+          <div class="modal-content overlay">
+            <div class="modal-header">
+              <button type="button" (click)="closePopup()" class="close" data-dismiss="modal"><img
+                  src="../assets/images/X.svg"></button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="popup-sec">
+                <div class="container">
+                  <div class="row" *ngIf="reviewProduct">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+                      *ngIf="this.reviewProduct.product.image != null else other_content">
+                      <div class="preview popup-view">
+                        <div class="preview-pic tab-content">
+
+                          <div class="tab-pane active" id="pic-0"><img src="{{activeProductImage}}" />
+                          </div>
+                        </div>
+                        <ul class="preview-thumbnail nav nav-tabs">
+                          <li (click)="changeActiveProductImage(image, image.id)"
+                            *ngFor="let image of variantImages;let j = index" class="active"><a
+                              data-target="#pic-{{j+1}}" data-toggle="tab"><img src="{{image.src}}"
+                                id="{{image.id}}" /></a></li>
+                        </ul>
+
+                      </div>
+                    </div>
+                    <ng-template #other_content>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="preview popup-view">
+                          <img src="../assets/images/NoImageFound.png" alt="item">
+                        </div>
+                      </div>
+                    </ng-template>
+
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                      <div class="product-description res-order">
+                        <h2 class="product-title one"><span
+                            class="p-title">{{this.reviewProduct.product.title}}</span><span
+                            class="product-price pullright-box"><b>$
+                              {{price}}</b></span>
+                        </h2>
+                        <p class="product-meta-description two" *ngIf="shortdescription">{{shortdescription}}<b></b></p>
+                        <a routerLink="/review/{{this.reviewProduct.product.id}}" class="three"><i
+                            class="fa fa-heart"></i> <span class="number-sec">4.5 / </span> <span class="review-sec">10
+                            Review</span></a>
+                        <p class="text-title nine">{{longdescription}}</p>
+                        <p class="size-text four size-top"
+                          *ngIf="this.reviewProduct.product.options[0].name != 'Title'"><span
+                            class="size-inner">{{this.reviewProduct.product.options[0].name}}:</span>
+                          {{this.reviewProduct.product.options[0].values[0]}} </p>
+                        <p class="size-text five" *ngIf="this.reviewProduct.product.options[2]"><span
+                            class="size-inner">{{this.reviewProduct.product.options[2].name}}:</span>
+                          {{this.reviewProduct.product.options[2].values[0]}} </p>
+                        <div class="errorMsgs notification">
+                          <div style="display: none;" class="alert-box myclass warning">Please add a shade</div>
+                          <div style="display: none;" class="alert-box myclass failure">Out Of Stock</div>
+                          <div style="display: none;" class="alert-box myclass success">{{ids}} Product has been
+                            added to cart
+                          </div>
+                        </div>
+                        <ul class="circle-sec six"
+                          *ngIf="this.reviewProduct.product.options[1]&&this.reviewProduct.product.options[0].values &&this.reviewProduct.product.options[0].values[0]!= 'Default Title' else other_div">
+
+                          <li class="shade-common"
+                            *ngFor="let item of reviewProduct.product.options[1].values let i = index;"
+                            (click)="selectshades(item, this.reviewProduct.product.variants[i].id, $event,this.reviewProduct.product.variants[i] )"
+                            (mouseover)="onMouseMove(item, this.reviewProduct.product.variants[i].id, $event,this.reviewProduct.product.variants[i])">
+                            <i [ngClass]="{'fa fa-circle': true, 'active':this.reviewProduct.product.variants[i].id==selectedColorDropdown }"
+                              [attr.initialColor]="item"
+                              [ngStyle]="{color:item, 'background-color':this.reviewProduct.product.variants[i].id==selectedColorDropdown ? itemsColour :''}"></i>
+                          </li>
+                        </ul>
+
+                        <ng-template #other_div>
+
+                          <ul class="circle-sec">
+                            <li>Product has no variants</li>
+                          </ul>
+                        </ng-template>
+
+
+
+                        <div class="select-btn seven">
+                          <div class="row">
+                            <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 "
+                              *ngIf="this.reviewProduct.product.options[0].values &&this.reviewProduct.product.options[0].values[0]!= 'Default Title' else other_divs">
+                              <select class="form-control shades" id="shedes" [(ngModel)]="selectedColorDropdown"
+                                name="selectedColorDropdown" #name
+                                (change)="selectshades('color',$event.target.value,$event,'variantId')">
+                                <option [value]="SelectAShade">select a shade</option>
+                                <option *ngFor="let items of reviewProduct.product.variants"
+                                  [attr.initialColor]="items.option2" [value]="items.id">
+                                  {{items.option2}}</option>
+
+                              </select>
+
+                            </div>
+
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                              <div class="form-sec-title"
+                                *ngIf="this.reviewProduct.product.options[0].values &&this.reviewProduct.product.options[0].values[0]!= 'Default Title'">
+
+                                <div class="quantity buttons_added popup-button-quantity quan-buttons">
+                                  <input type='button' value='-' class='minus' field='quantity' (click)="sub()" />
+                                  <input type="number" step="1" name="quantity" min="0" value={{count}} #quantity
+                                    title="Qhow-to-ues-secty" class="input-text qty text" size="4" pattern=""
+                                    inputmode="">
+                                  <input type='button' value='+' class='plus' field='quantity' (click)="add()" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="cart-btn eight"
+                          *ngIf="this.reviewProduct.product.options[0].values &&this.reviewProduct.product.options[0].values[0]!= 'Default Title'">
+
+                          <button class="pink-btn text-center" type="button" title="add to cart"
+                            (click)="addtocart(productvariant)">Add
+                            to Cart</button>
+
+
+                          <p class="italy-text textiright made-italy">Made in Italy</p>
+                        </div>
+                        <ul class="media-icon-sec nine">
+                          <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                          <li><a href="https://www.pinterest.co.uk/"><i class="fa fa-pinterest"></i></a></li>
+                          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- home-overlay -->
+  <app-footer></app-footer>
+
+  <script>
+    $('.f-menu .collapse').collapse();
+
+  </script>
+</body>
+
+</html>

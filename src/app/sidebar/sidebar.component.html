@@ -1,0 +1,114 @@
+<div class="side-filter">
+  <h4 class="titile-cate " data-toggle="collapse" data-target="#collapseSix1" aria-expanded="false"
+    aria-controls="collapseSix1">Refine By</h4>
+  <div class="fiter-text collapse show" id="collapseSix1" aria-labelledby="headingSix" data-parent="#accordion">
+    <div class="side-filter1">
+      <h6 class="btn-link seeMoreBtns" data-toggle="collapse" data-target="#collapsenine" aria-expanded="false"
+        aria-controls="collapsenine">Ingredients<span class="pull-right">
+          <a class=" " data-toggle="collapse" data-target="#demo"></a>
+        </span></h6>
+
+      <ul class="fiter-text1 collapse show" id="collapsenine" aria-labelledby="headingSix" data-parent="#accordion">
+        <li class="side-line " (click)="checkbox(81913937969,$event,'COSMOS CERTIFIED')" id="81913937969">
+          <!-- <input type="checkbox" class="check"> -->
+          <input type="checkbox" id="81913937969" (change)="onChecked($event,'81913937969')">
+          <a routerLink="/eyes/81913937969" class="re_sidebar">COSMOS CERTIFIED</a></li>
+        <li class="side-line" (click)="checkbox(81913839665,$event,'100%NATURAL/BIO-BASED')" id="81913839665">
+          <input type="checkbox" id="81913839665" (change)="onChecked($event,'81913839665')">
+          <a routerLink="/eyes/81913839665" class="re_sidebar">100%NATURAL/BIO-BASED</a>
+        </li>
+        <li class="side-line" (click)="checkbox(82944524337,$event,'100%NATURAL/COLORANTS')" id="82944524337">
+          <input type="checkbox" id="82944524337" (change)="onChecked($event,'82944524337')">
+          <a routerLink="/eyes/82944524337" class="re_sidebar">100%NATURAL/COLORANTS</a>
+        </li>
+        <li class="side-line" (click)="checkbox(81913872433,$event,'OIL FREE')" id="81913872433"> <input type="checkbox"
+            id="81913872433" (change)="onChecked($event,'81913872433')">
+          <a routerLink="/eyes/81913872433" class="re_sidebar">OIL FREE</a></li>
+        <li class="side-line" (click)="checkbox(81913872433,$event,'VEGAN')"> <input type="checkbox">
+          <input type="checkbox" id="81913937969" (change)="onChecked($event,'81913937969')">
+          <a routerLink="/eyes/81913937969" class="re_sidebar">VEGAN</a></li>
+      </ul>
+
+      <h6 class="btn-link seeMoreBtns" data-toggle="collapse" data-target="#category" aria-expanded="false"
+        aria-controls="collapsenine">Category<span class="pull-right">
+          <a class=" " data-toggle="collapse" data-target="#category"></a>
+        </span></h6>
+
+      <li class="dropdown">Eyes
+        <span class="arrow js-collection-dropdown-button is-open">
+          <!-- <i class="fas fa-angle-down"></i> -->
+        </span>
+        <ul class="fiter-text1 collapse show " id="category" aria-labelledby="headingSix" data-parent="#accordion">
+          <li class="side-line sideline-content" (click)="checkbox('81913479217',$event,'Mascara')"><input
+              type="checkbox" id="81913479217" (change)="onChecked($event,'81913479217')"><a
+              routerLink="/eyes/81913479217" routerLinkActive="active" class="re_sidebar">Mascara</a></li>
+          <li class="side-line sideline-content" (click)="checkbox('81913446449',$event,'Eye Linear')"><input
+              (change)="onChecked($event,'81913446449')" type="checkbox" id="81913446449"><a
+              routerLink="/eyes/81913446449" routerLinkActive="active" class="re_sidebar" class="re_sidebar">Eye
+              Linear</a></li>
+          <li class="side-line sideline-content" (click)="checkbox('81913413681',$event,'Eye Shadow')"><input
+              type="checkbox" id="81913413681" (change)="onChecked($event,'81913413681')"><a
+              routerLink="/eyes/81913413681" routerLinkActive="active" class="re_sidebar">Eye Shadow</a></li>
+
+        </ul>
+      </li>
+      <li class="dropdown">Lips
+        <span class="arrow js-collection-dropdown-button is-open">
+          <!-- <i class="fas fa-angle-down"></i> -->
+        </span>
+        <ul class="fiter-text1 collapse show " id="category" aria-labelledby="headingSix" data-parent="#accordion">
+          <li class="side-line sideline-content" (click)="checkbox('81913675825',$event,'LipStick')">
+            <input type="checkbox" id="81913675825" (change)="onChecked($event,'81913675825')"><a
+              routerLink="/lips/81913675825" routerLinkActive="active" class="re_sidebar">Lipstick</a></li>
+          <li class="side-line sideline-content" (click)="checkbox('88418123825',$event,'Lip Sheer')">
+            <input type="checkbox" id="88418123825" (change)="onChecked($event,'88418123825')"><a
+              routerLink="/lips/88418123825" routerLinkActive="active" class="re_sidebar">Lip Sheer</a></li>
+          <li class="side-line sideline-content" (click)="checkbox('81913741361',$event,'Lip Gloss')"><input
+              (change)="onChecked($event,'81913741361')" type="checkbox" id="81913741361"><a
+              routerLink="/lips/81913741361" routerLinkActive="active" class="re_sidebar">Lip Gloss</a> </li>
+          <li class="side-line sideline-content" (click)="checkbox('81913774129',$event,'Lip Oil')"><input
+              (change)="onChecked($event,'81913774129')" type="checkbox" id="81913774129"><a
+              routerLink="/lips/81913774129" routerLinkActive="active" class="re_sidebar">Lip Oil</a></li>
+          <li class="side-line sideline-content" (click)="checkbox('81913806897',$event,'Lip Balm')"><input
+              (change)="onChecked($event,'81913806897')" type="checkbox" id="81913806897"><a
+              routerLink="/lips/81913806897" routerLinkActive="active" class="re_sidebar">Lip Balm</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">Face
+        <span class="arrow js-collection-dropdown-button is-open">
+          <!-- <i class="fas fa-angle-down"></i> -->
+        </span>
+        <ul class="fiter-text1 collapse show " id="category" aria-labelledby="headingSix" data-parent="#accordion">
+          <li class="side-line sideline-content" (click)="checkbox('81913511985',$event,'Foundation')"><input
+              (change)="onChecked($event,'81913511985')" type="checkbox" id="81913511985"><a
+              routerLink="/face/81913511985" routerLinkActive="active" class="re_sidebar">Foundation</a></li>
+          <li class="side-line sideline-content" (click)="checkbox('81913544753',$event,'Concealer')"><input
+              (change)="onChecked($event,'81913544753')" type="checkbox" id="81913544753"><a
+              routerLink="/face/81913544753" routerLinkActive="active" class="re_sidebar">Concealer</a></li>
+          <li class="side-line sideline-content" (click)="checkbox('81913610289',$event,'Blush')"><input type="checkbox"
+              (change)="onChecked($event,'81913610289')" id="81913610289"><a routerLink="/face/81913610289"
+              routerLinkActive="active" class="re_sidebar">Blush</a>
+          </li>
+
+        </ul>
+      </li>
+
+
+      <h6 class="btn-link seeMoreBtns" data-toggle="collapse" data-target="#solution" aria-expanded="false"
+        aria-controls="collapsenine">Solutions<span class="pull-right">
+          <a class=" " data-toggle="collapse" data-target="#solution"></a>
+        </span></h6>
+      <ul class="fiter-text1 collapse show" id="solution" aria-labelledby="headingSix" data-parent="#accordion">
+        <li class="side-line sideline-content" (click)="checkbox(119198908480,$event,'Acne')"> <input type="checkbox"
+            id="119198908480" (change)="onChecked($event,'119198908480')"><a routerLink="/eyes/119198908480"
+            class="re_sidebar">Acne</a></li>
+        <li class="side-line sideline-content" (click)="checkbox('81913872433',$event,'Redness')"> <input
+            type="checkbox" id="81913872433" (change)="onChecked($event,'81913872433')"><a
+            routerLink="/eyes/81913872433" class="re_sidebar">Redness</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</div>

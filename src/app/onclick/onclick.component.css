@@ -1,0 +1,159 @@
+.alert-box.success {
+  color: #de4578;
+  background-color: #ffffff;
+  border-color: #de4578;
+  display: none;
+  border: 1px solid #c9c9c9;
+  font-weight: 400;
+}
+
+.alert-box.failure {
+  color: #de4578;
+  background-color: #ffffff;
+  border-color: #de4578;
+  display: none;
+  border: 1px solid #c9c9c9;
+  font-weight: 400;
+}
+
+.alert-box.warning {
+  color: #de4578;
+  background-color: #ffffff;
+  border-color: #de4578;
+  display: none;
+  border: 1px solid #c9c9c9;
+  font-weight: 400;
+}
+
+.both-arrow.preview.horizontal.slide {
+  width: 100%;
+  float: left;
+  min-width: 100%;
+}
+.errorMsgs {
+  position: fixed;
+  font-weight: 500;
+  bottom: 100px;
+  width: 100%;
+  z-index: 1050;
+  -webkit-transition: bottom .4s;
+  transition: bottom .4s;
+  left: 50%;
+}
+
+.alert-box {
+  left: 0% !important;
+  position: absolute !important;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  top: unset;
+  top: unset;
+}
+
+
+#preview {
+  margin-top: 10px;
+  border: 1px solid black;
+  max-width: 500px;
+  height: 500px;
+  background-repeat: no-repeat !important;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: -521px;
+  width: 100%;
+  z-index: 10500;
+  background: #fff;
+
+}
+
+.errorMsgs.notification {
+  position: relative;
+  left: 0;
+  width: 100%;
+  float: left;
+  height: 0px;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+
+.tab-pane img:hover {
+  cursor: zoom-in;
+  border: 0;
+}
+
+
+.productHover {
+  border: 1px solid #000 !important;
+}
+
+.mg {
+  border: 1px solid #e4e4e4 !important;
+}
+
+
+
+img.active{
+  border: 1px solid #e4e4e4 !important;
+}
+
+
+
+element.style {
+  display: none;
+}
+
+.errorMsgs.notification .alert-box {
+  left: 50%!important;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+
+#headerPopup{
+  width:75%;
+  margin:0 auto;
+}
+
+#headerPopup iframe{
+  width:100%;
+  margin:0 auto;
+}
+.embed-responsive {
+  position: absolute;
+  display:none;
+  width: 100%;
+  padding: 0;
+  overflow: visible;
+  z-index: 1;
+  max-width: 637px;
+  right: 10%;
+  top: 50px;
+}
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 1;
+  top: -8px;
+  position: absolute;
+  right: -17px;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border: 1px solid #fbfbfb!important;
+  line-height: 20px!important;
+  padding: 0!important;
+}
+.close :hover{
+  color:#fff;
+}
+

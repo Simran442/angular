@@ -1,0 +1,112 @@
+.alert-box.success {
+  color: #de4578;
+  background-color: #ffffff;
+  border-color: #de4578;
+  display: none;
+  border: 1px solid #c9c9c9;
+  font-weight: 400;
+}
+
+.alert-box.failure {
+  color: #de4578;
+  background-color: #ffffff;
+  border-color: #de4578;
+  display: none;
+  border: 1px solid #c9c9c9;
+  font-weight: 400;
+}
+
+.alert-box.noProduct {
+  color: #de4578;
+  background-color: #ffffff;
+  border-color: #de4578;
+  display: none;
+  border: 1px solid #c9c9c9;
+  font-weight: 400;
+}
+
+
+
+.warning {
+  color: #de4578;
+  background-color: #ffffff;
+  border-color: #de4578;
+  display: none;
+  border: 1px solid #c9c9c9;
+  font-weight: 400;
+}
+
+/*  .failure[_ngcontent-c3]{
+        position: absolute;
+        top: -66px;
+        width: 53%;
+        left: 330px;
+       }
+       .success{
+        position: absolute;
+        top: -66px;
+        width: 53%;
+        left: 330px;
+       }
+       */
+.errorMsgs {
+  position: fixed;
+  font-weight: 900;
+  bottom: 100px;
+  width: 100%;
+  z-index: 1050;
+  -webkit-transition: bottom .4s;
+  transition: bottom .4s;
+  left: 50%;
+}
+
+.alert-box {
+  left: 0% !important;
+  position: absolute !important;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  top: unset;
+  top: unset;
+}
+
+.errorMsgs.notification {
+  position: relative;
+  left: 0;
+  width: 100%;
+  float: left;
+  height: 0px;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+
+element.style {
+display: none;
+}
+.errorMsgs.notification .alert-box {
+  left: 50%!important;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.lips-sec-text h1 a.active {
+  color: #e94a78!important;
+  text-decoration: none;
+}
+
+img.active{
+  border: 1px solid #e4e4e4 !important;
+}
+.NoProduct {
+  top: 50%;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #de4578;
+  padding: 15px;
+  color: #fff;
+  z-index: 1051;
+}

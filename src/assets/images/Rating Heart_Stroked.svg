@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Heart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Leave-a-Review" transform="translate(-496.000000, -456.000000)" stroke="#DE4579">
+            <g id="Rating" transform="translate(495.000000, 416.000000)">
+                <path d="M9.89171441,55.2885178 L9.53543501,55.648064 L10.2468639,55.6491797 L9.89171441,55.2885178 Z M9.36980216,42.5227172 C9.37646834,42.5329979 9.38310465,42.5433146 9.38971089,42.5536675 L9.81120819,42.2847065 L9.34239583,42.458531 C9.35137907,42.4827592 9.35991933,42.5029196 9.36980216,42.5227172 Z M11.8693536,41.0869031 C11.8694805,41.0868273 11.8696074,41.0867515 11.8697342,41.0866758 L11.8689726,41.0871297 C11.8690996,41.0870542 11.8692266,41.0869786 11.8693536,41.0869031 Z" id="Heart"></path>
+            </g>
+        </g>
+    </g>
+</svg>

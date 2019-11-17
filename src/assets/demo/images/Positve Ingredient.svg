@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home_Shop-Hover" transform="translate(-1064.000000, -2208.000000)" stroke="#EED6D3" stroke-width="2">
+            <g id="Good-Ingredients" transform="translate(0.000000, 2112.000000)">
+                <g id="Plus" transform="translate(1064.000000, 96.000000)">
+                    <path d="M48,1 C22.0418847,1 1,22.0418847 1,48 C1,73.9549885 22.0435579,95 48,95 C73.9533153,95 95,73.9533153 95,48 C95,22.0435579 73.9549885,1 48,1 Z" id="Stroke-1"></path>
+                    <path d="M48,9 C26.4602847,9 9,26.4602847 9,48 C9,69.5371122 26.4616816,87 48,87 C69.5357153,87 87,69.5357153 87,48 C87,26.4616816 69.5371122,9 48,9 Z" id="Stroke-1"></path>
+                    <path d="M48,28.8 L48,67.2" id="Stroke-3"></path>
+                    <path d="M28.8,48 L67.2,48" id="Stroke-5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

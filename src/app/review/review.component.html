@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <app-header></app-header>
+  <section class="headerFixed">
+    <div class="review">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1 dis-n">
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="review-img" *ngIf="this.products">
+              <img src={{this.products.product.images[0].src}} class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-9">
+            <div class="review-sec">
+              <h5>Leave a Review <span>*Required Fields</span></h5>
+              <div class="product-name">
+                <h4 *ngIf="products">{{this.products.product.title}}</h4>
+                <!--   <p>Face Cream</p> -->
+              </div>
+
+              <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+
+                  <input type="hidden" class="form-control" formControlName="productid" value="{{productid}}"
+                    placeholder="Ex. Love this!" [ngClass]="{ 'is-invalid': submitted && f.productid.errors }" />
+
+
+                </div>
+
+                <div class="form-group">
+
+                  <div class="form-group rating">
+                    <label class="rate-reviews">Your Rating</label>
+                    <div class="rating-input input-form">
+                      <app-rating [rating]='this.rating' (ratingClick)='ratingComponentClick($event)'></app-rating>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="review_handline">Review Headline*</label>
+                  <input type="text" class="form-control" formControlName="review_handline" placeholder="Ex. Love this!"
+                    [ngClass]="{ 'is-invalid': submitted && f.review_handline.errors }" />
+                  <div *ngIf="submitted && f.review_handline.errors" class="">
+                    <div *ngIf="f.review_handline.errors.required">review_handline is required</div>
+                  </div>
+
+                </div>
+
+                <div class="form-group">
+                  <label for="comments">Comments*</label>
+                  <textarea class="form-control" formControlName="comments" rows="5" id="comment"
+                    placeholder="How you use this, how it smells, how it feels..."
+                    [ngClass]="{ 'is-invalid': submitted && f.review_handline.errors }"></textarea>
+                  <div *ngIf="submitted && f.comments.errors" class="">
+                    <div *ngIf="f.comments.errors.required">comments is required</div>
+                  </div>
+                </div>
+
+
+                <div class="form-group">
+                  <label for="nickname">Nickname*</label>
+                  <input type="text" class="form-control" formControlName="nickname" placeholder="Ex. Nancy"
+                    [ngClass]="{ 'is-invalid': submitted && f.nickname.errors }" />
+                  <div *ngIf="submitted && f.nickname.errors" class="">
+                    <div *ngIf="f.nickname.errors.required">nickname is required</div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="location">Your Location*</label>
+                  <input type="text" class="form-control" formControlName="location" placeholder="Ex. Atlanta, GA"
+                    [ngClass]="{ 'is-invalid': submitted && f.location.errors }" />
+                  <div *ngIf="submitted && f.location.errors" class="">
+                    <div *ngIf="f.location.errors.required">location is required</div>
+                  </div>
+                </div>
+
+                <!--  <div class="form-group bottom-line">
+                  <label for="bottomline">Bottom Line</label>
+                  <p>Select One</p>
+
+                  <div class="form-control custom-c">
+                    Yes, I would recommend this to a friend<input type="radio" checked="checked" formControlName="bottom-line">
+                    <span class="checkmark"></span>
+                  </div>
+                  <div class="form-control custom-c">
+                    No, I would recommend this to a friend<input type="radio" formControlName="bottom-line">
+                    <span class="checkmark"></span>
+                  </div>
+
+                </div>
+
+                <div class="form-group skin-type">
+                  <label for="skinType">Skin Type*</label>
+                  <p>Select One</p>
+                  <div class="dis-flex">
+                    <div class="form-control custom-c">
+                      Combination<input type="radio" checked="checked" formControlName="skin-type">
+                      <span class="checkmark"></span>
+                    </div>
+                    <div class="form-control custom-c">
+                      Dry<input type="radio" formControlName="skin-type">
+                      <span class="checkmark"></span>
+                    </div>
+                    <div class="form-control custom-c">
+                      Normal<input type="radio" formControlName="skin-type">
+                      <span class="checkmark"></span>
+                    </div>
+                    <div class="form-control custom-c">
+                      Oily<input type="radio" formControlName="skin-type">
+                      <span class="checkmark"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group bottom-line age">
+                  <label>Age Range</label>
+                  <p>Select One</p>
+
+                  <div class="dis-flex">
+                    <div class="form-control custom-c">
+                      18-24<input type="radio" checked="checked" formControlName="age">
+                      <span class="checkmark"></span>
+                    </div>
+                    <div class="form-control custom-c">
+                      25-30<input type="radio" formControlName="age">
+                      <span class="checkmark"></span>
+                    </div>
+                    <div class="form-control custom-c">
+                      31-35<input type="radio" checked="checked" formControlName="age">
+                      <span class="checkmark"></span>
+                    </div>
+                    <div class="form-control custom-c">
+                      36-40<input type="radio" name="age">
+                      <span class="checkmark"></span>
+                    </div>
+                    <div class="form-control custom-c">
+                      41-50<input type="radio" checked="checked" formControlName="age">
+                      <span class="checkmark"></span>
+                    </div>
+                    <div class="form-control custom-c">
+                      50+<input type="radio" formControlName="age">
+                      <span class="checkmark"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group bottom-line skin">
+                  <label>Skin Tint Shade</label>
+                  <p>Select One</p>
+
+                  <div class="dis-flex">
+                    <div class="form-control custom-c">
+                      Light<input type="radio" checked="checked" formControlName="skin">
+                      <span class="checkmark"></span>
+                    </div>
+                    <div class="form-control custom-c">
+                      Medium<input type="radio" formControlName="skin">
+                      <span class="checkmark"></span>
+                    </div>
+                    <div class="form-control custom-c">
+                      Dark<input type="radio" checked="checked" formControlName="skin">
+                      <span class="checkmark"></span>
+                    </div>
+                    <div class="form-control custom-c">
+                      Deep<input type="radio" formControlName="skin">
+                      <span class="checkmark"></span>
+                    </div>
+                    <div class="form-control custom-c">
+                      Rich<input type="radio" checked="checked" formControlName="skin">
+                      <span class="checkmark"></span>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="form-group file-upload">
+                  <input type="file" name="myFile">
+                  <div class="button form-control">Add an Image <i class="fa fa-plus" aria-hidden="true"></i></div>
+                </div>
+
+                <div class="form-group file-upload">
+                  <input type="file" name="myFile">
+                  <div class="button form-control">Add a Video <i class="fa fa-plus" aria-hidden="true"></i></div>
+                </div>
+ -->
+                <div class="form-group email">
+                  <label for="email">Email Address*</label>
+                  <input type="text" class="form-control" formControlName="email"
+                    placeholder="Please enter your email address to mark this review as verified"
+                    [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                  <div *ngIf="submitted && f.email.errors" class="">
+                    <div *ngIf="f.email.errors.required">email is required</div>
+                  </div>
+                </div>
+
+
+
+
+                <!-- 
+                <div class="form-group">
+                  <button class="pink-btn text-center review-btn">Submit Review</button>
+                </div> -->
+
+
+                <div class="form-group">
+                  <button [disabled]="loading" class="btn btn-primary pink-btn">Submit Review</button>
+
+                </div>
+
+
+              </form>
+
+            </div> <!--  review-sec -->
+          </div>
+          <div class="col-md-1 dis-n">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <app-footer></app-footer>
+  <script>
+    $('.f-menu .collapse').collapse();
+
+  </script>
+</body>
+
+</html>

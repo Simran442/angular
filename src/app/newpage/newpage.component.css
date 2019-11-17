@@ -1,0 +1,106 @@
+.container {
+  margin-top: 20px;
+}
+
+.page {
+  display: none;
+}
+
+.page-active {
+  display: block;
+}
+
+
+
+
+.alert-box.success {
+  color: #de4578;
+  background-color: #ffffff;
+  border-color: #de4578;
+  display: none;
+  border: 1px solid #c9c9c9;
+  font-weight: 400;
+}
+
+.alert-box.failure {
+  color: #de4578;
+  background-color: #ffffff;
+  border-color: #de4578;
+  display: none;
+  border: 1px solid #c9c9c9;
+  font-weight: 400;
+}
+
+.alert-box.warning {
+  color: #de4578;
+  background-color: #ffffff;
+  border-color: #de4578;
+  display: none;
+  border: 1px solid #c9c9c9;
+  font-weight: 400;
+}
+
+/*  .failure[_ngcontent-c3]{
+      position: absolute;
+      top: -66px;
+      width: 53%;
+      left: 330px;
+     }
+     .success{
+      position: absolute;
+      top: -66px;
+      width: 53%;
+      left: 330px;
+     }
+     */
+ .errorMsgs {
+  position: fixed;
+  font-weight: 900;
+  bottom: 100px;
+  width: 100%;
+  z-index: 1050;
+  -webkit-transition: bottom .4s;
+  transition: bottom .4s;
+  left: 50%;
+}
+.alert-box.myclass {
+  left: 0% !important;
+  position: absolute !important;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  top: unset;
+  top: unset;
+}
+
+.mg {
+  border: 2px solid #b9b9b9 !important;
+}
+
+
+.errorMsgs.notification {
+  position: relative;
+  left: 0;
+  width: 100%;
+  float: left;
+  height: 0px;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+element.style {
+display: none;
+}
+.errorMsgs.notification .alert-box {
+left: 50%!important;
+transform: translateX(-50%);
+position: absolute;
+}
+
+
+img.active{
+  border: 1px solid #e4e4e4 !important;
+}
